@@ -3,6 +3,13 @@ import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import "../styles/Cards.css";
 
+import swi from "../images/swi.webp";
+import villa from "../images/5 (1).webp";
+import res from "../images/re.webp";
+import villa2 from "../images/6.webp";
+import compound from "../images/11 (1).webp";
+import villa3 from "../images/5 (2).webp";
+
 const AutoSlider = () => {
   const settings = {
     dots: true,
@@ -22,48 +29,56 @@ const AutoSlider = () => {
         <Slider {...settings}>
           <div>
             <img
-              src="../images/swi.webp"
-              alt="slide1_alt"
+              src={swi.default || swi}
+              loading="lazy"
+              alt="Villa Compound"
               title={t("Villa Compound")}
               className="img-fluid"
             />
           </div>
           <div>
             <img
-              src="../images/5 (1).webp"
-              alt="slide2_alt"
+              src={villa.default || villa}
+              loading="eager"
+              alt="Modern Villa"
               title={t("Modern Villa Design")}
               className="img-fluid"
             />
           </div>
+
           <div>
             <img
-              src="../images/re.webp"
-              alt="slide3_alt"
+              src={res.default || res}
+              loading="eager"
+              alt="Modern Restaurant Design"
               title={t("Modern Restaurant Design")}
               className="img-fluid"
             />
           </div>
+
           <div>
             <img
-              src="../images/6.webp"
-              alt="slide4_alt"
+              src={villa2.default || villa2}
+              loading="eager"
+              alt="Modern Villa Design"
               title={"Modern Villa Design"}
               className="img-fluid"
             />
           </div>
           <div>
             <img
-              src="../images/11 (1).webp"
-              alt="slide5_alt"
-              title={"Villa Compound"}
+              src={compound.default || compound}
+              loading="eager"
+              alt="Villa Compound Design"
+              title={"Villa Compound Design"}
               className="img-fluid"
             />
           </div>
           <div>
             <img
-              src="../images/5 (2).webp"
-              alt="slide6_alt"
+              src={villa3.default || villa3}
+              loading="eager"
+              alt="Villa"
               title={"Villa Compound"}
               className="img-fluid"
             />

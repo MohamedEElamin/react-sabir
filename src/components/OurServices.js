@@ -4,6 +4,13 @@ import ServiceItem from "../components/ServiceItem";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 
+import architectural from "../images/7.webp";
+
+import civil from "../images/13 (2).webp";
+import projects from "../images/4 (3).webp";
+import Interior from "../images/11.webp";
+import building from "../images/3.webp";
+
 const OurServices = () => {
   const { t } = useTranslation();
   return (
@@ -25,7 +32,8 @@ const OurServices = () => {
           <div className="cards__wrapper">
             <ul className="cards__items">
               <ServiceItem
-                src="images/7.webp"
+                src={architectural.default || architectural}
+                loading="lazy"
                 alt="modern villa design"
                 title="Architectural Engineering Consultancy"
                 h2={t("Architectural Engineering Consultancy")}
@@ -34,7 +42,8 @@ const OurServices = () => {
                 )}
               />
               <ServiceItem
-                src="images/13 (2).webp"
+                src={civil.default || civil}
+                loading="lazy"
                 alt="Modern circular staircase design"
                 title="Civil Engineering Consultancy"
                 h2={t("Civil Engineering Consultancy")}
@@ -45,7 +54,8 @@ const OurServices = () => {
             </ul>
             <ul className="cards__items">
               <ServiceItem
-                src="images/4 (3).webp"
+                src={projects.default || projects}
+                loading="lazy"
                 alt=" villa design"
                 title="Engineering Projects Management Consultancy"
                 h2={t("Engineering Projects Management Consultancy")}
@@ -54,7 +64,8 @@ const OurServices = () => {
                 )}
               />
               <ServiceItem
-                src="images/11.webp"
+                src={Interior.default || Interior}
+                loading="lazy"
                 alt="Interior Design"
                 title="Interior Design Engineering Consultancy"
                 h2={t("Interior Design Engineering Consultancy")}
@@ -63,7 +74,8 @@ const OurServices = () => {
                 )}
               />
               <ServiceItem
-                src="images/3.webp"
+                src={building.default || building}
+                loading="lazy"
                 alt="General Building"
                 title="General Buildings Engineering  Consultancy"
                 h2={t("General Buildings Engineering  Consultancy")}

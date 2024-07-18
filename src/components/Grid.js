@@ -2,6 +2,10 @@ import "../styles/Cards.css";
 import ServiceItem from "../components/ServiceItem";
 import { useTranslation } from "react-i18next";
 
+import villa from "../images/5 (1).webp";
+import mosque from "../images/P7.webp";
+import re from "../images/re.webp";
+
 function Grid() {
   const { t } = useTranslation();
   return (
@@ -16,7 +20,7 @@ function Grid() {
               <h2>{t("Who We Are")}</h2>
               <p>
                 {t(
-                  "Sabir Elsir Engineering Consultants Services has been a leader in engineering consultancy since 2001. With branches in Sudan and the United Arab Emirates, we offer exceptional architectural and structural planning and engineering supervision with top-tier design capabilities."
+                  "Sabir Elsir Consulting Office is one of the leading companies in the field of engineering consulting since 2001. Through our branches in Sudan and the United Arab Emirates, we provide exceptional architectural and construction designs. We also provide engineering supervision services."
                 )}
               </p>
             </div>
@@ -30,23 +34,26 @@ function Grid() {
 
           <ul className="cards__items">
             <ServiceItem
-              src="../images/5 (1).webp"
+              src={villa.default || villa}
               alt="Modern Villa Design"
+              loading="eager"
               h2={t("Modern Villa Design")}
               text={t(
                 "Tailored architectural, structural, and MEP design solutions to fulfill each client's unique needs."
               )}
             />
             <ServiceItem
-              src="../images/P7.webp"
-              akt="Mosque"
+              src={mosque.default || mosque}
+              alt="Mosque"
+              loading="eager"
               h2={t("Mosque")}
               text={t(
                 "Mixed model Mosque design with the most recent technology with sustainable landscape materials."
               )}
             />
             <ServiceItem
-              src="../images/re.webp"
+              src={re.default || re}
+              loading="eager"
               alt="Landscape Design"
               h2={t("Landscape Design")}
               text={t(
