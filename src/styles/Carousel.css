@@ -1,0 +1,230 @@
+:root {
+  --primary: #6a59ff;
+  --primary-light: #9a85ff;
+  --primary-dark: #3a2bff;
+
+  --secondary: #ff6b59;
+  --secondary-light: #ff9985;
+  --secondary-dark: #ff3b2b;
+
+  --bg: #f5f5f5;
+  --bg-dark: #e0e0e0;
+  --bg-light: #fafafa;
+  --bg-accent: #ececec;
+
+  --text-primary: #222224;
+  --text-secondary: #797979;
+  --text-light: #ffffff;
+  --text-dark: #000000;
+
+  --accent1: #ffd700;
+  --accent2: #00bfff;
+  --accent3: #32cd32;
+  --accent4: #ff4500;
+
+  --border-light: #dcdcdc;
+  --border-dark: #a9a9a9;
+
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.25);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 140px) {
+  html {
+    zoom: 1.5;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    zoom: 1.7;
+  }
+}
+
+@media (min-width: 3860px) {
+  html {
+    zoom: 2.5;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: var(--text-secondary);
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-primary);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+.container {
+  max-width: 124rem;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+  background: var(--bg-light);
+}
+
+.heading {
+  padding: 1rem 0;
+  font-size: 3.5rem;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.calc2 {
+  padding: 2rem;
+  background: var(--bg);
+  border-radius: 1rem;
+}
+
+.slider-container {
+  position: relative;
+  margin: 0px auto;
+  max-width: 100%;
+  overflow: hidden;
+  background: var(--bg-dark);
+  height: 50vh; /* Adjusted height for slider */
+}
+
+.slider-container .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.slider-container img {
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.slider-container .navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+@media (max-width: 1200px) {
+  .slider-container {
+    padding: 1rem;
+    height: 40vh; /* Adjusted height for smaller screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .slider-container {
+    padding: 0.5rem;
+    height: 35vh; /* Adjusted height for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    padding: 0.25rem;
+    height: 30vh; /* Adjusted height for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .slider-container {
+    padding: 0.1rem;
+    height: 25vh; /* Adjusted height for smaller screens */
+  }
+}
+
+/* Slider Controler */
+.slider-controler {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.slider-controler img {
+  border-radius: 2ex;
+}
+.slider-controler .slider-arrow {
+  background: var(--black);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  cursor: pointer;
+  margin: 0 1rem;
+}
+
+.slider-controler .slider-arrow ion-icon {
+  font-size: 2rem; /* Adjusted to a reasonable size for slider arrows */
+  color: black !important;
+}
+
+.slider-controler .slider-arrow::after {
+  content: "";
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .slider-controler .slider-arrow {
+    width: 3rem;
+    height: 3rem;
+  }
+  .slider-controler .slider-arrow ion-icon {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .slider-controler .slider-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .slider-controler .slider-arrow ion-icon {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-controler .slider-arrow {
+    width: 2rem;
+    height: 2rem;
+  }
+  .slider-controler .slider-arrow ion-icon {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .slider-controler .slider-arrow {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .slider-controler .slider-arrow ion-icon {
+    font-size: 1.2rem;
+  }
+}

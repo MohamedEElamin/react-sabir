@@ -1,0 +1,50 @@
+form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  font-size: 18px;
+
+  input {
+    width: 332px;
+    height: 35px;
+    padding: px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+
+    &:focus {
+      border: 2px solid rgba(0, 206, 158, 1);
+    }
+  }
+
+  textarea {
+    min-width: 100%;
+    width: 332px;
+    height: 180px;
+
+    min-height: 100px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+
+    &:focus {
+      border: 2px solid rgba(0, 206, 158, 1);
+    }
+  }
+
+  label {
+    margin-top: 1rem;
+    padding: 0.5rem 8rem;
+    font-family: "Cairo Play", sans-serif;
+  }
+
+  input[type="submit"] {
+    margin-top: 6rem;
+    cursor: pointer;
+    background: rgb(249, 105, 14);
+    color: white;
+    border: none;
+  }
+}

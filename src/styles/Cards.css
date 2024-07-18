@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap");
+.cards {
+  padding: 4rem;
+  background: white;
+}
+
+body.arabic {
+  font-family: "Amiri", serif; /* Example Arabic font family */
+}
+
+h3 {
+  color: rgb(16, 14, 79);
+  text-align: left;
+  font-size: 50px;
+  line-height: 1.5em;
+  text-align: center;
+  font-family: "Cairo Play", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+.card-text-custom {
+  font-size: 130%;
+  color: black;
+  font-family: "Cairo Play", sans-serif;
+  padding-top: 20px;
+  text-align: center;
+}
+.cards__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 1420px;
+  width: 95%;
+  margin: 0 auto;
+}
+.cards__tit .cards__wrapper {
+  position: relative;
+  margin: 50px 0 45px;
+}
+
+.cards__items {
+  margin-bottom: 24px;
+}
+
+.cards__items h2 {
+  margin-bottom: 24px;
+}
+
+.iframe-containers {
+  border-radius: 10px;
+  width: 700px;
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.cards__item {
+  display: flex;
+  flex: 1;
+  margin: 0 1rem;
+  border-radius: 10px;
+}
+
+.cards__item__link {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.cards__item__pic-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 67%;
+  overflow: hidden;
+}
+
+.fade-img {
+  animation-name: fade-img;
+  animation-duration: 2s;
+}
+
+.cards__item__pic-wrap::after {
+  content: attr(data-category);
+  position: absolute;
+  bottom: 0;
+  margin-left: 10px;
+  padding: 6px 8px;
+  max-width: calc((100%) - 60px);
+  font-size: 12px;
+  font-weight: 700;
+
+  box-sizing: border-box;
+}
+
+.cards__item__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+}
+
+.cards__item__img:hover {
+  transform: scale(1.1);
+}
+
+.cards__item__info {
+  padding: 20px 30px 30px;
+}
+
+.cards__item__text {
+  font-size: 120%;
+  color: rgb(50, 67, 220);
+  font-family: "Cairo Play", sans-serif;
+  padding-top: 20px;
+}
+
+.cards_h2 {
+  font-family: "Cairo Play", sans-serif;
+  color: black;
+  font-size: 17px;
+}
+
+/*
+.cards__cards__container__main__header {
+  border: 2px solid black;
+  box-shadow: 1em 1em rgb(25%, 25%, 25%, 25%);
+  border-radius: 2ex;
+  font-size: 130%;
+  color: rgb(50, 67, 220);
+  font-family: "Pacifico", cursive;
+  text-align: center;
+}
+*/
+h2 {
+  font-family: "Cairo Play", sans-serif;
+  color: black;
+  text-align: center;
+  font-weight: bolder;
+
+  font-size: 35px;
+  line-height: 1.5em;
+}
+
+.responsive-container {
+  border: 2px solid black;
+  padding: 30px 8px;
+  margin: 0px 4px;
+  border-radius: 10px;
+  color: rgb(50, 67, 220);
+  font-size: 15px;
+  text-align: justify;
+
+  font-family: "Cairo Play", sans-serif;
+}
+.card-stack {
+  padding: 0px 10rem;
+}
+@media only screen and (min-width: 1200px) {
+  .content__blog__container {
+    width: 84%;
+  }
+  .calc__article {
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards__items {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards__item {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .iframe-containers {
+    width: 84%;
+  }
+  .cards {
+    width: 90%;
+  }
+  .card-stack {
+    padding: 1px 1rem;
+  }
+  .Myh1 {
+    font-size: 20px;
+    margin-top: 4rem;
+  }
+  .Myh2 {
+    font-size: 22px;
+  }
+  .calc__article {
+    width: 82%;
+  }
+  .cards__items {
+    font-size: 80%;
+
+    width: 350px;
+  }
+}
+.responsive-iframe {
+  width: 100%;
+  border-radius: 2ex;
+  margin: 30px 9px 10px 0px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 2ex;
+}
+
+.span {
+  font-size: 13px;
+  display: none;
+  color: red;
+  padding: 3px;
+}
+.calc {
+  width: 80%;
+  height: auto;
+  padding: 2em;
+  margin: 50px auto;
+  border: 2px solid rgb(50, 67, 220);
+  box-shadow: 1em 1em rgb(25%, 25%, 25%, 25%);
+  font-size: 130%;
+  color: rgb(50, 67, 220);
+  font-family: "Pacifico", cursive;
+}
+.responsive-container h2 {
+  font-size: 130%;
+  color: rgb(50, 67, 220);
+  font-family: "Cairo Play", sans-serif;
+  padding: 10px 0px;
+}
+.calc h3 {
+  font-size: 105%;
+  color: black;
+  font-family: "Cairo Play", sans-serif;
+}
+
+.calc h2 {
+  font-family: "Cairo Play", sans-serif;
+  text-align: center;
+  font-size: 175%;
+  color: black;
+  margin: 10px 0px;
+}
+.calc__article h2 {
+  font-size: 1.5em;
+  color: black;
+  text-align: center;
+  margin-top: 2px;
+  position: relative;
+  font-size: 175%;
+  color: black;
+
+  font-family: "Cairo Play", sans-serif;
+}
+
+.calc__article {
+  font-size: 150%;
+  border: 2px double black;
+  padding: 1em;
+  box-shadow: 1em 1em rgb(25%, 25%, 25%, 25%);
+  border-radius: 2ex;
+  font-family: "Cairo Play", sans-serif;
+  width: 50%;
+  height: auto;
+  color: #007bff;
+  margin: 50px 0px;
+}
+
+.text-muted {
+  font-family: "Cairo Play", sans-serif;
+  color: #007bff;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .responsive-container {
+    padding: 15px;
+  }
+
+  .responsive-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .responsive-container article {
+    font-size: 0.9rem;
+  }
+
+  .responsive-container iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-container {
+    padding: 10px;
+  }
+  .StyledContactForm {
+    position: relative;
+  }
+
+  .card-title-custom {
+    font-size: 1.2em;
+  }
+
+  .card-text-custom {
+    font-size: medium;
+    text-align: inherit;
+    padding: 0px -6px;
+  }
+
+  .responsive-container h2 {
+    font-size: 1.25rem;
+  }
+
+  .responsive-container p {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .responsive-container iframe {
+    height: 250px;
+  }
+}
+
+.Myh2 {
+  color: black;
+  font-family: "Cairo Play", sans-serif;
+  padding-bottom: 50px;
+}
+.Myh1 {
+  color: black;
+  text-align: center;
+  font-family: "Cairo Play", sans-serif;
+  padding-bottom: 50px;
+}
+
+/* General styles */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  align-items: stretch;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+  text-align: justify;
+  font-family: "Cairo Play", sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  width: 100%;
+  margin: 35px 5px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.StyledContactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  label {
+    font-size: 0.9rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  input[type="submit"] {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .StyledContactForm input[type="text"],
+  .StyledContactForm input[type="email"],
+  .StyledContactForm textarea {
+    font-size: 0.875rem;
+  }
+
+  .StyledContactForm input[type="submit"] {
+    font-size: 0.875rem;
+  }
+}
+
+.ti {
+  font-family: "Cairo Play", sans-serif;
+}
+
+form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  font-size: 14px;
+  width: 230px;
+  height: auto;
+
+  input {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+
+    &:focus {
+      border: 2px solid rgba(0, 206, 158, 1);
+    }
+  }
+
+  textarea {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    max-height: 100px;
+    min-height: 100px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+
+    &:focus {
+      border: 2px solid rgba(0, 206, 158, 1);
+    }
+  }
+
+  label {
+    margin-top: 1rem;
+  }
+
+  input[type="submit"] {
+    margin-top: 2rem;
+    cursor: pointer;
+    background: rgb(249, 105, 14);
+    color: white;
+    border: none;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.addr {
+  text-align: center;
+  font-family: "Cairo Play", sans-serif;
+}
