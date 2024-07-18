@@ -49,7 +49,7 @@ const Navbar = () => {
               className="logo"
               src="../images/logo-part.webp"
               alt={t("Sabir Elsir Engineering Consultants logo")}
-              title="Sabir Elsir Engineering Consultants logo"
+              title="Sabir Elsir Engineering Consultant logo"
             />
 
             <i className="fab fa-typ" />
