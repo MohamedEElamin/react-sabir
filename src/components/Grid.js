@@ -35,7 +35,7 @@ function Grid() {
 
           <ul className="cards__items">
             <ServiceItem
-              src="/static/media/5 (1).47e356d9a8e7051f8c06.webp"
+              src="../images/5 (1).jpg"
               alt="Modern Villa Design"
               loading="eager"
               h2={t("Modern Villa Design")}
