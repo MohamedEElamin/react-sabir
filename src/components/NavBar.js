@@ -47,7 +47,7 @@ const Navbar = () => {
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img
               className="logo"
-              src="images/logo-part-min.jpeg"
+              src="/images/logo-part-min.jpg"
               alt={t("Sabir Elsir Engineering Consultants logo")}
               title="Sabir Elsir Engineering Consultants logo"
             />
