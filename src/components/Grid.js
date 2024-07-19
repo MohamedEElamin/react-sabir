@@ -4,8 +4,8 @@ import { useTranslation } from "react-i18next";
 
 // import villa from "/static/media/5 (1).47e356d9a8e7051f8c06.webp";
 
-import mosque from "../images/P7.webp";
-import re from "../images/re.webp";
+// import mosque from "../images/5 (1)-min.jpg";
+// import re from "../images/re.webp";
 
 function Grid() {
   const { t } = useTranslation();
@@ -35,7 +35,7 @@ function Grid() {
 
           <ul className="cards__items">
             <ServiceItem
-              src="../images/5 (1).jpg"
+              src="images/5 (2)-min.jpg"
               alt="Modern Villa Design"
               loading="eager"
               h2={t("Modern Villa Design")}
@@ -44,7 +44,7 @@ function Grid() {
               )}
             />
             <ServiceItem
-              src={mosque.default || mosque}
+              src="/images/P13-min.jpg"
               alt="Mosque"
               loading="eager"
               h2={t("Mosque")}
@@ -53,7 +53,7 @@ function Grid() {
               )}
             />
             <ServiceItem
-              src={re.default || re}
+              src="/images/re-min.jpg"
               loading="eager"
               alt="Landscape Design"
               h2={t("Landscape Design")}

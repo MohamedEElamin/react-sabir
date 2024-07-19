@@ -3,12 +3,12 @@ import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import "../styles/Cards.css";
 
-import swi from "../images/swi.webp";
-import villa from "../images/5 (1).webp";
-import res from "../images/re.webp";
-import villa2 from "../images/6.webp";
-import compound from "../images/11 (1).webp";
-import villa3 from "../images/5 (2).webp";
+// import swi from "../images/swi.webp";
+// import villa from "../images/5 (1).webp";
+// import res from "../images/re.webp";
+// import villa2 from "../images/6.webp";
+// import compound from "../images/11 (1).webp";
+// import villa3 from "../images/5 (2).webp";
 
 const AutoSlider = () => {
   const settings = {
@@ -29,17 +29,17 @@ const AutoSlider = () => {
         <Slider {...settings}>
           <div>
             <img
-              src={swi.default || swi}
+              src="images/circle_villa-min.jpg"
               loading="lazy"
-              alt="Villa Compound"
-              title={t("Villa Compound")}
+              alt="Villa Design"
+              title={t("Villa Design")}
               className="img-fluid"
             />
           </div>
           <div>
             <img
-              src={villa.default || villa}
-              loading="eager"
+              src="images/3 (1)-min.jpg"
+              loading="lazy"
               alt="Modern Villa"
               title={t("Modern Villa Design")}
               className="img-fluid"
@@ -48,18 +48,18 @@ const AutoSlider = () => {
 
           <div>
             <img
-              src={res.default || res}
-              loading="eager"
-              alt="Modern Restaurant Design"
-              title={t("Modern Restaurant Design")}
+              src="images/mo.jpg"
+              loading="lazy"
+              alt="Modern Mosque Design"
+              title={t("Modern Mosque Design")}
               className="img-fluid"
             />
           </div>
 
           <div>
             <img
-              src={villa2.default || villa2}
-              loading="eager"
+              src="images/5 (1)-min.jpg"
+              loading="lazy"
               alt="Modern Villa Design"
               title={"Modern Villa Design"}
               className="img-fluid"
@@ -67,8 +67,8 @@ const AutoSlider = () => {
           </div>
           <div>
             <img
-              src={compound.default || compound}
-              loading="eager"
+              src="images/11 (1)-min.jpg"
+              loading="lazy"
               alt="Villa Compound Design"
               title={"Villa Compound Design"}
               className="img-fluid"
@@ -76,8 +76,8 @@ const AutoSlider = () => {
           </div>
           <div>
             <img
-              src={villa3.default || villa3}
-              loading="eager"
+              src="images/villa_compound.jpg"
+              loading="lazy"
               alt="Villa"
               title={"Villa Compound"}
               className="img-fluid"

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
 import withTrans from "./withTranslation";
 import { useTranslation } from "react-i18next";
-import logo from "../images/logo-part.webp";
 
 const Navbar = () => {
   const { i18n } = useTranslation();
@@ -48,8 +47,7 @@ const Navbar = () => {
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img
               className="logo"
-              src={logo.default || logo}
-              loading="lazy"
+              src="images/logo-part-min.jpeg"
               alt={t("Sabir Elsir Engineering Consultants logo")}
               title="Sabir Elsir Engineering Consultants logo"
             />
