@@ -506,3 +506,10 @@ body {
   text-align: center;
   font-family: "Cairo Play", sans-serif;
 }
+
+.success-message {
+  color: green;
+  font-size: 1.2em;
+  margin-top: 10px;
+  text-align: center;
+}

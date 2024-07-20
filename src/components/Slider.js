@@ -6,7 +6,6 @@ import "../styles/Cards.css";
 import swi from "../images/circle_villa-min.jpg";
 import villa from "../images/3 (1)-min.jpg";
 import res from "../images/mo.jpg";
-import villa2 from "../images/11 (2)-min.jpg";
 import compound from "../images/11 (1)-min.jpg";
 import villa3 from "../images/villa_compound.jpg";
 
@@ -30,6 +29,7 @@ const AutoSlider = () => {
           <div>
             <img
               src={swi.default || swi}
+              loading="eager"
               alt="Villa Design"
               title={t("Villa Design")}
               className="img-fluid"
@@ -39,6 +39,7 @@ const AutoSlider = () => {
             <img
               src={villa.default || villa}
               alt="Modern Villa"
+              loading="eager"
               title={t("Modern Villa Design")}
               className="img-fluid"
             />
@@ -58,6 +59,7 @@ const AutoSlider = () => {
             <img
               src={compound.default || compound}
               alt="Villa Compound Design"
+              loading="eager"
               title={"Villa Compound Design"}
               className="img-fluid"
             />

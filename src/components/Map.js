@@ -6,18 +6,6 @@ import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
 
 const Map = ({ location }) => {
-  const [values, setValues] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    message: "",
-  });
-  function handleInput(event) {
-    const newOgj = { ...values, [event.target.name]: event.target.value };
-    setValues(newOgj);
-  }
-  const { t } = useTranslation();
-  const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -31,13 +19,56 @@ const Map = ({ location }) => {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("message sent");
+          setSuccessMessage(
+            t("Thank you! Message sent successfully. We will contact you soon.")
+          );
         },
         (error) => {
           console.log(error.text);
+          setSuccessMessage(t("Failed to send the message. Please try again."));
         }
       );
   };
+  const { t } = useTranslation();
+  const form = useRef(null);
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errors, setErrors] = useState({});
+
+  const validate = () => {
+    if (!form.current) {
+      console.error("form.current is null");
+      return {};
+    }
+
+    const formElements = form.current.elements;
+    const newErrors = {};
+
+    if (!formElements.user_name.value.trim()) {
+      newErrors.user_name = t("Name is required");
+    }
+
+    const phonePattern = /^\+?[1-9]\d{1,14}$/;
+    if (!formElements.phone.value.match(phonePattern)) {
+      newErrors.phone = t("Enter a valid phone number");
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!formElements.user_email.value.match(emailPattern)) {
+      newErrors.user_email = t("Enter a valid email address");
+    }
+
+    if (!formElements.message.value.trim()) {
+      newErrors.message = t("Message is required");
+    }
+
+    return newErrors;
+  };
+
+  const newErrors = validate();
+  if (Object.keys(newErrors).length > 0) {
+    setErrors(newErrors);
+    return;
+  }
 
   return (
     <div className="">
@@ -106,35 +137,64 @@ const Map = ({ location }) => {
                 <br /> <h3>{t("Contact Us")}</h3>
                 <br />
                 <form ref={form} onSubmit={sendEmail}>
-                  <label re>{t("Name")}</label>
+                  <label>{t("Name")}</label>
                   <input
                     type="text"
                     placeholder={t("Enter your Name")}
                     name="user_name"
-                    errorMessage=""
+                    required
                   />
+                  {errors.user_name && (
+                    <p style={{ color: "red" }}>{errors.user_name}</p>
+                  )}
+
                   <label>{t("Phone")}</label>
                   <input
-                    type="Phone"
+                    type="text"
                     placeholder={t("Enter your Phone")}
                     name="phone"
-                    errorMessage=""
+                    pattern="^\+?[1-9]\d{1,14}$"
+                    required
                   />
+                  {errors.phone && (
+                    <p style={{ color: "red" }}>{errors.phone}</p>
+                  )}
+
                   <label>{t("Email")}</label>
                   <input
                     type="email"
                     placeholder={t("Enter your Email")}
                     name="user_email"
-                    errorMessage=""
+                    required
                   />
+                  {errors.user_email && (
+                    <p style={{ color: "red" }}>{errors.user_email}</p>
+                  )}
+
                   <label>{t("Message")}</label>
                   <textarea
                     name="message"
                     placeholder={t("Enter your Message")}
-                    onChange={handleInput}
+                    required
                   />
+                  {errors.message && (
+                    <span style={{ color: "red" }}>{errors.message}</span>
+                  )}
+
                   <input type="submit" value={t("Send")} />
                 </form>
+                <br />
+                {successMessage && (
+                  <p
+                    style={{
+                      color: "green",
+                      fontSize: "1.2em",
+                      marginTop: "10px",
+                    }}
+                  >
+                    {successMessage}
+                  </p>
+                )}
               </div>
             </Card.Body>
           </Card>
@@ -145,6 +205,7 @@ const Map = ({ location }) => {
               <Card.Body className="calc2">
                 <br />
                 <h2>{t("Address")}</h2> <br />
+                <br /> <br />
                 <h4>
                   {t(
                     "Sharjah-Almajaz(1)- Balrasheed Tower (1)-Floor 22 - office 2203"
@@ -160,6 +221,7 @@ const Map = ({ location }) => {
                 <h3>{t("Email")}</h3>
                 <br />
                 <h4>sabirelgabri@sabirelsir.ae </h4>
+                <br />
                 <br />
                 <h3>{t("Phone")}</h3>
                 <br />
