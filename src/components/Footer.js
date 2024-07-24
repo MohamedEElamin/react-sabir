@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
+import { faSnapchatGhost } from "@fortawesome/free-brands-svg-icons";
+
 import { useTranslation } from "react-i18next";
 
 function Footer() {
@@ -47,6 +49,14 @@ function Footer() {
             Sabir Elsir Engineering Consultants © 2024
           </small>
           <div className="social-icons">
+            <Link
+              className="social-icon-link snapchat"
+              to="/"
+              target="_blank"
+              aria-label="Snapchat"
+            >
+              <FontAwesomeIcon icon={faSnapchatGhost} />
+            </Link>
             <Link
               className="social-icon-link facebook"
               to="https://www.facebook.com/profile.php?id=61562617565173"

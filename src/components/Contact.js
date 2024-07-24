@@ -16,7 +16,7 @@ const Contact = () => {
         ></meta>
 
         <link rel="canonical" href="./contact"></link>
-        <meta name="language" content="EN, AR"></meta>
+        {/* <meta name="language" content="EN, AR"></meta> */}
       </Helmet>
 
       <div>
