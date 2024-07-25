@@ -389,6 +389,7 @@ h2 {
   height: 100vh; /* Full viewport height */
   overflow: hidden; /* Hide overflow to prevent scrolling */
   position: relative; /* Position relative for absolute positioning of child elements */
+  margin-bottom: -580px;
 }
 
 /* Slider wrapper to control the height of the slides */
