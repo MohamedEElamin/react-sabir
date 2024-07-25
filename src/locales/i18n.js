@@ -37,8 +37,8 @@ i18n
             "مرحبا بكم في صابر السر للاستشارات الهندسية",
 
           "Who We Are": "معلومات عنا",
-          "Sabir Elsir Engineering Consultants Services has been a leader in engineering consultancy since 2001. With branches in Sudan and the United Arab Emirates, we offer exceptional architectural and structural planning and engineering supervision with top-tier design capabilities.":
-            "صابر السر للخدمات الاستشارية الهندسية هي شركة رائدة في مجال الاستشارات الهندسية منذ عام 2001. من خلال فروعنا في السودان والإمارات العربية المتحدة ، نقدم تخطيطات معماريا وإنشائيا استثنائيا وإشرافا هندسيا مع قدرات تصميم من الدرجة الأولى",
+          "Sabir Elsir Consulting Office is one of the leading companies in the field of engineering consulting since 2001. Through our branches in Sudan and the United Arab Emirates, we provide exceptional architectural and construction designs. We also provide engineering supervision services.":
+            "منذ عام 2001، كان مكتب صابر السر الاستشاري رائداً في مجال الاستشارات الهندسية. تقدم فروعنا في السودان والإمارات العربية المتحدة تصميمات معمارية وإنشائية استثنائية، إلى جانب خدمات الإشراف الهندسي عالية المستوى.",
 
           "Enhancing Mental Well-being through Outdoor Living with Sustainable Landscape Materials.":
             "تعزيز الصحة النفسية من خلال الحياة في الهواء الطلق باستخدام مواد المناظر الطبيعية المستدامة.",
@@ -137,9 +137,14 @@ i18n
           "Villa Compound": "مجمع فلل",
           "Modern restaurant design": "تصميم مطعم حديث",
           "Enter your Name": "أدخل أسمك",
-          "Enter your Phone": "أدخل هاتفك",
+          "Enter your Phone Number": "أدخل هاتفك",
           "Enter your Email": "أدخل بريدك الإلكتروني",
           "Enter your Message": "أدخل رسالتك",
+          Submit: "ارسال",
+          "Name is required": "الاسم مطلوب",
+          "Enter a valid phone number": "أدخل رقم هاتف صحيح",
+          "Enter a valid email address": "أدخل عنوان بريد إلكتروني صالح",
+          "Message is required": "الرجاء ادخال رسالتك",
         },
       },
     },

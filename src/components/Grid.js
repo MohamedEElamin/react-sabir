@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 function Grid() {
   const { t } = useTranslation();
   return (
-    <div className="cards">
+    <div className="calc">
       <div className="cards__container">
         <h1 className="Myh2">
           {t("Welcome to Sabir Elsir Engineering Consultants")}

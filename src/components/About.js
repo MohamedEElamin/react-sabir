@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import { useTranslation } from "react-i18next";
 import "../styles/Cards.css";
 import { Helmet } from "react-helmet-async";
+import Container from "react-bootstrap/Container";
 
 const About = () => {
   const { t } = useTranslation();
@@ -56,24 +57,24 @@ const About = () => {
         <link rel="canonical" href="./about"></link>
       </Helmet>
 
-      <div className="cards">
-        <h1 className="Myh1">
-          {t("About Sabir Elsir Engineering Consultants")}
-        </h1>
-
-        <Row xs={1} md={2} lg={4} className="g-4">
-          {data.map((item) => (
-            <Col key={item.id}>
-              <Card>
-                <Card.Img variant="top" src={item.imgSrc} />
-                <Card.Body>
-                  <h2 className="card-title-custom">{item.title}</h2>
-                  <h3 className="card-text-custom">{item.text}</h3>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
+      <h1 className="Myh1">{t("About Sabir Elsir Engineering Consultants")}</h1>
+      <div className="calc">
+        <div className="card">
+          <Row xs={1} md={2} lg={1} className="g-4">
+            {data.map((item) => (
+              <Col key={item.id}>
+                <Card className="">
+                  <Card.Img variant="top" src={item.imgSrc} />
+                  <Card.Body>
+                    <h2 className="card-title-custom">{item.title}</h2>
+                    <h3 className="card-text-custom">{item.text}</h3>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </div>
+        <br />
       </div>
     </>
   );

@@ -99,9 +99,8 @@ const Map = ({ location }) => {
 
   return (
     <>
-      <div className="">
+      <div className="calc">
         <h1 className="Myh1">
-          <br /> <br />
           {t("Contact Sabir Elsir Engineering Consultants")}
         </h1>
         <Row>
@@ -173,10 +172,10 @@ const Map = ({ location }) => {
                         name="user_name"
                       />
                       {errors.user_name && <span>{errors.user_name}</span>}
+                      <br />
                       <label>{t("Phone")}</label>
                     </div>
                     <div>
-                      <br />
                       <input
                         type="text"
                         placeholder={t("Enter your Phone Number")}
@@ -202,6 +201,7 @@ const Map = ({ location }) => {
                       {errors.message && <span>{errors.message}</span>}
                     </div>
                     <br />
+                    <br />
                     <button
                       type="button"
                       className="success"
@@ -223,32 +223,28 @@ const Map = ({ location }) => {
                 <Card.Body className="calc2">
                   <br />
                   <h2>{t("Address")}</h2> <br />
-                  <br /> <br />
+                  <br />
                   <h4>
                     {t(
                       "Sharjah-Almajaz(1)- Balrasheed Tower (1)-Floor 22 - office 2203"
                     )}
                   </h4>
                   <br />
+                  <br />
                   <h4>{t("Ajman-Nakheel 2 Office No. 190")}</h4>
                   <br /> <br />
                   <h3>{t("Office Hours")}</h3>
-                  <br />
                   <h4>{t("Saturday to Thursday: 9:00 AM to 5:00 PM")}</h4>
                   <br /> <br />
                   <h3>{t("Email")}</h3>
-                  <br />
                   <h4>sabirelgabri@sabirelsir.ae </h4>
                   <br />
                   <br />
                   <h3>{t("Phone")}</h3>
-                  <br />
                   <h4>
                     +971552771408 <br />
                     +974547099448
                   </h4>
-                  <br />
-                  <br />
                 </Card.Body>
               </div>
             </Card>

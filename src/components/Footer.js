@@ -51,7 +51,7 @@ function Footer() {
           <div className="social-icons">
             <Link
               className="social-icon-link snapchat"
-              to="/"
+              to="http://snapchat.com/t/1omrldOs"
               target="_blank"
               aria-label="Snapchat"
             >

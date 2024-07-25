@@ -62,7 +62,7 @@ const OurServices = () => {
                 )}
               />
               <ServiceItem
-                src="/images/2 (1)-min.jpg"
+                src="images/int2.jpg"
                 loading="lazy"
                 alt="Interior Design"
                 title="Interior Design Engineering Consultancy"

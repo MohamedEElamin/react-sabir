@@ -317,7 +317,7 @@ h2 {
 
 @media (max-width: 480px) {
   .responsive-container {
-    padding: 10px;
+    margin-right: 30px;
   }
   .StyledContactForm {
     position: relative;
@@ -332,20 +332,92 @@ h2 {
     text-align: inherit;
     padding: 0px -6px;
   }
+  .calc {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .calc2 {
+    width: fit-content;
+  }
 
   .responsive-container h2 {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
+  }
+
+  .cards__items h2 {
+    font-size: 1.4rem;
   }
 
   .responsive-container p {
-    font-size: 0.8rem;
-    text-align: center;
-    padding: 10px;
+    font-size: 0.9rem;
+    text-align: justify;
+    margin: 10px;
   }
 
   .responsive-container iframe {
-    height: 250px;
+    height: 280px;
+    width: auto !important;
+    margin-bottom: 90px;
   }
+  .Myh2 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .cards__items {
+    width: 44vh;
+    margin-left: -10px;
+  }
+  .cards {
+    width: auto !important;
+  }
+  .responsive-iframe {
+    width: 93%;
+    margin: 60px 0px 40px 0px;
+  }
+  .slider-container {
+    margin-bottom: 20px;
+  }
+}
+
+/* Container for the slider */
+.card-about {
+  width: 100%;
+}
+.slider-container {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide overflow to prevent scrolling */
+  position: relative; /* Position relative for absolute positioning of child elements */
+}
+
+/* Slider wrapper to control the height of the slides */
+.slider-wrapper {
+  height: 100%; /* Full height of the container */
+}
+
+/* Individual slides */
+.slide {
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  align-items: center; /* Center the images vertically */
+  height: 100%; /* Full height of the slider wrapper */
+}
+
+/* Make images responsive */
+.slide img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* Optional: Add some styles for dots */
+.slick-dots {
+  bottom: 20px; /* Position dots at the bottom */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
 }
 
 .Myh2 {
@@ -512,4 +584,48 @@ body {
   font-size: 1.2em;
   margin-top: 10px;
   text-align: center;
+}
+
+/* Styling for the card elements */
+.card-about {
+  border: 1px solid #ddd; /* Border for the card */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card-about:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Ensure images inside the card fit the card's width */
+.card-about img {
+  width: 100%;
+  height: auto;
+  display: block; /* Remove bottom space under image */
+}
+
+/* Responsive padding for card body */
+.card-about .card-body {
+  padding: 15px; /* Adjust as needed */
+}
+
+/* Responsive layout for different screen sizes */
+@media (max-width: 576px) {
+  .card-about {
+    margin-bottom: 15px; /* Space between cards on small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .card-about {
+    margin-bottom: 20px; /* Space between cards on medium screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .card-about {
+    margin-bottom: 30px; /* Space between cards on large screens */
+  }
 }
