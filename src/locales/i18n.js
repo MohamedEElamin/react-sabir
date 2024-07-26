@@ -46,7 +46,7 @@ i18n
           "Modern Villa Design": "تصميم فيلا حديث",
           "Design Outdoor Space": " تصميم المساحات الخارجية",
           "Tailored architectural, structural, and MEP design solutions to fulfill each client's unique needs.":
-            "حلول التصميم المعماري والهيكلي والميكانيكي والكهربائي والميكانيكي مصممة خصيصًا لتلبية الاحتياجات الفريدة لكل عميل.",
+            "حلول التصميم المعماري والهيكلي والكهربائي والميكانيكي مصممة خصيصًا لتلبية الاحتياجات الفريدة لكل عميل.",
 
           "Landscape Design": "تصميم المناظر الطبيعية",
 

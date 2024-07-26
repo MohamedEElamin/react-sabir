@@ -239,7 +239,7 @@ h2 {
   height: auto;
   padding: 2em;
   margin: 50px auto;
-  border: 2px solid rgb(50, 67, 220);
+  border: 2px solid black;
   box-shadow: 1em 1em rgb(25%, 25%, 25%, 25%);
   font-size: 130%;
   color: rgb(50, 67, 220);
@@ -386,10 +386,10 @@ h2 {
 }
 .slider-container {
   width: 100%;
-  height: 100vh; /* Full viewport height */
+
   overflow: hidden; /* Hide overflow to prevent scrolling */
   position: relative; /* Position relative for absolute positioning of child elements */
-  margin-bottom: -580px;
+  margin-bottom: 80px;
 }
 
 /* Slider wrapper to control the height of the slides */

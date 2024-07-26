@@ -25,7 +25,7 @@ const AutoSlider = () => {
 
   return (
     <div className="slider-container">
-      <Slider {...settings} className="slider-wrapper">
+      <Slider {...settings} className="slider-container">
         <div className="slide">
           <img
             src={swi.default || swi}
