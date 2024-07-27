@@ -6,7 +6,7 @@ import "../styles/Cards.css";
 import swi from "../images/circle_villa-min.jpg";
 import villa from "../images/3 (1)-min.jpg";
 import res from "../images/P17-min.jpg";
-
+import intt from "../images/int.jpg";
 import villa3 from "../images/villa_compound.jpg";
 import vd from "../images/VillaT.jpg";
 
@@ -51,6 +51,16 @@ const AutoSlider = () => {
             loading="lazy"
             alt="Modern Mosque Design"
             title={t("Modern Mosque Design")}
+            className="img-fluid"
+          />
+        </div>
+
+        <div className="slide">
+          <img
+            src={intt.default || intt}
+            loading="lazy"
+            alt="Interior Design"
+            title={t("Interior Design")}
             className="img-fluid"
           />
         </div>

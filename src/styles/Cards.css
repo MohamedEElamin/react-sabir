@@ -149,12 +149,12 @@ h3 {
   text-align: center;
 }
 */
+
 h2 {
   font-family: "Cairo Play", sans-serif;
   color: black;
   text-align: center;
   font-weight: bolder;
-
   font-size: 35px;
   line-height: 1.5em;
 }
@@ -245,6 +245,12 @@ h2 {
   color: rgb(50, 67, 220);
   font-family: "Pacifico", cursive;
 }
+
+.main-p {
+  font-size: 130%;
+  color: rgb(50, 67, 220);
+  font-family: "Cairo Play", sans-serif;
+}
 .responsive-container h2 {
   font-size: 130%;
   color: rgb(50, 67, 220);
@@ -271,7 +277,6 @@ h2 {
   margin-top: 2px;
   position: relative;
   font-size: 175%;
-  color: black;
 
   font-family: "Cairo Play", sans-serif;
 }
@@ -296,6 +301,12 @@ h2 {
   line-height: 1.3em;
 }
 
+.responsive-container p {
+  font-size: 1.2rem;
+  text-align: justify;
+  margin: 10px;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .responsive-container {
@@ -303,7 +314,7 @@ h2 {
   }
 
   .responsive-container h2 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
 
   .responsive-container article {
@@ -361,6 +372,10 @@ h2 {
     margin-bottom: 90px;
   }
   .Myh2 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  Myh22 {
     font-size: 1.1rem;
     text-align: center;
   }

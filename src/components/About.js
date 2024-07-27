@@ -4,7 +4,6 @@ import Row from "react-bootstrap/Row";
 import { useTranslation } from "react-i18next";
 import "../styles/Cards.css";
 import { Helmet } from "react-helmet-async";
-import Container from "react-bootstrap/Container";
 
 const About = () => {
   const { t } = useTranslation();

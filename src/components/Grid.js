@@ -2,11 +2,6 @@ import "../styles/Cards.css";
 import ServiceItem from "../components/ServiceItem";
 import { useTranslation } from "react-i18next";
 
-// import villa from "/static/media/5 (1).47e356d9a8e7051f8c06.webp";
-
-// import mosque from "../images/5 (1)-min.jpg";
-// import re from "../images/re.webp";
-
 function Grid() {
   const { t } = useTranslation();
   return (
@@ -19,7 +14,7 @@ function Grid() {
           <ul className="cards__items">
             <div className="responsive-container">
               <h2>{t("Who We Are")}</h2>
-              <p>
+              <p className="main-p">
                 {t(
                   "Sabir Elsir Consulting Office is one of the leading companies in the field of engineering consulting since 2001. Through our branches in Sudan and the United Arab Emirates, we provide exceptional architectural and construction designs. We also provide engineering supervision services."
                 )}
