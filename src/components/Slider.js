@@ -24,8 +24,8 @@ const AutoSlider = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="slider-container">
-      <Slider {...settings} className="slider-container">
+    <div className="calc">
+      <Slider {...settings} className="Container fluid">
         <div className="slide">
           <img
             src={swi.default || swi}
