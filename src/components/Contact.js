@@ -15,7 +15,7 @@ const Contact = () => {
           content="Contact us: sabirelgabri@sabirelsir.ae, Almajaz(1)-Balrasheed Tower(1), office 2203 Sharjah, +971552771408. :المجاز1 برج الرشيد1 الشارقة مكتب 2023"
         ></meta>
 
-        <link rel="canonical" href="./contact"></link>
+        <link rel="canonical" href="https://www.sabirelsir.com/Contact"></link>
         <meta name="language" content="EN, AR"></meta>
       </Helmet>
 

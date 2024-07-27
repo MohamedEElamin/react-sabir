@@ -46,14 +46,13 @@ const About = () => {
     <>
       <Helmet>
         <title className="Myh2">{t("About")}</title>
-
         <meta
           name="description"
           content="  We specializes in Architectural and Structural Engineering, among other fields.
 نحن متخصصون في الهندسة المعمارية والإنشائية، من بين مجالات أخرى."
         ></meta>
-
-        <link rel="canonical" href="./about"></link>
+        <link rel="canonical" href="https://www.sabirelsir.com/About"></link>
+        <meta name="language" content="EN, AR"></meta>
       </Helmet>
 
       <h1 className="Myh1">{t("About Sabir Elsir Engineering Consultants")}</h1>

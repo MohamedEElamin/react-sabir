@@ -15,7 +15,7 @@ const Home = () => {
           name="description"
           content="We are a leading engineering consultancy firm in the UAE.  صابر السر للاستشارات الهندسية، شركة الاستشارات الهندسية الرائدة في دولة الإمارات العربية المتحدة."
         ></meta>
-        <link rel="canonical" href="Home"></link>
+        <link rel="canonical" href="https://www.sabirelsir.com/"></link>
         <meta name="language" content="EN, AR"></meta>
       </Helmet>
       <Slider />

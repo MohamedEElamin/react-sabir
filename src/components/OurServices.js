@@ -19,7 +19,7 @@ const OurServices = () => {
           name="description"
           content="Explore our consultancy services, architectural, civil, project management, and more. استكشف خدماتنا الاستشارية، الاستشارات المعمارية والمدنية وإدارة المشاريع والمزيد"
         ></meta>
-        <link rel="canonical" href="./Services.js"></link>
+        <link rel="canonical" href="https://www.sabirelsir.com/services"></link>
         <meta name="language" content="EN, AR"></meta>
       </Helmet>
       <div className="cards">
