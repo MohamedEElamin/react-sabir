@@ -237,7 +237,8 @@ const Map = ({ location }) => {
                   <h4>{t("Saturday to Thursday: 9:00 AM to 5:00 PM")}</h4>
                   <br /> <br />
                   <h3>{t("Email")}</h3>
-                  <h4>sabirelgabri@sabirelsir.ae </h4>
+                  {/* <h4>sabirelgabri@sabirelsir.ae </h4> */}
+                  <h4>sabir.elsir.eng.cons@gmail.com</h4>
                   <br />
                   <br />
                   <h3>{t("Phone")}</h3>
