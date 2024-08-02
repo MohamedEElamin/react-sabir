@@ -12,11 +12,11 @@ const Contact = () => {
         <title className="Myh2">{t("Contact Us")}</title>
         <meta
           name="description"
-          content="Contact us: sabirelgabri@sabirelsir.ae, Almajaz(1)-Balrasheed Tower(1), office 2203 Sharjah, +971552771408. :المجاز1 برج الرشيد1 الشارقة مكتب 2023"
+          content=" مكتب صابر السر الاستشاري في إماره الشارقه الإمارات المجاز1 برج الرشيد1 مكتب 2023
+          Contact us: sabirelgabri@sabirelsir.ae, Almajaz(1)-Balrasheed Tower(1), office 2203 Sharjah, +971552771408. "
         ></meta>
-
         <link rel="canonical" href="https://www.sabirelsir.com/Contact"></link>
-        <meta name="language" content="EN, AR"></meta>
+        <meta name="language" content="AR, EN"></meta>
       </Helmet>
 
       <div>

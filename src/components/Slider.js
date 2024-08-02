@@ -3,12 +3,12 @@ import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import "../styles/Cards.css";
 
-import swi from "../images/circle_villa-min.jpg";
-import villa from "../images/3 (1)-min.jpg";
-import res from "../images/P17-min.jpg";
-import intt from "../images/int.jpg";
-import villa3 from "../images/villa_compound.jpg";
-import vd from "../images/VillaT.jpg";
+// import swi from "../images/circle_villa-min.jpg ";
+// import villa from "/images/3 (1)-min.jpg";
+// import res from "../images/P17-min.jpg";
+// import intt from "../images/int.jpg";
+// import villa3 from "../images/villa_compound.jpg";
+// import vd from "../images/VillaT.jpg";
 
 const AutoSlider = () => {
   const settings = {
@@ -28,16 +28,17 @@ const AutoSlider = () => {
       <Slider {...settings} className="Container fluid">
         <div className="slide">
           <img
-            src={swi.default || swi}
-            loading="eager"
-            alt="Villa Design"
-            title={t("Villa Design")}
-            className="img-fluid"
+            src="images/circle_villa-min.jpg"
+            loading="lazy"
+            alt="sdffn"
+            class="img-fluid"
+            width="800"
+            height="600"
           />
         </div>
         <div className="slide">
           <img
-            src={villa.default || villa}
+            src="images/vils-min.jpg"
             alt="Classic Villa"
             loading="eager"
             title={t("Classic Villa Design")}
@@ -47,7 +48,7 @@ const AutoSlider = () => {
 
         <div className="slide">
           <img
-            src={res.default || res}
+            src="images/تصميم مسجد-min.jpg"
             loading="lazy"
             alt="Modern Mosque Design"
             title={t("Modern Mosque Design")}
@@ -57,7 +58,7 @@ const AutoSlider = () => {
 
         <div className="slide">
           <img
-            src={intt.default || intt}
+            src="images/interior.jpg"
             loading="lazy"
             alt="Interior Design"
             title={t("Interior Design")}
@@ -67,7 +68,7 @@ const AutoSlider = () => {
 
         <div className="slide">
           <img
-            src={villa3.default || villa3}
+            src="images/villa_compound.jpg"
             loading="lazy"
             alt="Villa"
             title={"Villa Compound"}
@@ -76,7 +77,7 @@ const AutoSlider = () => {
         </div>
         <div className="slide">
           <img
-            src={vd.default || vd}
+            src="images/6 (2).jpg"
             loading="lazy"
             alt="Villa"
             title={"Villa"}

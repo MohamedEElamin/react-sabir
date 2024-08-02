@@ -30,7 +30,7 @@ function Grid() {
 
           <ul className="cards__items">
             <ServiceItem
-              src="images/5 (2)-min.jpg"
+              src="images/modVilla2.jpg"
               alt="Modern Villa Design"
               loading="eager"
               h2={t("Modern Villa Design")}
@@ -39,7 +39,7 @@ function Grid() {
               )}
             />
             <ServiceItem
-              src="/images/P13-min.jpg"
+              src="/images/P17-min.jpg"
               alt="Mosque"
               loading="eager"
               h2={t("Mosque")}

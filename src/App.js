@@ -7,7 +7,6 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import "./styles/App.css";
 
 function App() {
   return (
@@ -17,10 +16,10 @@ function App() {
         <div className="App">
           <main>
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route exact path="/" element={<Home />} />
+              <Route exact path="/about" element={<About />} />
+              <Route exact path="/services" element={<Services />} />
+              <Route exact path="/contact" element={<Contact />} />
             </Routes>
           </main>
         </div>

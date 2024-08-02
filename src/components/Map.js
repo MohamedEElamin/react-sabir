@@ -8,13 +8,12 @@ import { useTranslation } from "react-i18next";
 const Map = ({ location }) => {
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_h0il90i",
         "template_cjgzv7r",
         form.current,
-        "uTQxUE8eLm-0b2YZW"
+        "R53zKxDTRI_IMv4mx"
       )
       .then(
         (result) => {
@@ -35,13 +34,11 @@ const Map = ({ location }) => {
   const form = useRef(null);
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
-
   const validate = () => {
     if (!form.current) {
       console.error("form.current is null");
       return {};
     }
-
     const formElements = form.current.elements;
     const newErrors = {};
 
@@ -107,23 +104,6 @@ const Map = ({ location }) => {
           <Col md={4}>
             <Card className="mb-4">
               <Card.Body className="calc2">
-                <h3>{t("Khartoum Sudan")}</h3>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d985.7143868319603!2d32.558500725483576!3d15.595707697674648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168e91b00d257a39%3A0x30ba9f11fdf738be!2z2LnZhdin2LHYqSDYp9mE2KjYr9ix!5e0!3m2!1sen!2sus!4v1718587546236!5m2!1sen!2sus"
-                  width="100%"
-                  height="465"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Location Map 2"
-                ></iframe>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card className="mb-4">
-              <Card.Body className="calc2">
                 <h3>{t("Sharjah UAE")}</h3>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.848116567497!2d55.38329977538656!3d25.34287717761749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5bc92e8eac93%3A0x3c85516abfef18aa!2sBell%20Rashid%20Towers%20-%20Corniche%20St%20-%20Al%20Majaz%201%20-%20Al%20Majaz%20-%20Sharjah%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1717694266783!5m2!1sen!2sus"
@@ -134,6 +114,23 @@ const Map = ({ location }) => {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Location Map 3"
+                ></iframe>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={4}>
+            <Card className="mb-4">
+              <Card.Body className="calc2">
+                <h3>{t("Khartoum Sudan")}</h3>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d985.7143868319603!2d32.558500725483576!3d15.595707697674648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168e91b00d257a39%3A0x30ba9f11fdf738be!2z2LnZhdin2LHYqSDYp9mE2KjYr9ix!5e0!3m2!1sen!2sus!4v1718587546236!5m2!1sen!2sus"
+                  width="100%"
+                  height="465"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Location Map 2"
                 ></iframe>
               </Card.Body>
             </Card>
@@ -203,7 +200,7 @@ const Map = ({ location }) => {
                     <br />
                     <br />
                     <button
-                      type="button"
+                      type="submit"
                       className="success"
                       onClick={handleSubmit}
                     >

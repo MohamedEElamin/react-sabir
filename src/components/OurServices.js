@@ -22,6 +22,7 @@ const OurServices = () => {
         <link rel="canonical" href="https://www.sabirelsir.com/services"></link>
         <meta name="language" content="EN, AR"></meta>
       </Helmet>
+
       <div className="cards">
         <div className="cards__container">
           <h1 className="Myh2">
