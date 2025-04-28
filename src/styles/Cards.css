@@ -7,7 +7,7 @@
 }
 
 body.arabic {
-  font-family: "Amiri", serif; /* Example Arabic font family */
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
 }
 
 h3 {
@@ -16,7 +16,8 @@ h3 {
   font-size: 50px;
   line-height: 1.5em;
   text-align: center;
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "slnt" 0;
@@ -24,7 +25,8 @@ h3 {
 .card-text-custom {
   font-size: 130%;
   color: black;
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+
   padding-top: 20px;
   text-align: center;
 }
@@ -128,12 +130,12 @@ h3 {
 .cards__item__text {
   font-size: 120%;
   color: rgb(50, 67, 220);
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
   padding-top: 20px;
 }
 
 .cards_h2 {
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
   color: black;
   font-size: 17px;
 }
@@ -151,7 +153,7 @@ h3 {
 */
 
 h2 {
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
   color: black;
   text-align: center;
   font-weight: bolder;
@@ -168,7 +170,7 @@ h2 {
   font-size: 15px;
   text-align: justify;
 
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
 }
 .card-stack {
   padding: 0px 10rem;
@@ -238,28 +240,30 @@ h2 {
   box-shadow: 1em 1em rgb(25%, 25%, 25%, 25%);
   font-size: 130%;
   color: rgb(50, 67, 220);
-  font-family: "Pacifico", cursive;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
 }
 
 .main-p {
   font-size: 130%;
   color: rgb(50, 67, 220);
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
 }
 .responsive-container h2 {
   font-size: 130%;
   color: rgb(50, 67, 220);
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+
   padding: 10px 0px;
 }
 .calc h3 {
   font-size: 105%;
   color: black;
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
 }
 
 .calc h2 {
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+
   text-align: center;
   font-size: 175%;
   color: black;
@@ -273,7 +277,7 @@ h2 {
   position: relative;
   font-size: 170%;
 
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
 }
 
 .calc__article {
@@ -282,7 +286,8 @@ h2 {
   padding: 1em;
   box-shadow: 1em 1em rgb(25%, 25%, 25%, 25%);
   border-radius: 2ex;
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+
   width: 50%;
   height: auto;
   color: #007bff;
@@ -290,7 +295,7 @@ h2 {
 }
 
 .text-muted {
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
   color: #007bff;
   font-weight: bold;
   line-height: 1.3em;
@@ -433,14 +438,14 @@ h2 {
 
 .Myh2 {
   color: black;
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
   padding-bottom: 50px;
   text-align: center;
 }
 .Myh1 {
   color: black;
   text-align: center;
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
   padding-bottom: 50px;
 }
 
@@ -463,7 +468,7 @@ label {
   font-size: 1rem;
   color: #333;
   text-align: justify;
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
 }
 
 input[type="text"],
@@ -527,7 +532,7 @@ input[type="submit"]:hover {
 }
 
 .ti {
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
 }
 
 form {
@@ -588,7 +593,7 @@ body {
 
 .addr {
   text-align: center;
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
 }
 
 .success-message {
@@ -644,7 +649,8 @@ body {
 
 .content {
   padding: 20px;
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+
   color: #007bff;
   font-weight: bold;
   line-height: 1.9em;
@@ -671,5 +677,5 @@ body {
   box-shadow: 1em 1em rgb(25%, 25%, 25%, 25%);
   font-size: 130%;
   color: rgb(50, 67, 220);
-  font-family: "Pacifico", cursive;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
 }

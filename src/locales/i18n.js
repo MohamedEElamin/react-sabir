@@ -37,8 +37,35 @@ i18n
             "مرحبا بكم في صابر السر للاستشارات الهندسية",
 
           "Who We Are": "معلومات عنا",
-          "Sabir Elsir Consulting Office is one of the leading companies in the field of engineering consulting since 2001. Through our branches in Sudan and the United Arab Emirates, we provide exceptional architectural and construction designs. We also provide engineering supervision services.":
-            "منذ عام 2001، كان مكتب صابر السر الاستشاري رائداً في مجال الاستشارات الهندسية. تقدم فروعنا في السودان والإمارات العربية المتحدة تصميمات معمارية وإنشائية استثنائية، إلى جانب خدمات الإشراف الهندسي عالية المستوى.",
+          "At Sabir Elsir Consulting Office, excellence in engineering consulting has been our passion since 2001. With thriving branches in Sudan and the United Arab Emirates, we proudly deliver outstanding architectural designs, innovative construction solutions, and expert engineering supervision services across the region. What truly sets Sabir Elsir Consulting Office apart among engineering companies is the exceptional expertise of our team. Our consultants proudly hold prestigious qualifications such as the Professional Engineer (PE) License, the Project Management Professional (PMP) Certification, master’s Degrees (MSc) in specialized engineering fields, and even Doctorate Degrees (PhD). These achievements reflect a deep commitment to professional excellence, innovative thinking, and world-class project execution Whether you need visionary designs or meticulous engineering supervision, Sabir Elsir Consulting Office Consulting Office brings unmatched professionalism and decades of experience to every project. We combine academic mastery with hands-on expertise to help clients realize their dreams — safely, sustainably, and beautifully.Discover why Sabir Elsir Consulting Office continues to lead the way among top engineering consulting firms in Sharjah, Ajman, Khartoum, and beyond.":
+            "في صابر السر للاستشارات الهندسية، كان التميز في الاستشارات الهندسية شغفنا منذ عام 2001. مع فروع مزدهرة في السودان والإمارات العربية المتحدة، نقدم بفخر تصميمات معمارية استثنائية وحلول بناء مبتكرة وخدمات إشراف هندسي خبراء عبر المنطقة. ما يميز صابر السر للاستشارات الهندسية بين شركات الهندسة هو الخبرة الاستثنائية لفريقنا. يحمل مستشارونا بفخر مؤهلات مرموقة مثل رخصة المهندس المحترف (PE) ، وشهادة محترف إدارة المشاريع (PMP) ، ودرجات الماجستير (MSc) في مجالات الهندسة المتخصصة ، وحتى درجات الدكتوراه (PhD). تعكس هذه الإنجازات التزامًا عميقًا بالتميز المهني والتفكير المبتكر وتنفيذ المشاريع على مستوى عالمي. سواء كنت بحاجة إلى تصميمات مبتكرة أو إشراف هندسي دقيق ، فإن صابر السر للاستشارات الهندسية يجلب احترافية لا مثيل لها وعقود من الخبرة إلى كل مشروع. نحن نجمع بين الإتقان الأكاديمي والخبرة العملية لمساعدة العملاء على تحقيق أحلامهم - بأمان واستدامة وجمال. اكتشف لماذا تواصل صابر السر للاستشارات الهندسية قيادة الطريق بين أفضل شركات الاستشارات الهندسية في الشارقة وعجمان والخرطوم وما وراءها.",
+
+          "Secrets to Choosing the Right Engineering Partner":
+            "أسرار اختيار الشريك الهندسي المناسب",
+
+          "Key Certifications Every Consultant Should Have":
+            "المؤهلات الرئيسية التي يجب أن يمتلكها كل مستشار",
+
+          "Are You Looking for the Best Engineering Companies in Sharjah, Ajman, and Khartoum? When choosing an engineering consultant for your project, relying on charming words or flashy presentations isn’t enough. You need strong proof and that’s where certified qualifications come into play. Certifications tell you: 'This person has worked hard, learned, and gained the expertise to lead your project to success! Look for a consultant who holds certifications such as:":
+            "هل تبحث عن أفضل شركات الهندسة في الشارقة وعجمان والخرطوم؟ عند اختيار مستشار هندسي لمشروعك، فإن الاعتماد على الكلمات الجذابة أو العروض اللامعة ليس كافيًا. تحتاج إلى دليل قوي وهنا تأتي المؤهلات المعتمدة في الصورة. تخبرك الشهادات: لقد عمل هذا الشخص بجد وتعلم واكتسب الخبرة لقيادة مشروعك نحو النجاح! ابحث عن مستشار يحمل مؤهلات مثل:",
+
+          "When choosing an engineering consultant for your project, relying on charming words or flashy presentations isn’t enough. You need strong proof and that’s where certified qualifications come into play. Certifications tell you: This person has worked hard, learned, and gained the expertise to lead your project to success! Look for a consultant who holds certifications such as:":
+            "عند اختيار مستشار هندسي لمشروعك، فإن الاعتماد على الكلمات الجذابة أو العروض اللامعة ليس كافيًا. تحتاج إلى دليل قوي وهنا تأتي المؤهلات المعتمدة في الصورة. تخبرك الشهادات: لقد عمل هذا الشخص بجد وتعلم واكتسب الخبرة لقيادة مشروعك نحو النجاح! ابحث عن مستشار يحمل مؤهلات مثل:",
+
+          "Professional Engineer (PE) License": "رخصة مهندس محترف (PE)",
+          "Project Management Professional (PMP) Certification":
+            "شهادة محترف إدارة المشاريع (PMP)",
+          "Master’s Degree (MSc) in an engineering specialty":
+            "درجة الماجستير (MSc) في تخصص هندسي",
+          "Doctorate Degree (PhD) in their field":
+            "درجة الدكتوراه (PhD) في مجاله",
+          "These certifications are not just titles; they are proof of years of study, training, and real-world experience. Each certification means the consultant before you has faced academic and professional challenges and is qualified to turn your ideas into successful real-world projects.":
+            "هذه الشهادات ليست مجرد ألقاب؛ إنها دليل على سنوات من الدراسة والتدريب والخبرة العملية. تعني كل شهادة أن المستشار أمامك قد واجه تحديات أكاديمية ومهنية وهو مؤهل لتحويل أفكارك إلى مشاريع ناجحة في العالم الحقيقي.",
+          "A Final Tip": "نصيحة أخيرة",
+          "When you choose an engineering consultant, look for someone who not only has the right certifications but also a proven track record of successful projects. Ask for references and examples of their work. A good consultant will be happy to share their success stories with you.":
+            "عند اختيار مستشار هندسي، ابحث عن شخص لديه ليس فقط الشهادات الصحيحة ولكن أيضًا سجل حافل من المشاريع الناجحة. اطلب المراجع وأمثلة على عملهم. سيكون المستشار الجيد سعيدًا بمشاركة قصص نجاحه معك.",
+          "Next time you are searching for an engineering company in Sharjah, Ajman, or Khartoum Always ask about the team's certifications and experience!":
+            "في المرة القادمة التي تبحث فيها عن شركة هندسية في الشارقة أو عجمان أو الخرطوم، اسأل دائمًا عن مؤهلات وخبرة الفريق!",
 
           "Enhancing Mental Well-being through Outdoor Living with Sustainable Landscape Materials.":
             "تعزيز الصحة النفسية من خلال الحياة في الهواء الطلق باستخدام مواد المناظر الطبيعية المستدامة.",

@@ -8,25 +8,24 @@ import { useTranslation } from "react-i18next";
 const Map = ({ location }) => {
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_h0il90i",
-        "template_cjgzv7r",
-        form.current,
-        "R53zKxDTRI_IMv4mx"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setSuccessMessage(
-            t("Thank you! Message sent successfully. We will contact you soon.")
-          );
-        },
-        (error) => {
-          console.log(error.text);
-          setSuccessMessage(t("Failed to send the message. Please try again."));
-        }
-      );
+    emailjs.sendForm(
+      "service_h0il90i",
+      "template_cjgzv7r",
+      form.current,
+      "R53zKxDTRI_IMv4mx"
+    );
+    // .then(
+    //   (result) => {
+    //     console.log(result.text);
+    //     setSuccessMessage(
+    //       t("Thank you! Message sent successfully. We will contact you soon.")
+    //     );
+    //   },
+    //   (error) => {
+    //     console.log(error.text);
+    //     setSuccessMessage(t("Failed to send the message. Please try again."));
+    //   }
+    // );
   };
 
   const { t } = useTranslation();
