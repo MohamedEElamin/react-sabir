@@ -1,3 +1,4 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import "../styles/Cards.css";
 import { Helmet } from "react-helmet-async";

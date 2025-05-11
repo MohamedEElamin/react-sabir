@@ -1,5 +1,6 @@
 import "../styles/Cards.css";
 import { useTranslation } from "react-i18next";
+import React from "react";
 
 function Grid() {
   const { t } = useTranslation();
