@@ -46,7 +46,7 @@ function Footer() {
         <div className="social-media-wrap">
           <div className="footer-log"></div>
           <small className="website-rights">
-            Sabir Elsir Engineering Consultants © 2024
+            Sabir Elsir Engineering Consultants © 2025
           </small>
           <div className="social-icons">
             <Link
