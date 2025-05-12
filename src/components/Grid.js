@@ -116,12 +116,12 @@ function Grid() {
               <img
                 src="/images/P17-min.jpg"
                 alt="Mosque"
-                loading="eager"
+                loading="eager "
                 className="card-img-top"
                 width={400}
               />
               <div className="card-body">
-                <h5 className="card-title">{t("Mosque")}</h5>
+                <h5 className="card-title">{t(" Mosque")}</h5>
                 <p className="card-text">
                   {t(
                     "As a leading engineering consultant in Sharjah and Ajman, we offer distinguished mosque design services that honor Islamic architectural heritage while integrating modern engineering solutions. Our team emphasizes spiritual ambiance, acoustics, and optimal prayer space orientation in every mosque project. We adhere strictly to UAE building codes and cultural sensitivities to deliver places of worship that resonate with community values. From domes and minarets to interior calligraphy and lighting, we design mosques that are both structurally sound and spiritually inspiring. Trust us to bring your vision of a sacred space to life with precision and respect."
