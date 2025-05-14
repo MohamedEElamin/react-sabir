@@ -14,18 +14,6 @@ const Map = ({ location }) => {
       form.current,
       "R53zKxDTRI_IMv4mx"
     );
-    // .then(
-    //   (result) => {
-    //     console.log(result.text);
-    //     setSuccessMessage(
-    //       t("Thank you! Message sent successfully. We will contact you soon.")
-    //     );
-    //   },
-    //   (error) => {
-    //     console.log(error.text);
-    //     setSuccessMessage(t("Failed to send the message. Please try again."));
-    //   }
-    // );
   };
 
   const { t } = useTranslation();
