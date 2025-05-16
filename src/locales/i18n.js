@@ -38,7 +38,7 @@ i18n
 
           "Who We Are": "معلومات عنا",
           "At Sabir Elsir Consulting Office, excellence in engineering consulting has been our passion since 2001. With thriving branches in Sudan and the United Arab Emirates, we proudly deliver outstanding architectural designs, innovative construction solutions, and expert engineering supervision services across the region. What truly sets Sabir Elsir Consulting Office apart among engineering companies is the exceptional expertise of our team. Our consultants proudly hold prestigious qualifications such as the Professional Engineer (PE) License, the Project Management Professional (PMP) Certification, master’s Degrees (MSc) in specialized engineering fields, and even Doctorate Degrees (PhD). These achievements reflect a deep commitment to professional excellence, innovative thinking, and world-class project execution Whether you need visionary designs or meticulous engineering supervision, Sabir Elsir Consulting Office Consulting Office brings unmatched professionalism and decades of experience to every project. We combine academic mastery with hands-on expertise to help clients realize their dreams — safely, sustainably, and beautifully.Discover why Sabir Elsir Consulting Office continues to lead the way among top engineering consulting firms in Sharjah, Ajman, Khartoum, and beyond.":
-            "في صابر السر للاستشارات الهندسية، كان التميز في الاستشارات الهندسية شغفنا منذ عام 2001. مع فروع مزدهرة في السودان والإمارات العربية المتحدة، نقدم بفخر تصميمات معمارية استثنائية وحلول بناء مبتكرة وخدمات إشراف هندسي خبراء عبر المنطقة. ما يميز صابر السر للاستشارات الهندسية بين شركات الهندسة هو الخبرة الاستثنائية لفريقنا. يحمل مستشارونا بفخر مؤهلات مرموقة مثل رخصة المهندس المحترف (PE) ، وشهادة محترف إدارة المشاريع (PMP) ، ودرجات الماجستير (MSc) في مجالات الهندسة المتخصصة ، وحتى درجات الدكتوراه (PhD). تعكس هذه الإنجازات التزامًا عميقًا بالتميز المهني والتفكير المبتكر وتنفيذ المشاريع على مستوى عالمي. سواء كنت بحاجة إلى تصميمات مبتكرة أو إشراف هندسي دقيق ، فإن صابر السر للاستشارات الهندسية يجلب احترافية لا مثيل لها وعقود من الخبرة إلى كل مشروع. نحن نجمع بين الإتقان الأكاديمي والخبرة العملية لمساعدة العملاء على تحقيق أحلامهم - بأمان واستدامة وجمال. اكتشف لماذا تواصل صابر السر للاستشارات الهندسية قيادة الطريق بين أفضل شركات الاستشارات الهندسية في الشارقة وعجمان والخرطوم وما وراءها.",
+            "في مكتب صابر السر للاستشارات الهندسية، كان التميز في الاستشارات الهندسية شغفنا منذ عام 2001. مع فروع مزدهرة في السودان والإمارات العربية المتحدة، نفخر بتقديم تصميمات معمارية متميزة وحلول بناء مبتكرة وخدمات إشراف هندسي خبير في جميع أنحاء المنطقة. ما يميز مكتب صابر السر للاستشارات الهندسية حقًا بين شركات الهندسة هو الخبرة الاستثنائية لفريقنا. يحمل مستشارونا بفخر مؤهلات مرموقة مثل رخصة المهندس المحترف (PE) وشهادة إدارة المشاريع المحترفة (PMP) ودرجات الماجستير (MSc) في مجالات الهندسة المتخصصة وحتى درجات الدكتوراه (PhD). تعكس هذه الإنجازات التزامًا عميقًا بالتميز المهني والتفكير المبتكر وتنفيذ المشاريع على مستوى عالمي سواء كنت بحاجة إلى تصاميم رؤيوية أو إشراف هندسي دقيق، فإن مكتب صابر السر للاستشارات يقدم احترافية لا مثيل لها وعقود من الخبرة لكل مشروع. نحن نجمع بين الإتقان الأكاديمي والخبرة العملية لمساعدة العملاء على تحقيق أحلامهم - بأمان واستدامة وجمال. اكتشف لماذا يواصل مكتب صابر السير للاستشارات الريادة بين أفضل شركات الاستشارات الهندسية في الشارقة وعجمان والخرطوم وما وراءها",
 
           "Secrets to Choosing the Right Engineering Partner":
             "أسرار اختيار الشريك الهندسي المناسب",
@@ -69,13 +69,14 @@ i18n
 
           "Enhancing Mental Well-being through Outdoor Living with Sustainable Landscape Materials.":
             "تعزيز الصحة النفسية من خلال الحياة في الهواء الطلق باستخدام مواد المناظر الطبيعية المستدامة.",
-          Mosque: "مسجد",
+
           "Modern Villa Design": "تصميم فيلا حديث",
           "Design Outdoor Space": " تصميم المساحات الخارجية",
           "Tailored architectural, structural, and MEP design solutions to fulfill each client's unique needs.":
             "حلول التصميم المعماري والهيكلي والكهربائي والميكانيكي مصممة خصيصًا لتلبية الاحتياجات الفريدة لكل عميل.",
 
           "Landscape Design": "تصميم المناظر الطبيعية",
+          " Mosque": "مسجد",
 
           "Mixed model Mosque design with the most recent technology with sustainable landscape materials.":
             "تصميم مسجد نموذجي مختلط بأحدث التقنيات مع مواد المناظر الطبيعية المستدامة",
@@ -201,6 +202,29 @@ i18n
             "نطمح لأن نكون المعيار القياسي بين شركات الاستشارات الهندسية في الشارقة وفي جميع أنحاء الإمارات. رؤيتنا ترتكز على ريادة القطاع من خلال تبني أحدث التقنيات، وتعزيز التنمية المستدامة، وتحسين جودة الخدمات باستمرار. ونسعى جاهدين للحفاظ على مكانتنا كواحدة من أفضل المكاتب الهندسية في الشارقة، الإمارات العربية المتحدة، والمعروفة بالتزامها بالنزاهة والابتكار.",
           "Choosing us means partnering with one of the most respected engineering consultant companies in Sharjah. We bring unmatched technical expertise, personalized service, and a strong track record of successful projects. Whether you're seeking the best Engineering Consultants in Ajman UAE or dependable engineering support in Sharjah, our team is dedicated to turning your vision into reality—on time and within budget.":
             "عند اختيارك لنا، فأنت تتعامل مع واحدة من أبرز شركات الاستشارات الهندسية في الشارقة. نحن نقدم خبرة تقنية لا مثيل لها، وخدمة مخصصة، وسجلًا حافلًا من المشاريع الناجحة. سواء كنت تبحث عن أفضل المكاتب الهندسية في عجمان أو دعم هندسي موثوق في الشارقة، فإن فريقنا ملتزم بتحقيق رؤيتك بكفاءة واحترافية وضمن الميزانية المحددة.",
+          "Saber Elsir Engineering Consultants: Excellence in Engineering Consultancy and Supervision Since 2001":
+            " صابر السر للاستشارات الهندسية: التميز في الاستشارات الهندسية والإشراف منذ عام 2001",
+          "When it comes to delivering superior engineering consultancy and supervision services, few firms match the legacy and expertise of Saber Elsir Engineering Consultants. Founded in 2001, this distinguished engineering firm has carved a remarkable reputation across Sudan and the United Arab Emirates (UAE), offering world-class architectural design, construction solutions, and engineering supervision services to clients in Sharjah, Ajman, Khartoum, and beyond.":
+            " عندما يتعلق الأمر بتقديم خدمات استشارية وإشراف هندسي متميزة، فإن القليل من الشركات يمكن أن تضاهي إرث وخبرة صابر السر للاستشارات الهندسية. تأسست في عام ٢٠٠١ وقد حققت هذه الشركة الهندسية المتميزة سمعة رائعة في السودان ودولة الإمارات العربية المتحدة، حيث تقدم تصميمات معمارية عالمية المستوى، وحلول بناء، وخدمات إشراف هندسي للعملاء في الشارقة وعجمان والخرطوم وما وراءها.",
+          "A Heritage of Engineering Excellence": " إرث من التميز الهندسي",
+          "With over two decades of experience, Saber Elsir Engineering Consultants has been at the forefront of engineering innovation. Our team of highly qualified engineers and architects is dedicated to providing tailored solutions that meet the unique needs of each project. We pride ourselves on our commitment to quality, safety, and sustainability, ensuring that every project we undertake is executed to the highest standards.":
+            " على مدار أكثر من عقدين من الزمن، كانت صابر السر للاستشارات الهندسية في طليعة الابتكار الهندسي. يكرس فريقنا من المهندسين والمعماريين المؤهلين تأهيلاً عالياً جهوده لتقديم حلول مصممة خصيصًا لتلبية الاحتياجات الفريدة لكل مشروع. نحن نفخر بالتزامنا بالجودة والسلامة والاستدامة، مما يضمن أن كل مشروع نقوم به يتم تنفيذه وفقًا لأعلى المعايير.",
+          "Unmatched Team Qualifications and Technical Expertise":
+            " مؤهلات فريق لا مثيل لها وخبرة فنية",
+          "What truly sets Saber Elsir Engineering Consultants apart from other engineering consultants in UAE is the outstanding academic and professional credentials of its team. The consultants at Saber Elsir are more than experienced professionals—they are recognized leaders in their respective fields.Their team members boast prestigious certifications and degrees, including:":
+            " ما يميز صابر السر للاستشارات الهندسية عن غيرها من الاستشارات الهندسية في الإمارات هو المؤهلات الأكاديمية والمهنية المتميزة لفريقها. إن الاستشاريين في صابر السر هم أكثر من مجرد محترفين ذوي خبرة - فهم قادة معترف بهم في مجالاتهم. يتمتع أعضاء فريقهم بشهادات ودرجات علمية مرموقة، بما في ذلك:",
+          "Doctor of Philosophy (PhD) qualifications in engineering and related fields":
+            " دكتوراه في الهندسة والمجالات ذات الصلة",
+          "Master’s Degree (MSc) in an engineering specialty":
+            "ماجستير في تخصص هندسي",
+          "These credentials are more than just letters—they represent a level of expertise and professionalism that few firms can match. With this blend of academic excellence and hands-on experience, Saber Elsir delivers engineering solutions that are not only technically sound but also forward-thinking and sustainable.":
+            " هذه المؤهلات ليست مجرد حروف - بل تمثل مستوى من الخبرة والاحترافية لا يمكن أن تضاهيه سوى قلة من الشركات. مع هذا المزيج من التميز الأكاديمي والخبرة العملية، تقدم صابر السر حلولًا هندسية ليست فقط متينة من الناحية الفنية، ولكنها أيضًا مبتكرة ومستدامة.",
+          "": "",
+          "": "",
+
+          "": "",
+          "": "",
+          "": "",
         },
       },
     },

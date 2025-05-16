@@ -10,20 +10,34 @@ const About = () => {
   return (
     <>
       <Helmet>
+        <meta
+          name="description"
+          content="Learn about Sabir Elsir Engineering Consultants, a trusted name in engineering consultancy and supervision services since 2001 across the UAE and Sudan."
+        />
+        <meta
+          name="keywords"
+          content="about Sabir Elsir, engineering consultants UAE, engineering company Sharjah, supervision services, consultancy firm"
+        />
         <title className="Myh2">{t("About")}</title>
         <meta
           name="description"
-          content="مكتب صابر السر هو مكتب هندسي منخصص في الهندسة المعمارية والإنشائية 
-          We specializes in Architectural and Structural Engineering."
-        ></meta>
-        <link rel="canonical" href="https://www.sabirelsir.com/About"></link>
+          content="تعرّف على شركة صابر السر للاستشارات الهندسية، الاسم الموثوق في مجال الاستشارات الهندسية والإشراف على المشاريع منذ عام 2001 في الإمارات والسودان."
+        />
+        <meta
+          name="keywords"
+          content="من نحن صابر السر، شركة استشارات هندسية، شركات هندسية في الشارقة، الإشراف الهندسي، شركة هندسية الإمارات"
+        />
+
+        <link rel="canonical" href="https://www.sabirelsir.ae/About"></link>
         <meta name="language" content="AR, EN"></meta>
       </Helmet>
 
       <div className="container my-5">
+        <br />
         <h1 className="Myh1">
           {t("About Sabir Elsir Engineering Consultants")}
         </h1>
+        <br />
         <div className="row">
           {/* Card 1 */}
           <div className="col-md-6 mb-4">

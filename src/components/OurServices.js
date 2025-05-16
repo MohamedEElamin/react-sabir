@@ -3,32 +3,42 @@ import "../styles/Cards.css";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 
-// import architectural from "../images/7.webp";
-// import civil from "../images/13 (2).webp";
-// import Interior from "../images/11.webp";
-// import building from "../images/3.webp";
-
 const OurServices = () => {
   const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title className="Myh2">{t("Services")}</title>
+        <title>الخدمات الهندسية | شركة صابر السر</title>
         <meta
           name="description"
-          content="Explore our consultancy services, architectural, civil, project management, and more. استكشف خدماتنا الاستشارية، الاستشارات المعمارية والمدنية وإدارة المشاريع والمزيد"
-        ></meta>
-        <link rel="canonical" href="https://www.sabirelsir.com/services"></link>
+          content="تعرّف على خدمات الاستشارات الهندسية، التصميم المعماري، والإشراف على المشاريع في الإمارات والسودان منذ عام 2001."
+        />
+        <meta
+          name="keywords"
+          content="الاستشارات الهندسية، التصميم المعماري، إشراف هندسي، شركات هندسية في الشارقة، شركة صابر السر"
+        />
+        <meta
+          name="description"
+          content="Explore our engineering consultancy, architecture, and supervision services across the UAE and Sudan since 2001."
+        />
+        <meta
+          name="keywords"
+          content="engineering consultants UAE, architectural design Sharjah, project supervision Ajman, engineering companies in Sharjah"
+        />
+        <title className="Myh2">{t("Services")}</title>
+
+        <link rel="canonical" href="https://www.sabirelsir.ae/services"></link>
         <meta name="language" content="EN, AR"></meta>
       </Helmet>
 
       <div class="container my-4">
         <br />
+        <br />
 
         <h1 className="Myh2">
           {t("Sabir Elsir Engineering Consultants's Services")}
         </h1>
-
+        <br />
         <div class="card">
           <img
             class="card-img-top"

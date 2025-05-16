@@ -10,13 +10,29 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title className="Myh2">{t("Home")}</title>
+        <title className="Myh2">
+          {t("Home")} استشاريون هندسيون في الإمارات والسودان | شركة صابر السر
+        </title>
         <meta
           name="description"
-          content=" .مكتب صابر السر هو إحدى شركات الاستشارات الهندسية الرائده في دولة الإمارات العربية المتحدة
-          We are a leading engineering consultancy firm in the UAE."
+          content="شركة صابر السر للاستشارات الهندسية والإشراف الهندسي تقدم خدمات تصميم معماري وهندسي متميزة في الشارقة وعجمان والخرطوم منذ عام 2001"
         ></meta>
-        <link rel="canonical" href="https://www.sabirelsir.com/"></link>
+        <meta
+          property="og:title"
+          content="استشاريون هندسيون في الإمارات والسودان | شركة صابر السر"
+        />
+        <meta
+          property="og:description"
+          content="ريادة في الاستشارات الهندسية والإشراف الفني في الشارقة وعجمان والخرطوم، بخبرة منذ 2001 وفريق مؤهل دوليًا."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.saberelsir.ae" />
+        <meta
+          property="og:image"
+          content="https://www.saberelsir.ae/images/logo.png"
+        />
+
+        <link rel="canonical" href="https://www.sabirelsir.ae/"></link>
         <meta name="language" content="AR, EN"></meta>
       </Helmet>
       <Slider />
