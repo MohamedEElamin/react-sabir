@@ -79,7 +79,7 @@ const AutoSlider = () => {
         </div>
         <div className="slide">
           <img
-            src="images/6 (2).jpg"
+            src="images/000.jpg"
             loading="lazy"
             alt="Villa"
             title={"Villa"}
