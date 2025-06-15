@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Cards.css";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
+import ServiceItem from "./ServiceItem";
 
 const OurServices = () => {
   const { t } = useTranslation();
@@ -30,99 +31,6 @@ const OurServices = () => {
         <link rel="canonical" href="https://www.sabirelsir.ae/services"></link>
         <meta name="language" content="EN, AR"></meta>
       </Helmet>
-
-<<<<<<< HEAD
-      <div className="cards">
-        <div className="cards__container">
-          <h1 className="Myh2">
-            {t("Sabir Elsir Engineering Consultants's ")}
-          </h1>
-          <div className="cards__wrapper">
-            <ul className="cards__items">
-              <ServiceItem
-                src="images/vils-min.jpg"
-                loading="lazy"
-                alt="modern villa design"
-                title="Architectural Engineering Consultancy"
-                h2={t("Architectural Engineering Consultancy")}
-                text={t(
-                  "Sabir Elsir Engineering Consultancy provides comprehensive solutions  that integrate architectural design with engineering excellence. Our team collaborates closely with clients to deliver innovative designs, precise engineering, and seamless project management from concept to completion."
-                )}
-              />
-              <ServiceItem
-                src="images/13 (2)-min.jpg"
-                loading="lazy"
-                alt="Modern circular staircase design"
-                title="Civil Engineering Consultancy"
-                h2={t("Civil Engineering Consultancy")}
-                text={t(
-                  "Sabir Elsir Engineering Consultants confidently provides a wide range of high-quality civil engineering services, such as structural design services, building rehabilitation, structural reinforcement, building remodeling"
-                )}
-              />
-            </ul>
-            <ul className="cards__items">
-              <ServiceItem
-                src="/images/4 (3)-min.jpg"
-                loading="lazy"
-                alt=" villa design"
-                title="Engineering Projects Management Consultancy"
-                h2={t("Engineering Projects Management Consultancy")}
-                text={t(
-                  "Sabir Elsir Engineering Consultants is your premier choice for Engineering Projects Management Consultancy. Our top-tier services guarantee the successful execution of complex engineering projects. From planning and feasibility studies to design coordination, procurement, and construction oversight, we offer end-to-end project management solutions. Our expert team is dedicated to optimizing project performance and ensuring adherence to timelines, budgets, and quality standards."
-                )}
-              />
-              <ServiceItem
-                src="images/int2.jpg"
-                loading="lazy"
-                alt="Interior Design"
-                title="Interior Design Engineering Consultancy"
-                h2={t("Interior Design Engineering Consultancy")}
-                text={t(
-                  "At Sabir Elsir Engineering Consultants, we specialize in providing personalized Interior design services for both residential and commercial spaces. Our skilled engineers are committed to incorporating functionality and sustainability into every project. From initial idea to final execution, we meticulously oversee every aspect of the process to ensure our client's active involvement and satisfaction. The result is extraordinary designs that elevate the appeal and value of their spaces."
-                )}
-              />
-              <ServiceItem
-                src="images/3-min.jpg"
-                loading="required"
-                alt="General Building"
-                title="General Buildings Engineering  Consultancy"
-                h2={t("General Buildings Engineering  Consultancy")}
-                text={t(
-                  "Boost your construction projects with Sabir Elsir Engineering Consultants. Our comprehensive building engineering consultancy services offer expert guidance and innovative solutions for architectural, structural, electrical, and mechanical engineering. Collaborating closely with clients, architects, and contractors, we ensure every aspect of your building is designed for safety, efficiency, and durability."
-                )}
-              />
-            </ul>
-=======
-      <div className="container my-4">
-        <br />
-        <br />
-
-        <h1 className="Myh2">
-          {t("Sabir Elsir Engineering Consultants's Services")}
-        </h1>
-        <br />
-        <div className="card">
-          <img
-            className="card-img-top"
-            src="images/vils-min.jpg"
-            loading="lazy"
-            alt="modern villa design"
-            title="Architectural Engineering Consultancy"
-          />
-          <div className="card-body">
-            <h5 className="card-title">
-              {t("Architectural Engineering Consultancy")}
-            </h5>
-            <br />
-            <p className="card-text">
-              {t(
-                "As one of the top engineering companies in Sharjah and Ajman, Sabir Elsir Engineering Office stands out for its exceptional Architectural Engineering Consultancy services tailored to meet the dynamic needs of the UAE's growing construction and infrastructure sectors. Recognized among leading engineering companies in Sharjah, we specialize in innovative architectural design, sustainable development, and regulatory-compliant planning. Our team of experienced architects and engineers delivers bespoke solutions for residential, commercial, and industrial projects, ensuring both aesthetic value and structural integrity. From concept to completion, Sabir Elsir Engineering Office remains a trusted partner for quality, precision, and visionary design."
-              )}
-            </p>
->>>>>>> 8a7ddac23bec3d696fed1b5d7d69a4e8cab32eb9
-          </div>
-        </div>
-      </div>
 
       <div className="container my-4">
         <div className="card">
