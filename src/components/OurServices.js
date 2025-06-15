@@ -31,8 +31,40 @@ const OurServices = () => {
         <link rel="canonical" href="https://www.sabirelsir.ae/services"></link>
         <meta name="language" content="EN, AR"></meta>
       </Helmet>
+      <br />
+      <br />
+      <br />
+      <div className="container ">
+        <div className="card">
+          <br />
+          <br />
 
-      <div className="container my-4">
+          <h1 className="Myh2">
+            {t("Sabir Elsir Engineering Consultants's Services")}
+          </h1>
+          <br />
+          <div className="card">
+            <img
+              className="card-img-top"
+              src="images/vils-min.jpg"
+              loading="lazy"
+              alt="modern villa design"
+              title="Architectural Engineering Consultancy"
+            />
+            <div className="card-body">
+              <h5 className="card-title">
+                {t("Architectural Engineering Consultancy")}
+              </h5>
+              <br />
+              <p className="card-text">
+                {t(
+                  "As one of the top engineering companies in Sharjah and Ajman, Sabir Elsir Engineering Office stands out for its exceptional Architectural Engineering Consultancy services tailored to meet the dynamic needs of the UAE's growing construction and infrastructure sectors. Recognized among leading engineering companies in Sharjah, we specialize in innovative architectural design, sustainable development, and regulatory-compliant planning. Our team of experienced architects and engineers delivers bespoke solutions for residential, commercial, and industrial projects, ensuring both aesthetic value and structural integrity. From concept to completion, Sabir Elsir Engineering Office remains a trusted partner for quality, precision, and visionary design."
+                )}
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
         <div className="card">
           <img
             src="images/13 (2)-min.jpg"
@@ -51,6 +83,8 @@ const OurServices = () => {
           </div>
         </div>
       </div>
+      <br />
+      <br />
 
       <div className="row">
         <div className="col-md-4 mb-4">
