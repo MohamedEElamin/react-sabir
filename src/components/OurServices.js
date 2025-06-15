@@ -26,7 +26,7 @@ const OurServices = () => {
       <div className="cards">
         <div className="cards__container">
           <h1 className="Myh2">
-            {t("Sabir Elsir Engineering Consultants's Services")}
+            {t("Sabir Elsir Engineering Consultants's ")}
           </h1>
           <div className="cards__wrapper">
             <ul className="cards__items">
