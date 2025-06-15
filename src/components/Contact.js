@@ -12,10 +12,27 @@ const Contact = () => {
         <title className="Myh2">{t("Contact Us")}</title>
         <meta
           name="description"
+          content="Get in touch with Sabir Elsir Engineering Consultants. We are here to assist you with engineering consultancy, design, and supervision services across the UAE and Sudan."
+        />
+        <meta
+          name="keywords"
+          content="contact engineering consultants, contact Sabir Elsir, engineering company Sharjah, engineering consultants UAE"
+        />
+        <meta
+          name="description"
           content=" مكتب صابر السر الاستشاري في إماره الشارقه الإمارات المجاز1 برج الرشيد1 مكتب 2023
-          Contact us: sabirelgabri@sabirelsir.ae, Almajaz(1)-Balrasheed Tower(1), office 2203 Sharjah, +971552771408. "
+          Contact us: sabir.elsir.eng.cons@gmail.com, Almajaz(1)-Balrasheed Tower(1), office 2203 Sharjah, +971552771408. "
         ></meta>
-        <link rel="canonical" href="https://www.sabirelsir.com/Contact"></link>
+        <meta
+          name="description"
+          content="تواصل مع شركة صابر السر للاستشارات الهندسية. نحن جاهزون لمساعدتك في خدمات الاستشارات الهندسية، التصميم، والإشراف في الإمارات والسودان."
+        />
+        <meta
+          name="keywords"
+          content="اتصال الاستشارات الهندسية، شركة صابر السر، مهندسون في الشارقة، الاستشارات الهندسية الإمارات"
+        />
+
+        <link rel="canonical" href="https://www.sabirelsir.ae/Contact"></link>
         <meta name="language" content="AR, EN"></meta>
       </Helmet>
 

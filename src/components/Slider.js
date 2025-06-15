@@ -2,6 +2,8 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import "../styles/Cards.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 // import swi from "../images/circle_villa-min.jpg ";
 // import villa from "/images/3 (1)-min.jpg";
@@ -58,7 +60,7 @@ const AutoSlider = () => {
 
         <div className="slide">
           <img
-            src="images/interior.jpg"
+            src="images/li.jpg"
             loading="lazy"
             alt="Interior Design"
             title={t("Interior Design")}
@@ -77,7 +79,7 @@ const AutoSlider = () => {
         </div>
         <div className="slide">
           <img
-            src="images/6 (2).jpg"
+            src="images/000.jpg"
             loading="lazy"
             alt="Villa"
             title={"Villa"}
