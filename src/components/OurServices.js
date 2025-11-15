@@ -33,6 +33,7 @@ const OurServices = () => {
       </Helmet>
       <br />
       <br />
+
       <br />
       <div className="container ">
         <div className="card">
@@ -43,46 +44,80 @@ const OurServices = () => {
             {t("Sabir Elsir Engineering Consultants's Services")}
           </h1>
           <br />
-          <div className="card">
-            <img
-              className="card-img-top"
-              src="images/vils-min.jpg"
-              loading="lazy"
-              alt="modern villa design"
-              title="Architectural Engineering Consultancy"
-            />
-            <div className="card-body">
-              <h5 className="card-title">
-                {t("Architectural Engineering Consultancy")}
-              </h5>
-              <br />
-              <p className="card-text">
-                {t(
-                  "As one of the top engineering companies in Sharjah and Ajman, Sabir Elsir Engineering Office stands out for its exceptional Architectural Engineering Consultancy services tailored to meet the dynamic needs of the UAE's growing construction and infrastructure sectors. Recognized among leading engineering companies in Sharjah, we specialize in innovative architectural design, sustainable development, and regulatory-compliant planning. Our team of experienced architects and engineers delivers bespoke solutions for residential, commercial, and industrial projects, ensuring both aesthetic value and structural integrity. From concept to completion, Sabir Elsir Engineering Office remains a trusted partner for quality, precision, and visionary design."
-                )}
-              </p>
+
+          <div className="row">
+            <div className="col-md-4 mb-4">
+              <div className="card">
+                <img
+                  className="card-img-top"
+                  src="images/vils-min.jpg"
+                  loading="lazy"
+                  alt="modern villa design"
+                  title="Architectural Engineering Consultancy"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">
+                    {t("Architectural Engineering Consultancy")}
+                  </h5>
+                  <br />
+                  <p className="card-text">
+                    {t(
+                      "As one of the top engineering companies in Sharjah and Ajman, Sabir Elsir Engineering Office stands out for its exceptional Architectural Engineering Consultancy services tailored to meet the dynamic needs of the UAE's growing construction and infrastructure sectors. Recognized among leading engineering companies in Sharjah, we specialize in innovative architectural design, sustainable development, and regulatory-compliant planning. Our team of experienced architects and engineers delivers bespoke solutions for residential, commercial, and industrial projects, ensuring both aesthetic value and structural integrity. From concept to completion, Sabir Elsir Engineering Office remains a trusted partner for quality, precision, and visionary design."
+                    )}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 mb-4">
+              <div className="card">
+                <img
+                  className="card-img-top"
+                  src="images/3000.jpeg"
+                  loading="lazy"
+                  alt="modern villa design"
+                  title="Architectural Engineering Consultancy"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">
+                    {t(
+                      "Civil Engineering-Approved Modification Drawings for Warehouses, Factories & Workshops"
+                    )}
+                  </h5>
+                  <br />
+                  <p className="card-text">
+                    {t(
+                      "Sabir Elsir Engineering Office is one of the leading engineering consultancies approved by Sharjah Municipality, SEWA, and the Civil Defense, delivering reliable, end-to-end engineering solutions for industrial and commercial projects. Our expert team specializes in creating modification drawings for warehouses, factories, and workshops, including comprehensive architectural, structural, MEP, and fire & life-safety plans required for official approvals. We provide fast and accurate support with: Building permits, municipal approvals, SEWA load approvals, Civil Defense fire-safety drawings, renovation permits, change-of-use applications, and completion certificates, all fully compliant with Sharjah regulations. If you are searching for: An approved engineering consultant in Sharjah, modification drawings, municipal approval services, SEWA NOC assistance, or fire-safety plan approval — we deliver the fastest, most reliable, and hassle-free approval process for your project."
+                    )}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div className="col-md-4 mb-4">
+              <div className="card">
+                <img
+                  src="images/13 (2)-min.jpg"
+                  loading="lazy"
+                  alt="Modern circular staircase design"
+                  className="card-img-top"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">
+                    {t("Civil Engineering Consultancy")}
+                  </h5>
+                  <br />
+                  <p className="card-text">
+                    {t(
+                      "Sabir Elsir Engineering Consultants Office is a leading name in the engineering and civil engineering industry in the UAE, delivering trusted and innovative solutions across Sharjah and Ajman. As one of the region’s most experienced eng consultants, we provide comprehensive engineering and consultancy services covering structural design, infrastructure planning, and full project management. Our civil engineering expertise, combined with deep knowledge of local regulations, allows us to deliver high-quality consulting services for residential, commercial, and industrial developments. With a strong reputation for reliability and engineering excellence, Sabir Elsir Engineering Consultants remains a top choice for developers, contractors, and government entities seeking professional and cost-effective civil engineering solutions."
+                    )}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <br />
-        <div className="card">
-          <img
-            src="images/13 (2)-min.jpg"
-            loading="lazy"
-            alt="Modern circular staircase design"
-            className="card-img-top"
-          />
-          <div className="card-body">
-            <h5 className="card-title">{t("Civil Engineering Consultancy")}</h5>
-            <br />
-            <p className="card-text">
-              {t(
-                "Sabir Elsir Engineering Consultants Office is one of the most experienced and trusted civil engineering consultancy firms in the UAE, proudly serving Sharjah and Ajman with innovative, cost-effective, and sustainable engineering solutions. With a proven track record in structural design, infrastructure planning, and project management, Sabir Elsir Engineering Consultants combines technical expertise with local regulatory knowledge to deliver high-quality services across residential, commercial, and industrial projects. As a leading civil engineering consultant in Sharjah and Ajman, our commitment to engineering excellence and client satisfaction has positioned us as a top choice for developers, contractors, and government entities alike."
-              )}
-            </p>
-          </div>
-        </div>
       </div>
+
       <br />
       <br />
 
