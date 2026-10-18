@@ -6,14 +6,13 @@ import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const { i18n, t } = useTranslation();
-  const [language, setLanguage] = useState(i18n.language);
+  const language = i18n.resolvedLanguage || i18n.language || "en";
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
   const toggleLanguage = () => {
-    const newLanguage = language === "en" ? "ar" : "en";
+    const newLanguage = language.startsWith("en") ? "ar" : "en";
     i18n.changeLanguage(newLanguage);
-    setLanguage(newLanguage);
   };
 
   const handleClick = () => setClick(!click);
@@ -88,10 +87,20 @@ const Navbar = () => {
               {t("Contact")}
             </Link>
           </li>
+          <li className="nav-item">
+            <Link to="/faq" className="nav-links" onClick={closeMobileMenu}>
+              {i18n.language.startsWith("ar") ? "الأسئلة الشائعة" : "FAQ"}
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/blog" className="nav-links" onClick={closeMobileMenu}>
+              {i18n.language.startsWith("ar") ? "المدونة" : "Blog"}
+            </Link>
+          </li>
         </ul>
 
         <button onClick={toggleLanguage} className="language-toggle">
-          {language === "en" ? "العربية" : "English"}
+          {language.startsWith("en") ? "العربية" : "English"}
         </button>
       </div>
     </nav>

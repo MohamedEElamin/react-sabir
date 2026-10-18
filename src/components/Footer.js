@@ -46,7 +46,7 @@ function Footer() {
         <div className="social-media-wrap">
           <div className="footer-log"></div>
           <small className="website-rights">
-            Sabir Elsir Engineering Consultants © 2025
+            Sabir Elsir Engineering Consultants © {new Date().getFullYear()}
           </small>
           <div className="social-icons">
             <Link

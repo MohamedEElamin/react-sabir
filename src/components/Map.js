@@ -12,7 +12,7 @@ const Map = ({ location }) => {
       "service_h0il90i",
       "template_cjgzv7r",
       form.current,
-      "R53zKxDTRI_IMv4mx"
+      "R53zKxDTRI_IMv4mx",
     );
   };
 
@@ -59,7 +59,9 @@ const Map = ({ location }) => {
         .then((result) => {
           console.log(result.text);
           setSuccessMessage(
-            t("Thank you! Message sent successfully. We will contact you soon.")
+            t(
+              "Thank you! Message sent successfully. We will contact you soon.",
+            ),
           );
         })
         .catch((error) => {
@@ -83,10 +85,7 @@ const Map = ({ location }) => {
 
   return (
     <>
-      <div className="calc">
-        <h1 className="Myh1">
-          {t("Contact Sabir Elsir Engineering Consultants")}
-        </h1>
+      <section className="site-page-content contact-page-content">
         <Row>
           <Col md={4}>
             <Card className="mb-4">
@@ -96,6 +95,7 @@ const Map = ({ location }) => {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.848116567497!2d55.38329977538656!3d25.34287717761749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5bc92e8eac93%3A0x3c85516abfef18aa!2sBell%20Rashid%20Towers%20-%20Corniche%20St%20-%20Al%20Majaz%201%20-%20Al%20Majaz%20-%20Sharjah%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1717694266783!5m2!1sen!2sus"
                   width="100%"
                   height="465"
+                  className="contact-map-frame"
                   style={{ border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
@@ -113,6 +113,7 @@ const Map = ({ location }) => {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d985.7143868319603!2d32.558500725483576!3d15.595707697674648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168e91b00d257a39%3A0x30ba9f11fdf738be!2z2LnZhdin2LHYqSDYp9mE2KjYr9ix!5e0!3m2!1sen!2sus!4v1718587546236!5m2!1sen!2sus"
                   width="100%"
                   height="465"
+                  className="contact-map-frame"
                   style={{ border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
@@ -130,6 +131,7 @@ const Map = ({ location }) => {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14414.321060014643!2d55.428171159773186!3d25.41885697013976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5770f5c0c4af%3A0xe23009abbf0652b4!2sAl%20Owan%20-%20Al%20Nakhil%202%20-%20Ajman%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1717700155252!5m2!1sen!2sus"
                   width="100%"
                   height="465"
+                  className="contact-map-frame"
                   style={{ border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
@@ -141,7 +143,7 @@ const Map = ({ location }) => {
           </Col>
         </Row>
         <Row>
-          <Col md={4}>
+          <Col md={6}>
             <Card className="mb-4">
               <Card.Body className="calc2">
                 <div className="StyledContactForm">
@@ -201,7 +203,7 @@ const Map = ({ location }) => {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={4}>
+          <Col md={6}>
             <Card className="mb-4">
               <div className="addr">
                 <Card.Body className="calc2">
@@ -210,7 +212,7 @@ const Map = ({ location }) => {
                   <br />
                   <h4>
                     {t(
-                      "Sharjah-Almajaz(1)- Balrasheed Tower (1)-Floor 22 - office 2203"
+                      "Sharjah-Almajaz(1)- Balrasheed Tower (1)-Floor 22 - office 2203",
                     )}
                   </h4>
                   <br />
@@ -235,7 +237,7 @@ const Map = ({ location }) => {
             </Card>
           </Col>
         </Row>
-      </div>
+      </section>
     </>
   );
 };

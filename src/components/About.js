@@ -3,9 +3,11 @@ import { useTranslation } from "react-i18next";
 import "../styles/Cards.css";
 import { Helmet } from "react-helmet-async";
 import "bootstrap/dist/css/bootstrap.min.css";
+import PageIntro from "./PageIntro";
 
 const About = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isArabic = i18n.language.startsWith("ar");
 
   return (
     <>
@@ -32,12 +34,20 @@ const About = () => {
         <meta name="language" content="AR, EN"></meta>
       </Helmet>
 
-      <div className="container my-5">
-        <br />
-        <h1 className="Myh1">
-          {t("About Sabir Elsir Engineering Consultants")}
-        </h1>
-        <br />
+      <PageIntro
+        eyebrow={isArabic ? "من نحن" : "About us"}
+        title={
+          isArabic
+            ? "عن صابر السر للاستشارات الهندسية"
+            : "About Sabir Elsir Engineering Consultants"
+        }
+        description={
+          isArabic
+            ? "خبرة في الاستشارات الهندسية والتصميم والإشراف في الإمارات والسودان منذ عام 2001."
+            : "Engineering consultancy, design, and supervision across the UAE and Sudan since 2001."
+        }
+      />
+      <section className="site-page-content about-page-content">
         <div className="row">
           {/* Card 1 */}
           <div className="col-md-6 mb-4">
@@ -46,7 +56,7 @@ const About = () => {
                 <h5 className="card-title">{t("Our Mission")}</h5>
                 <p className="card-text">
                   {t(
-                    "Our mission is to provide smart, reliable, and efficient engineering services that add value to every project. As one of the best Engineering Consultants in Ajman UAE, we focus on delivering quality design and supervision with precision and professionalism. We aim to support our clients through every phase of the project, from concept to completion, ensuring excellence in execution and long-term satisfaction."
+                    "Our mission is to provide smart, reliable, and efficient engineering services that add value to every project. As one of the best Engineering Consultants in Ajman UAE, we focus on delivering quality design and supervision with precision and professionalism. We aim to support our clients through every phase of the project, from concept to completion, ensuring excellence in execution and long-term satisfaction.",
                   )}
                 </p>
               </div>
@@ -60,7 +70,7 @@ const About = () => {
                 <h5 className="card-title">{t("Our Vision")}</h5>
                 <p className="card-text">
                   {t(
-                    "We envision becoming the benchmark for engineering consultant companies in Sharjah and across the UAE. Our goal is to lead the industry by adopting cutting-edge technologies, promoting sustainable development, and continuously enhancing our service delivery. As we look ahead, we strive to maintain our reputation as one of the top Engineering Consultants in Sharjah UAE, known for our commitment to integrity and innovation."
+                    "We envision becoming the benchmark for engineering consultant companies in Sharjah and across the UAE. Our goal is to lead the industry by adopting cutting-edge technologies, promoting sustainable development, and continuously enhancing our service delivery. As we look ahead, we strive to maintain our reputation as one of the top Engineering Consultants in Sharjah UAE, known for our commitment to integrity and innovation.",
                   )}
                 </p>
               </div>
@@ -74,7 +84,7 @@ const About = () => {
                 <h5 className="card-title">{t("Our Story")}</h5>
                 <p className="card-text">
                   {t(
-                    "As one of the top engineering companies in Sharjah, our journey began with a vision to redefine engineering consultancy in the UAE. From our humble beginnings, we’ve grown into a trusted name among the top Engineering Consultants in Sharjah UAE and beyond. Our expertise spans residential, commercial, and infrastructure projects—delivering innovative and sustainable solutions to clients across the Emirates. With a deep understanding of local regulations and international standards, we continue to shape Sharjah’s skyline with excellence."
+                    "As one of the top engineering companies in Sharjah, our journey began with a vision to redefine engineering consultancy in the UAE. From our humble beginnings, we’ve grown into a trusted name among the top Engineering Consultants in Sharjah UAE and beyond. Our expertise spans residential, commercial, and infrastructure projects—delivering innovative and sustainable solutions to clients across the Emirates. With a deep understanding of local regulations and international standards, we continue to shape Sharjah’s skyline with excellence.",
                   )}
                 </p>
               </div>
@@ -88,14 +98,14 @@ const About = () => {
                 <h5 className="card-title">{t("Why US")}</h5>
                 <p className="card-text">
                   {t(
-                    "Choosing us means partnering with one of the most respected engineering consultant companies in Sharjah. We bring unmatched technical expertise, personalized service, and a strong track record of successful projects. Whether you're seeking the best Engineering Consultants in Ajman UAE or dependable engineering support in Sharjah, our team is dedicated to turning your vision into reality—on time and within budget."
+                    "Choosing us means partnering with one of the most respected engineering consultant companies in Sharjah. We bring unmatched technical expertise, personalized service, and a strong track record of successful projects. Whether you're seeking the best Engineering Consultants in Ajman UAE or dependable engineering support in Sharjah, our team is dedicated to turning your vision into reality—on time and within budget.",
                   )}
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

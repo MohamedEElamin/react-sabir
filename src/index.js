@@ -3,6 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./locales/i18n";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
+import "./App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./locales/i18n";
@@ -21,7 +23,7 @@ root.render(
       <App />
     </React.StrictMode>
     ,<React.StrictMode></React.StrictMode>
-  </HelmetProvider>
+  </HelmetProvider>,
 );
 
 // If you want to start measuring performance in your app, pass a function

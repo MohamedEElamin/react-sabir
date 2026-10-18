@@ -1,0 +1,86 @@
+.climate-comparison,
+.climate-durability {
+  margin-top: clamp(38px, 6vw, 62px);
+}
+
+.climate-comparison h2,
+.climate-durability h2 {
+  margin: 0 0 18px;
+  color: var(--blog-green);
+  font-size: clamp(21px, 3vw, 27px);
+  font-weight: 600;
+}
+
+.climate-comparison-table {
+  min-width: 960px;
+}
+
+.climate-comparison-table th,
+.climate-comparison-table td {
+  min-width: 210px;
+}
+
+.climate-comparison-table tbody th {
+  min-width: 180px;
+}
+
+.climate-durability ol {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: durability-practice;
+}
+
+.climate-durability li {
+  position: relative;
+  padding: 20px 0 20px 48px;
+  border-bottom: 1px solid var(--blog-line);
+  counter-increment: durability-practice;
+}
+
+.climate-design-page[dir="rtl"] .climate-durability li {
+  padding-right: 48px;
+  padding-left: 0;
+}
+
+.climate-durability li::before {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  color: #8b9e73;
+  content: "0" counter(durability-practice);
+  font-size: 14px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.climate-design-page[dir="rtl"] .climate-durability li::before {
+  right: 0;
+  left: auto;
+}
+
+.climate-durability h3 {
+  margin: 0 0 8px;
+  color: var(--blog-ink);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.climate-durability li p {
+  margin: 0;
+  color: var(--blog-muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.climate-design-note {
+  margin: 28px 0 0;
+  padding: 16px 18px;
+  border-inline-start: 3px solid #8b9e73;
+  background: #f1f3ed;
+  color: var(--blog-muted);
+  font-size: 14px;
+  line-height: 1.8;
+}

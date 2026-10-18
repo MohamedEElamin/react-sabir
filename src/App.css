@@ -1,33 +1,232 @@
+:root {
+  --site-ink: #202923;
+  --site-muted: #68736b;
+  --site-green: #315746;
+  --site-lime: #c2d58a;
+  --site-paper: #f5f6f2;
+  --site-line: #dfe4dc;
+}
+
+#root {
+  min-height: 100vh;
+}
+
 .App {
+  min-height: 55vh;
+  color: var(--site-ink);
+}
+
+main {
+  min-width: 0;
+}
+
+.container {
+  width: min(100% - 48px, 1200px);
+  max-width: 1200px;
+  padding: clamp(36px, 6vw, 76px) 0;
+  margin-inline: auto;
+  background: transparent;
+}
+
+.home-page > .Myh2 {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: clamp(42px, 7vw, 88px) 24px 12px;
+  color: var(--site-ink);
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  font-size: clamp(30px, 4vw, 52px);
+  font-weight: 600;
+  line-height: 1.15;
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-page > .Myh2::after {
+  display: block;
+  width: 54px;
+  height: 4px;
+  margin: 24px auto 0;
+  background: var(--site-lime);
+  content: "";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.calc {
+  width: min(100% - 48px, 1280px);
+  margin: 24px auto 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 4px;
+  background: #e5e8e2;
+  box-shadow: 0 24px 60px rgba(32, 41, 35, 0.14);
+  color: var(--site-ink);
+}
+
+.calc .slick-list,
+.calc .slick-track,
+.calc .slick-slide > div,
+.calc .slide {
+  height: 100%;
+}
+
+.calc .slide img {
+  display: block;
+  width: 100%;
+  height: clamp(320px, 54vw, 680px);
+  object-fit: cover;
+  object-position: center;
+}
+
+.calc .slick-dots {
+  bottom: 18px;
+}
+
+.calc .slick-dots li button:before {
   color: white;
+  font-size: 10px;
+  opacity: 0.7;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
 }
 
-.App-link {
-  color: #8d61fb;
+.calc .slick-dots li.slick-active button:before {
+  color: var(--site-lime);
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.home-page .container {
+  width: min(100% - 48px, 1160px);
+  padding: 32px 0 72px;
+}
+
+.home-page .row {
+  --bs-gutter-x: 24px;
+  --bs-gutter-y: 24px;
+}
+
+.home-page > .row {
+  width: 100%;
+  margin-inline: 0;
+}
+
+.home-page .card,
+.container .card {
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--site-line);
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(32, 41, 35, 0.045) !important;
+}
+
+.home-page .card-body,
+.container .card-body {
+  padding: clamp(22px, 3vw, 34px);
+}
+
+.home-page .card-title,
+.container .card-title {
+  margin-bottom: 14px;
+  color: var(--site-green);
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.home-page .card-text,
+.container .card-text {
+  color: #58645b;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.home-page .card-img-top {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.home-page .video-container {
+  width: min(100% - 48px, 920px);
+  max-width: 920px !important;
+  margin: 4px auto 40px !important;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #202923;
+}
+
+.home-page .responsive-iframe {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--site-ink);
+  line-height: 1.25;
+}
+
+.Myh1 {
+  padding-bottom: 20px;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 600;
+}
+
+.Myh2 {
+  padding-bottom: 24px;
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .container,
+  .home-page .container {
+    width: min(100% - 32px, 1200px);
+    padding-block: 38px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .calc {
+    width: calc(100% - 32px);
+    margin-top: 16px;
+    border-radius: 3px;
+  }
+
+  .calc .slide img {
+    height: clamp(260px, 75vw, 440px);
+  }
+
+  .home-page > .Myh2 {
+    padding: 48px 22px 12px;
+    font-size: clamp(27px, 8vw, 38px);
+  }
+
+  .home-page .video-container {
+    width: calc(100% - 32px);
+  }
+
+  .home-page .row {
+    --bs-gutter-x: 16px;
+    --bs-gutter-y: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App main {
+    animation: page-arrive 500ms ease-out both;
+  }
+
+  @keyframes page-arrive {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
