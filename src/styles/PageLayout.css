@@ -186,6 +186,61 @@
   cursor: pointer;
 }
 
+.about-us-section > h2,
+.about-copy-section h2 {
+  margin: 0 0 14px;
+  color: var(--site-green, #315746);
+  font-size: clamp(21px, 3vw, 27px);
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: start;
+}
+
+.about-us-section > h2:not(:first-child) {
+  margin-top: 0;
+}
+
+.about-copy-section {
+  margin-top: clamp(34px, 5vw, 52px);
+}
+
+.about-copy-section h3 {
+  margin: 24px 0 12px;
+  color: var(--site-green, #315746);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.45;
+  text-align: start;
+}
+
+.about-us-section p,
+.about-us-section li {
+  color: #58645b;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.about-us-section .about-section-lead {
+  color: var(--site-ink, #202923);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.about-us-section ul {
+  display: grid;
+  gap: 12px;
+  margin: 14px 0 0;
+  padding-inline-start: 22px;
+}
+
+.about-us-section li::marker {
+  color: #8b9e73;
+}
+
+.about-us-section li strong {
+  color: var(--site-ink, #202923);
+}
+
 @media (max-width: 700px) {
   .contact-page-content {
     width: min(100% - 32px, 1120px);
@@ -197,6 +252,10 @@
 
   .contact-page-content .row + .row {
     margin-top: 18px;
+  }
+
+  .about-us-section .about-section-lead {
+    font-size: 16px;
   }
 }
 

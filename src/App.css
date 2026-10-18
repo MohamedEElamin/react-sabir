@@ -138,6 +138,52 @@ main {
   line-height: 1.8;
 }
 
+.engineering-consultants-qualifications h2 {
+  margin: 0 0 16px;
+  color: var(--site-green);
+  font-size: clamp(20px, 2.2vw, 25px);
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: start;
+}
+
+.engineering-consultants-qualifications h3 {
+  margin: 24px 0 10px;
+  color: var(--site-green);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.45;
+  text-align: start;
+}
+
+.engineering-consultants-qualifications .qualification-list {
+  display: grid;
+  gap: 10px;
+  margin: 14px 0 20px;
+  padding-inline-start: 22px;
+  color: #58645b;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.engineering-consultants-qualifications .qualification-list li::marker {
+  color: #8b9e73;
+}
+
+.qualification-tip {
+  margin-top: 20px;
+  padding: 16px 18px;
+  border-inline-start: 3px solid #8b9e73;
+  background: #f1f3ed;
+  color: #58645b;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.qualification-tip strong {
+  color: var(--site-green);
+}
+
 .home-page .card-img-top {
   aspect-ratio: 4 / 3;
   object-fit: cover;

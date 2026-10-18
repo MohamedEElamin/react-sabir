@@ -15,52 +15,108 @@ function Grid() {
           <div className="col-md-6 mb-4">
             <div className="card h-100 shadow-sm">
               <div className="card-body">
-                <h5 className="card-title">{t("Who We Are")}</h5>
-                <br />
+                <h2 className="card-title">
+                  {i18n.language.startsWith("ar")
+                    ? "تعاون مع نخبة الاستشاريين الهندسيين لحلول مبتكرة وقابلة للتوسع"
+                    : "Partner with Industry-Leading Engineering Consultants for Innovative, Scalable Solutions"}
+                </h2>
                 <p className="card-text">
-                  {t(
-                    "At Sabir Elsir Consulting Office, excellence in engineering consulting has been our passion since 2001. With thriving branches in Sudan and the United Arab Emirates, we proudly deliver outstanding architectural designs, innovative construction solutions, and expert engineering supervision services across the region. What truly sets Sabir Elsir Consulting Office apart among engineering companies is the exceptional expertise of our team. Our consultants proudly hold prestigious qualifications such as the Professional Engineer (PE) License, the Project Management Professional (PMP) Certification, master’s Degrees (MSc) in specialized engineering fields, and even Doctorate Degrees (PhD). These achievements reflect a deep commitment to professional excellence, innovative thinking, and world-class project execution Whether you need visionary designs or meticulous engineering supervision, Sabir Elsir Consulting Office Consulting Office brings unmatched professionalism and decades of experience to every project. We combine academic mastery with hands-on expertise to help clients realize their dreams — safely, sustainably, and beautifully.Discover why Sabir Elsir Consulting Office continues to lead the way among top engineering consulting firms in Sharjah, Ajman, Khartoum, and beyond.",
-                  )}
+                  {i18n.language.startsWith("ar")
+                    ? "هل تبحث عن خدمات استشارات هندسية تجمع بين التميز التقني والابتكار؟ يقدم فريقنا من المهندسين المحترفين خدمات متكاملة تشمل التصميم والتحليل الإنشائي وإدارة المشاريع وحلول البنية التحتية المستدامة، بما يتوافق مع متطلبات مشروعك. سواء كنت تطور مشروعاً تجارياً، أو تعمل على تحسين العمليات الصناعية، أو تتعامل مع متطلبات تنظيمية معقدة، يقدم استشاريو الهندسة لدينا تحليلات تستند إلى البيانات وتنفيذاً موثوقاً من الفكرة حتى الإنجاز. تواصل مع خبرائنا الهندسيين لدعم مشروعك القادم بالدقة والامتثال والكفاءة في التكاليف."
+                    : "Looking for expert engineering consulting services that combine technical excellence with cutting-edge innovation? Our team of certified professional engineers delivers end-to-end design, structural analysis, project management, and sustainable infrastructure solutions tailored to your unique specifications. Whether you are launching a commercial development, optimizing industrial operations, or navigating complex regulatory standards, our engineering consultants provide data-driven insights and reliable execution from concept to completion. Contact our engineering experts today to streamline your next project with unmatched accuracy, compliance, and cost efficiency."}
                 </p>
               </div>
             </div>
           </div>
           <div className="col-md-6 mb-4">
             <div className="card h-100 shadow-sm">
-              <div className="card-body">
-                <h5 className="card-title">
-                  {t("Key Certifications Every Consultant Should Have")}
-                </h5>
-                <br />
+              <section className="card-body engineering-consultants-qualifications">
+                <h2>
+                  {i18n.language.startsWith("ar")
+                    ? "أفضل شركات الاستشارات الهندسية في الشارقة، عجمان، والخرطوم: كيف تختار المستشار المناسب؟"
+                    : "How to choose an engineering consultant in Sharjah, Ajman, or Khartoum"}
+                </h2>
                 <p className="card-text">
-                  {t(
-                    "Are You Looking for the Best Engineering Companies in Sharjah, Ajman, and Khartoum? When choosing an engineering consultant for your project, relying on charming words or flashy presentations isn’t enough. You need strong proof and that’s where certified qualifications come into play. Certifications tell you: 'This person has worked hard, learned, and gained the expertise to lead your project to success! Look for a consultant who holds certifications such as:",
-                  )}
+                  {i18n.language.startsWith("ar")
+                    ? "عند البحث عن أفضل مكتب استشارات هندسية في الشارقة أو عجمان أو الخرطوم، لا تكفي العروض التسويقية والشعارات البراقة لضمان نجاح مشروعك. ابحث عن مؤهلات مهنية واعتمادات أكاديمية موثقة، إلى جانب خبرة عملية مناسبة لنطاق المشروع ومتطلبات الجهة المحلية."
+                    : "When looking for an engineering consultancy in Sharjah, Ajman, or Khartoum, polished marketing alone cannot establish whether a firm is right for your project. Review verifiable professional credentials and academic qualifications alongside relevant project experience and local authority requirements."}
                 </p>
 
-                <ul>
-                  <li>{t("Professional Engineer (PE) License")}</li>
+                <h3>
+                  {i18n.language.startsWith("ar")
+                    ? "المؤهلات الأساسية التي يجب أن يمتلكها مستشارك الهندسي"
+                    : "Key qualifications to look for in an engineering consultant"}
+                </h3>
+                <p className="card-text">
+                  {i18n.language.startsWith("ar")
+                    ? "قد تساعد الشهادات والاعتمادات المهنية على توضيح خبرة الفريق، لكنها لا تغني عن التحقق من الترخيص المحلي المناسب لكل مشروع. من المؤهلات التي يمكنك الاستفسار عنها:"
+                    : "Credentials can help you understand a team’s training and expertise, but they do not replace checking the local registration required for your specific project. Ask whether the team includes professionals with qualifications such as:"}
+                </p>
+                <ul className="qualification-list">
                   <li>
-                    {t("Project Management Professional (PMP) Certification")}
+                    <strong>
+                      {i18n.language.startsWith("ar")
+                        ? "رخصة مهندس محترف (Professional Engineer - PE): "
+                        : "Professional Engineer (PE) licence: "}
+                    </strong>
+                    {i18n.language.startsWith("ar")
+                      ? "مؤهل مهني يُظهر استيفاء متطلبات الترخيص في الجهة التي أصدرته؛ تحقق من الاعتراف به ومتطلبات التسجيل لدى البلدية أو الجهة المختصة بالمشروع."
+                      : "A professional credential indicating that its holder met the licensing requirements of the issuing jurisdiction. Confirm local recognition and registration requirements with the project authority."}
                   </li>
                   <li>
-                    {t("Master’s Degree (MSc) in an engineering specialty")}
+                    <strong>
+                      {i18n.language.startsWith("ar")
+                        ? "شهادة محترف إدارة المشاريع (PMP®): "
+                        : "Project Management Professional (PMP®) certification: "}
+                    </strong>
+                    {i18n.language.startsWith("ar")
+                      ? "شهادة مهنية في إدارة المشاريع، ترتبط بمهارات تخطيط النطاق والوقت والتكلفة والمخاطر."
+                      : "A project-management credential covering practices used to plan and manage scope, schedules, cost, and risk."}
                   </li>
-                  <li>{t("Doctorate Degree (PhD) in their field")}</li>
+                  <li>
+                    <strong>
+                      {i18n.language.startsWith("ar")
+                        ? "درجة الماجستير في تخصص هندسي (MSc): "
+                        : "A master’s degree in an engineering discipline (MSc): "}
+                    </strong>
+                    {i18n.language.startsWith("ar")
+                      ? "قد تعكس دراسة متقدمة وتخصصاً في مجالات مثل الهندسة المدنية أو المعمارية أو إدارة الإنشاءات."
+                      : "May demonstrate advanced study and specialization in areas such as civil, architectural, or construction-management engineering."}
+                  </li>
+                  <li>
+                    <strong>
+                      {i18n.language.startsWith("ar")
+                        ? "درجة الدكتوراه (PhD): "
+                        : "A doctorate (PhD): "}
+                    </strong>
+                    {i18n.language.startsWith("ar")
+                      ? "تعكس بحثاً أكاديمياً متقدماً في مجال التخصص، وقد تكون ذات صلة بالمسائل الهندسية المعقدة أو الابتكار."
+                      : "Represents advanced academic research in a specialist field and may be relevant to complex engineering questions or innovation."}
+                  </li>
                 </ul>
-                <p>
-                  {t(
-                    "These certifications are not just titles; they are proof of years of study, training, and real-world experience. Each certification means the consultant before you has faced academic and professional challenges and is qualified to turn your ideas into successful real-world projects.",
-                  )}
+
+                <h3>
+                  {i18n.language.startsWith("ar")
+                    ? "لماذا تُعد هذه المؤهلات مهمة لمشروعك؟"
+                    : "Why do these qualifications matter for your project?"}
+                </h3>
+                <p className="card-text">
+                  {i18n.language.startsWith("ar")
+                    ? "المؤهلات المهنية والدرجات العلمية توثق جانباً من التدريب والخبرة، وتساعدك على تقييم قدرة الفريق على دراسة التحديات والتواصل بشأن الحلول. قيّمها مع سجل المشاريع ذات الصلة، وخطة ضبط الجودة، ومتطلبات السلامة والأنظمة المحلية؛ فالمؤهل وحده لا يضمن نتيجة المشروع."
+                    : "Professional credentials and academic degrees document aspects of a team’s training and experience. Consider them alongside relevant project history, quality-control processes, safety practices, and local regulations; a credential alone cannot guarantee a project outcome."}
                 </p>
 
-                <h5>{t("A Final Tip")}</h5>
-                <p>
-                  {t(
-                    "Next time you are searching for an engineering company in Sharjah, Ajman, or Khartoum Always ask about the team's certifications and experience!",
-                  )}
-                </p>
-              </div>
+                <aside className="qualification-tip">
+                  <strong>
+                    {i18n.language.startsWith("ar")
+                      ? "نصيحة خبراء الهندسة: "
+                      : "Engineering tip: "}
+                  </strong>
+                  {i18n.language.startsWith("ar")
+                    ? "قبل التعاقد مع شركة استشارات هندسية في الإمارات (الشارقة أو عجمان) أو السودان (الخرطوم)، اطلب السيرة الذاتية للمستشار المشرف وفريق المشروع، وتحقق من التراخيص والاعتمادات لدى الجهات المعنية."
+                    : "Before hiring an engineering consultancy in Sharjah, Ajman, or Khartoum, ask for the CVs of the project lead and team, and verify their licences and credentials with the relevant authorities."}
+                </aside>
+              </section>
             </div>
           </div>
         </div>
@@ -127,11 +183,15 @@ function Grid() {
                 width={400}
               />
               <div className="card-body">
-                <h5 className="card-title">{t("Modern Villa Design")}</h5>
+                <h5 className="card-title">
+                  {i18n.language.startsWith("ar")
+                    ? "تصميم فلل عصرية في الشارقة وعجمان | استشارات هندسية معمارية"
+                    : "Premier Modern Villa Design Services in Sharjah & Ajman | Expert Architectural Engineering"}
+                </h5>
                 <p className="card-text">
-                  {t(
-                    "Our engineering consultancy in Sharjah and Ajman specializes in bespoke modern villa designs that combine luxury with functional elegance. We incorporate cutting-edge architectural trends and sustainable building practices to create villas that are visually striking and environmentally responsible. Our team works closely with clients to ensure every design detail aligns with their vision and lifestyle needs. With extensive experience in the UAE's residential sector, we understand the local regulations and cultural aesthetics essential for villa development. Choose us to transform your land into a modern sanctuary that reflects innovation and comfort.",
-                  )}
+                  {i18n.language.startsWith("ar")
+                    ? "اكتشف أسلوب الحياة الفاخر مع خدمات تصميم الفلل العصرية حسب الطلب، المصممة للمشاريع السكنية في الشارقة وعجمان. بصفتنا مكتب استشارات هندسية في الإمارات، نمزج الاتجاهات المعمارية الحديثة وممارسات البناء المستدامة والأناقة العملية لإنشاء منازل مميزة ومراعية للبيئة. من الفكرة الأولية وتخطيط المساحات إلى موافقات البلدية والتصميم الإنشائي، ينسق فريقنا الهندسي والمعماري التصاميم بما يتوافق مع احتياجاتك وكود البناء والاعتبارات الثقافية المحلية. تواصل مع مستشارينا في الشارقة وعجمان لتحويل أرضك إلى منزل عصري مصمم للراحة والقيمة طويلة الأمد."
+                    : "Discover luxury living with our bespoke modern villa design services, tailored specifically for high-end residential projects across Sharjah and Ajman. As a trusted engineering consultancy in the UAE, we blend contemporary architectural trends, sustainable building practices, and functional elegance to craft visually striking, eco-friendly homes. From initial concept and space planning to local municipal authority approvals and structural engineering, our engineering and architecture team coordinates designs with UAE building codes and local cultural considerations. Contact our Sharjah and Ajman engineering consultants today to turn your plot into a custom modern sanctuary designed for luxury, comfort, and long-term value."}
                 </p>
               </div>
             </div>
@@ -148,10 +208,27 @@ function Grid() {
                 width={400}
               />
               <div className="card-body">
-                <h5 className="card-title">{t(" Mosque")}</h5>
+                <h5 className="card-title">
+                  {i18n.language.startsWith("ar")
+                    ? "تصميم مساجد معمارية هادفة في الشارقة وعجمان | خدمات استشارات هندسية متكاملة"
+                    : "Purposeful Mosque Design in Sharjah & Ajman | Integrated Engineering Consultancy"}
+                </h5>
                 <p className="card-text">
-                  {t(
-                    "As a leading engineering consultant in Sharjah and Ajman, we offer distinguished mosque design services that honor Islamic architectural heritage while integrating modern engineering solutions. Our team emphasizes spiritual ambiance, acoustics, and optimal prayer space orientation in every mosque project. We adhere strictly to UAE building codes and cultural sensitivities to deliver places of worship that resonate with community values. From domes and minarets to interior calligraphy and lighting, we design mosques that are both structurally sound and spiritually inspiring. Trust us to bring your vision of a sacred space to life with precision and respect.",
+                  {i18n.language.startsWith("ar") ? (
+                    <>
+                      بصفتنا مكتب استشارات هندسية يخدم الشارقة وعجمان، نقدم
+                      خدمات <strong>تصميم مساجد</strong> تجمع بين أصالة العمارة
+                      الإسلامية والحلول الهندسية الحديثة. نراعي اتجاه القبلة
+                      والصوتيات الداخلية وتوزيع الإضاءة الطبيعية لتهيئة أجواء
+                      روحانية هادئة. وينسق فريقنا مراحل المشروع، من التصميم
+                      المعماري والإنشائي للقباب والمآذن إلى تجهيز معاملات
+                      الاعتماد لدى الجهات الحكومية والجهات المختصة بالأوقاف في
+                      الشارقة وعجمان، بحسب متطلبات المشروع. تواصل مع فريقنا
+                      الهندسي لمناقشة تصميم مسجد مستدام يعكس قيم المجتمع ويراعي
+                      متطلبات العبادة.
+                    </>
+                  ) : (
+                    "As an engineering consultancy serving Sharjah and Ajman, we provide purposeful mosque design that brings together Islamic architectural heritage and modern engineering solutions. Our team considers qibla orientation, interior acoustics, and natural lighting to support a calm spiritual environment. We coordinate project stages from architectural and structural design for domes and minarets to preparing approval submissions for relevant government and Awqaf authorities in Sharjah and Ajman, as applicable to the project. Contact our engineering team to discuss a sustainable mosque design that reflects community values and supports the needs of worshippers."
                   )}
                 </p>
               </div>
@@ -169,10 +246,28 @@ function Grid() {
                 width={400}
               />
               <div className="card-body">
-                <h5 className="card-title">{t("Landscape Design")}</h5>
+                <h5 className="card-title">
+                  {i18n.language.startsWith("ar")
+                    ? "تصميم مناظر طبيعية ولاندسكيب في الشارقة وعجمان | خدمات هندسية خارجية مستدامة"
+                    : "Landscape Design in Sharjah & Ajman | Sustainable Outdoor Engineering"}
+                </h5>
                 <p className="card-text">
-                  {t(
-                    "We provide innovative landscape design solutions in Sharjah and Ajman, enhancing outdoor spaces for residential, commercial, and public projects. Our designs blend natural beauty with sustainable practices, ensuring minimal water usage and environmental impact in the UAE’s arid climate. From garden layouts and hardscaping to lighting and irrigation systems, we create cohesive outdoor experiences that elevate property value. Our landscape architects collaborate closely with clients to craft spaces that are both visually appealing and functionally practical. Let us transform your surroundings into a serene and welcoming environment tailored to your lifestyle or brand.",
+                  {i18n.language.startsWith("ar") ? (
+                    <>
+                      نقدم في مكتبنا للاستشارات الهندسية حلولاً متطورة في{" "}
+                      <strong>تصميم المناظر الطبيعية (اللاندسكيب)</strong>{" "}
+                      للمشاريع السكنية والتجارية والعامة في الشارقة وعجمان. يدمج
+                      مهندسونا بين الجمال المعماري والممارسات البيئية المستدامة،
+                      من خلال الري الذكي واختيار النباتات الملائمة للمناخ الجاف
+                      في الإمارات للمساعدة على تقليل استهلاك المياه. تشمل
+                      خدماتنا تخطيط الحدائق وتصميم العناصر الصلبة (Hardscape)
+                      وأنظمة الإضاءة الخارجية والمسطحات المائية، مع مراعاة
+                      المعايير والاشتراطات البلدية المحلية. تواصل مع خبراء
+                      اللاندسكيب لدينا لتحويل مساحتك الخارجية إلى بيئة جذابة
+                      تعزز قيمة عقارك وتلبي تطلعاتك.
+                    </>
+                  ) : (
+                    "Our engineering consultancy provides landscape design services for residential, commercial, and public projects in Sharjah and Ajman. We combine architectural quality with sustainable practices, including smart irrigation and climate-appropriate plant selection to help reduce water use in the UAE's arid climate. Our services include garden planning, hardscape design, outdoor lighting, and water features, with consideration for applicable local municipal standards. Contact our landscape design team to create an attractive outdoor space that supports your needs and adds value to your property."
                   )}
                 </p>
               </div>
