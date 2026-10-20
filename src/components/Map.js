@@ -6,26 +6,13 @@ import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
 
 const Map = ({ location }) => {
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs.sendForm(
-      "service_h0il90i",
-      "template_cjgzv7r",
-      form.current,
-      "R53zKxDTRI_IMv4mx",
-    );
-  };
-
   const { t } = useTranslation();
 
   const form = useRef(null);
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const validate = () => {
-    if (!form.current) {
-      console.error("form.current is null");
-      return {};
-    }
     const formElements = form.current.elements;
     const newErrors = {};
 
@@ -51,36 +38,30 @@ const Map = ({ location }) => {
     return newErrors;
   };
 
-  const handleSubmit = () => {
-    const validationErrors = validate();
-    if (Object.keys(validationErrors).length === 0) {
-      // Assuming you have a function to send the form data
-      sendFormData(form.current)
-        .then((result) => {
-          console.log(result.text);
-          setSuccessMessage(
-            t(
-              "Thank you! Message sent successfully. We will contact you soon.",
-            ),
-          );
-        })
-        .catch((error) => {
-          console.log(error.text);
-          setSuccessMessage(t("Failed to send the message. Please try again."));
-        });
-    }
-  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!form.current || isSubmitting) return;
 
-  // Placeholder function for sending form data
-  const sendFormData = (formData) => {
-    return new Promise((resolve, reject) => {
-      // Simulating a successful form submission
-      setTimeout(() => {
-        resolve({ text: "Success" });
-      }, 1000);
-      // Uncomment the line below to simulate a failure
-      // setTimeout(() => { reject({ text: "Error" }); }, 1000);
-    });
+    setSuccessMessage("");
+    const validationErrors = validate();
+    if (Object.keys(validationErrors).length > 0) return;
+
+    setIsSubmitting(true);
+    try {
+      await emailjs.sendForm(
+        "service_h0il90i",
+        "template_cjgzv7r",
+        form.current,
+        "R53zKxDTRI_IMv4mx",
+      );
+      setSuccessMessage(
+        t("Thank you! Message sent successfully. We will contact you soon."),
+      );
+    } catch {
+      setSuccessMessage(t("Failed to send the message. Please try again."));
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -149,7 +130,7 @@ const Map = ({ location }) => {
                 <div className="StyledContactForm">
                   <br /> <h3>{t("Contact Us")}</h3>
                   <br />
-                  <form ref={form} onSubmit={sendEmail}>
+                  <form ref={form} onSubmit={handleSubmit}>
                     <label>{t("Name")}</label>
                     <div>
                       <input
@@ -191,12 +172,16 @@ const Map = ({ location }) => {
                     <button
                       type="submit"
                       className="success"
-                      onClick={handleSubmit}
+                      disabled={isSubmitting}
                     >
-                      {t("Submit")}
+                      {isSubmitting ? t("Sending...") : t("Submit")}
                     </button>
                     <br />
-                    {successMessage && <p>{successMessage}</p>}
+                    {successMessage && (
+                      <p role="status" aria-live="polite">
+                        {successMessage}
+                      </p>
+                    )}
                   </form>
                   <br />
                 </div>

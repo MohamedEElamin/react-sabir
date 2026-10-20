@@ -20,7 +20,7 @@ const AutoSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 5000,
   };
 
   const { t } = useTranslation();
@@ -31,9 +31,10 @@ const AutoSlider = () => {
         <div className="slide">
           <img
             src="images/circle_villa-min.jpg"
-            loading="lazy"
-            alt="sdffn"
-            class="img-fluid"
+            loading="eager"
+            fetchPriority="high"
+            alt="Contemporary villa design by Sabir Elsir Engineering Consultants"
+            className="img-fluid"
             width="800"
             height="600"
           />

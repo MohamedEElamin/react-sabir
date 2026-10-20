@@ -22,8 +22,8 @@ function Grid() {
                 </h2>
                 <p className="card-text">
                   {i18n.language.startsWith("ar")
-                    ? "هل تبحث عن خدمات استشارات هندسية تجمع بين التميز التقني والابتكار؟ يقدم فريقنا من المهندسين المحترفين خدمات متكاملة تشمل التصميم والتحليل الإنشائي وإدارة المشاريع وحلول البنية التحتية المستدامة، بما يتوافق مع متطلبات مشروعك. سواء كنت تطور مشروعاً تجارياً، أو تعمل على تحسين العمليات الصناعية، أو تتعامل مع متطلبات تنظيمية معقدة، يقدم استشاريو الهندسة لدينا تحليلات تستند إلى البيانات وتنفيذاً موثوقاً من الفكرة حتى الإنجاز. تواصل مع خبرائنا الهندسيين لدعم مشروعك القادم بالدقة والامتثال والكفاءة في التكاليف."
-                    : "Looking for expert engineering consulting services that combine technical excellence with cutting-edge innovation? Our team of certified professional engineers delivers end-to-end design, structural analysis, project management, and sustainable infrastructure solutions tailored to your unique specifications. Whether you are launching a commercial development, optimizing industrial operations, or navigating complex regulatory standards, our engineering consultants provide data-driven insights and reliable execution from concept to completion. Contact our engineering experts today to streamline your next project with unmatched accuracy, compliance, and cost efficiency."}
+                    ? "بصفتنا من شركات الاستشارات الهندسية الرائدة في الشارقة وعجمان، نقدم حلولاً متكاملة للمشاريع من بدايتها حتى إنجازها، مع خدمات التصميم الهندسي واستيفاء متطلبات الاعتماد لدى بلديتي الشارقة وعجمان. يضم فريقنا متعدد التخصصات خبراء في التصميم المعماري والهندسة الإنشائية وهندسة الميكانيكا والكهرباء والسباكة والهندسة المدنية، لخدمة مشاريع المباني التجارية والفلل. كما نقدم التصميم الداخلي وإدارة المشاريع، ونتابع إجراءات الموافقات لدى الجهات المختصة، بما في ذلك شهادات عدم الممانعة من هيئة كهرباء ومياه وغاز الشارقة ومتطلبات الدفاع المدني. ويتولى فريقنا المعتمد تنسيق خدمات التصميم والإشراف الهندسي ومتابعة تنفيذ الأعمال في الشارقة وعجمان، من مرحلة التخطيط وحتى اكتمال المشروع."
+                    : "As one of the best engineering consultants in Sharjah and a leading engineering consultancy in Ajman, our firm delivers complete solutions from project planning through completion, including engineering design and approval requirements for Sharjah and Ajman municipalities. Our multidisciplinary team includes architectural, structural, MEP, and civil engineering consultants, supporting commercial building and villa projects. We also provide interior design and project management, and coordinate authority approvals, including SEWA no-objection certificates and Civil Defence requirements. Our team provides engineering design and construction supervision in Sharjah and Ajman, guiding each project from its initial plans through completion."}
                 </p>
               </div>
             </div>
@@ -133,7 +133,7 @@ function Grid() {
           }
         >
           <img
-            src="https://i.ytimg.com/vi/ioB8sAX-99g/hqdefault.jpg"
+            src="https://i.ytimg.com/vi/kDAkQ_-998s/hqdefault.jpg"
             alt={
               i18n.language.startsWith("ar")
                 ? "صورة مصغرة لفيديو تصميم فيلا حديثة"

@@ -1,8 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import Slider from "./Slider";
 import Grid from "./Grid";
-import PageIntro from "./PageIntro";
+import "../styles/Home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useTranslation } from "react-i18next";
 
@@ -37,18 +38,46 @@ const Home = () => {
         <link rel="canonical" href="https://www.sabirelsir.ae/"></link>
         <meta name="language" content="AR, EN"></meta>
       </Helmet>
-      <Slider />
-      <PageIntro
-        eyebrow={
-          isArabic ? "من نحن" : "Engineering consultants · UAE and Sudan"
-        }
-        title={t("Welcome to Sabir Elsir Engineering Consultants")}
-        description={
-          isArabic
-            ? "استشارات هندسية وتصميم وإشراف للمشاريع في الإمارات والسودان منذ عام 2001."
-            : "Engineering consultancy, design, and supervision for projects across the UAE and Sudan since 2001."
-        }
-      />
+      <section className="home-hero" dir={isArabic ? "rtl" : "ltr"}>
+        <Slider />
+        <div className="home-hero-shade" aria-hidden="true" />
+        <div className="home-hero-inner">
+          <div className="home-hero-copy">
+            <p className="home-hero-eyebrow">
+              {isArabic
+                ? "استشارات هندسية · الإمارات والسودان"
+                : "Engineering consultants · UAE and Sudan"}
+            </p>
+            <h1>
+              {isArabic
+                ? "صابر السر للاستشارات الهندسية"
+                : "Sabir Elsir Engineering Consultants"}
+            </h1>
+            <p className="home-hero-description">
+              {isArabic
+                ? "تصميم وإشراف وإدارة مشاريع بخبرة عملية منذ عام 2001."
+                : "Engineering design, supervision, and project management, shaped by experience since 2001."}
+            </p>
+            <div className="home-hero-actions">
+              <Link className="home-hero-primary" to="/services">
+                {isArabic ? "استكشف خدماتنا" : "Explore our services"}
+                <span aria-hidden="true">↗</span>
+              </Link>
+              <Link className="home-hero-secondary" to="/contact">
+                {isArabic ? "تواصل مع فريقنا" : "Talk to our team"}
+              </Link>
+            </div>
+          </div>
+          <div className="home-hero-proof">
+            <span>{isArabic ? "منذ 2001" : "Established 2001"}</span>
+            <span>
+              {isArabic
+                ? "الشارقة · عجمان · الخرطوم"
+                : "Sharjah · Ajman · Khartoum"}
+            </span>
+          </div>
+        </div>
+      </section>
       <Grid />
     </>
   );

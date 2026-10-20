@@ -36,10 +36,8 @@ function VideoWatchPage() {
     "@type": "VideoObject",
     name: content.name,
     description: content.description,
-    thumbnailUrl: ["https://i.ytimg.com/vi/ioB8sAX-99g/hqdefault.jpg"],
-    uploadDate: "2024-07-10T09:32:56-07:00",
-    duration: "PT1M52S",
-    embedUrl: "https://www.youtube-nocookie.com/embed/ioB8sAX-99g",
+    thumbnailUrl: ["https://i.ytimg.com/vi/kDAkQ_-998s/hqdefault.jpg"],
+    embedUrl: "https://www.youtube-nocookie.com/embed/kDAkQ_-998s",
     publisher: {
       "@type": "Organization",
       name: "Sabir Elsir Engineering Consultants",
@@ -92,7 +90,7 @@ function VideoWatchPage() {
         tagName: "meta",
         attributes: {
           property: "og:image",
-          content: "https://i.ytimg.com/vi/ioB8sAX-99g/hqdefault.jpg",
+          content: "https://i.ytimg.com/vi/kDAkQ_-998s/hqdefault.jpg",
         },
       },
       {
@@ -153,7 +151,7 @@ function VideoWatchPage() {
         <article className="site-page-content video-watch-content">
           <div className="video-watch-player">
             <iframe
-              src="https://www.youtube-nocookie.com/embed/ioB8sAX-99g"
+              src="https://www.youtube-nocookie.com/embed/kDAkQ_-998s"
               title={content.name}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -162,7 +160,7 @@ function VideoWatchPage() {
 
           <div className="video-watch-actions">
             <a
-              href="https://www.youtube.com/watch?v=ioB8sAX-99g"
+              href="https://www.youtube.com/watch?v=kDAkQ_-998s"
               target="_blank"
               rel="noreferrer"
             >
