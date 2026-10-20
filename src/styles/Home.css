@@ -168,6 +168,32 @@
   order: 1;
 }
 
+.home-page
+  > .container:first-of-type
+  > .row:first-child
+  > .col-md-6:first-child
+  .card {
+  height: auto;
+}
+
+.home-page
+  > .container:first-of-type
+  > .row:first-child
+  > .col-md-6:first-child
+  .card-title {
+  text-align: start;
+}
+
+.home-page .home-section-heading {
+  margin: 0 0 16px;
+  color: var(--site-green);
+  font-family: inherit;
+  font-size: clamp(20px, 2.2vw, 25px);
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: start;
+}
+
 @media (max-width: 700px) {
   .home-hero,
   .home-hero-inner {

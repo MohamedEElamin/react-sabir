@@ -15,7 +15,7 @@ function Grid() {
           <div className="col-md-6 mb-4">
             <div className="card h-100 shadow-sm">
               <div className="card-body">
-                <h2 className="card-title">
+                <h2 className="card-title home-section-heading">
                   {i18n.language.startsWith("ar")
                     ? "تعاون مع نخبة الاستشاريين الهندسيين لحلول مبتكرة وقابلة للتوسع"
                     : "Partner with Industry-Leading Engineering Consultants for Innovative, Scalable Solutions"}
@@ -31,91 +31,16 @@ function Grid() {
           <div className="col-md-6 mb-4">
             <div className="card h-100 shadow-sm">
               <section className="card-body engineering-consultants-qualifications">
-                <h2>
+                <h2 className="home-section-heading">
                   {i18n.language.startsWith("ar")
-                    ? "أفضل شركات الاستشارات الهندسية في الشارقة، عجمان، والخرطوم: كيف تختار المستشار المناسب؟"
-                    : "How to choose an engineering consultant in Sharjah, Ajman, or Khartoum"}
+                    ? "استشارات هندسية وتصميم مبانٍ متكامل في الشارقة وعجمان"
+                    : "Leading Engineering & Building Design Consultancy in Sharjah & Ajman"}
                 </h2>
                 <p className="card-text">
                   {i18n.language.startsWith("ar")
-                    ? "عند البحث عن أفضل مكتب استشارات هندسية في الشارقة أو عجمان أو الخرطوم، لا تكفي العروض التسويقية والشعارات البراقة لضمان نجاح مشروعك. ابحث عن مؤهلات مهنية واعتمادات أكاديمية موثقة، إلى جانب خبرة عملية مناسبة لنطاق المشروع ومتطلبات الجهة المحلية."
-                    : "When looking for an engineering consultancy in Sharjah, Ajman, or Khartoum, polished marketing alone cannot establish whether a firm is right for your project. Review verifiable professional credentials and academic qualifications alongside relevant project experience and local authority requirements."}
+                    ? "بصفتنا جهة رائدة في إدارة المشاريع والاستشارات المتكاملة لتصميم المباني والإشراف عليها في الشارقة وعجمان، نقدم حلولاً هندسية شاملة في أنحاء دولة الإمارات. من المساكن الفاخرة المصممة حسب الطلب إلى المشاريع التجارية واسعة النطاق، يجمع فريقنا متعدد التخصصات بين العمارة المبتكرة والدقة الإنشائية الصارمة وضبط الجودة. سواء كنا نقدم خدمات الهندسة المدنية المتكاملة في عجمان أو نتخصص في تصميم الفلل في الشارقة، نرافق مشروعك في جميع مراحله، وندمج بسلاسة التصميم المفاهيمي والهندسة الإنشائية والتصميم الداخلي وإشراف الموقع المخصص، بصفتنا استشاريي إشراف موثوقين في عجمان."
+                    : "As a premier project management consultancy in Sharjah and a fully integrated building design and supervision consultancy in Ajman, our firm delivers complete, end-to-end engineering solutions across the United Arab Emirates. From bespoke luxury residences to expansive commercial developments, our multidisciplinary team blends innovative architecture with rigorous structural precision and quality control. Whether serving as complete civil engineering consultants in Ajman or specialized villa design consultants in Sharjah, we guide your project through every stage of development—seamlessly integrating concept design, structural engineering, interior design engineering consultancy in Ajman, and dedicated site oversight as trusted construction supervision consultants in Ajman."}
                 </p>
-
-                <h3>
-                  {i18n.language.startsWith("ar")
-                    ? "المؤهلات الأساسية التي يجب أن يمتلكها مستشارك الهندسي"
-                    : "Key qualifications to look for in an engineering consultant"}
-                </h3>
-                <p className="card-text">
-                  {i18n.language.startsWith("ar")
-                    ? "قد تساعد الشهادات والاعتمادات المهنية على توضيح خبرة الفريق، لكنها لا تغني عن التحقق من الترخيص المحلي المناسب لكل مشروع. من المؤهلات التي يمكنك الاستفسار عنها:"
-                    : "Credentials can help you understand a team’s training and expertise, but they do not replace checking the local registration required for your specific project. Ask whether the team includes professionals with qualifications such as:"}
-                </p>
-                <ul className="qualification-list">
-                  <li>
-                    <strong>
-                      {i18n.language.startsWith("ar")
-                        ? "رخصة مهندس محترف (Professional Engineer - PE): "
-                        : "Professional Engineer (PE) licence: "}
-                    </strong>
-                    {i18n.language.startsWith("ar")
-                      ? "مؤهل مهني يُظهر استيفاء متطلبات الترخيص في الجهة التي أصدرته؛ تحقق من الاعتراف به ومتطلبات التسجيل لدى البلدية أو الجهة المختصة بالمشروع."
-                      : "A professional credential indicating that its holder met the licensing requirements of the issuing jurisdiction. Confirm local recognition and registration requirements with the project authority."}
-                  </li>
-                  <li>
-                    <strong>
-                      {i18n.language.startsWith("ar")
-                        ? "شهادة محترف إدارة المشاريع (PMP®): "
-                        : "Project Management Professional (PMP®) certification: "}
-                    </strong>
-                    {i18n.language.startsWith("ar")
-                      ? "شهادة مهنية في إدارة المشاريع، ترتبط بمهارات تخطيط النطاق والوقت والتكلفة والمخاطر."
-                      : "A project-management credential covering practices used to plan and manage scope, schedules, cost, and risk."}
-                  </li>
-                  <li>
-                    <strong>
-                      {i18n.language.startsWith("ar")
-                        ? "درجة الماجستير في تخصص هندسي (MSc): "
-                        : "A master’s degree in an engineering discipline (MSc): "}
-                    </strong>
-                    {i18n.language.startsWith("ar")
-                      ? "قد تعكس دراسة متقدمة وتخصصاً في مجالات مثل الهندسة المدنية أو المعمارية أو إدارة الإنشاءات."
-                      : "May demonstrate advanced study and specialization in areas such as civil, architectural, or construction-management engineering."}
-                  </li>
-                  <li>
-                    <strong>
-                      {i18n.language.startsWith("ar")
-                        ? "درجة الدكتوراه (PhD): "
-                        : "A doctorate (PhD): "}
-                    </strong>
-                    {i18n.language.startsWith("ar")
-                      ? "تعكس بحثاً أكاديمياً متقدماً في مجال التخصص، وقد تكون ذات صلة بالمسائل الهندسية المعقدة أو الابتكار."
-                      : "Represents advanced academic research in a specialist field and may be relevant to complex engineering questions or innovation."}
-                  </li>
-                </ul>
-
-                <h3>
-                  {i18n.language.startsWith("ar")
-                    ? "لماذا تُعد هذه المؤهلات مهمة لمشروعك؟"
-                    : "Why do these qualifications matter for your project?"}
-                </h3>
-                <p className="card-text">
-                  {i18n.language.startsWith("ar")
-                    ? "المؤهلات المهنية والدرجات العلمية توثق جانباً من التدريب والخبرة، وتساعدك على تقييم قدرة الفريق على دراسة التحديات والتواصل بشأن الحلول. قيّمها مع سجل المشاريع ذات الصلة، وخطة ضبط الجودة، ومتطلبات السلامة والأنظمة المحلية؛ فالمؤهل وحده لا يضمن نتيجة المشروع."
-                    : "Professional credentials and academic degrees document aspects of a team’s training and experience. Consider them alongside relevant project history, quality-control processes, safety practices, and local regulations; a credential alone cannot guarantee a project outcome."}
-                </p>
-
-                <aside className="qualification-tip">
-                  <strong>
-                    {i18n.language.startsWith("ar")
-                      ? "نصيحة خبراء الهندسة: "
-                      : "Engineering tip: "}
-                  </strong>
-                  {i18n.language.startsWith("ar")
-                    ? "قبل التعاقد مع شركة استشارات هندسية في الإمارات (الشارقة أو عجمان) أو السودان (الخرطوم)، اطلب السيرة الذاتية للمستشار المشرف وفريق المشروع، وتحقق من التراخيص والاعتمادات لدى الجهات المعنية."
-                    : "Before hiring an engineering consultancy in Sharjah, Ajman, or Khartoum, ask for the CVs of the project lead and team, and verify their licences and credentials with the relevant authorities."}
-                </aside>
               </section>
             </div>
           </div>
