@@ -3,6 +3,10 @@ https://www.sabirelsir.ae/services
 https://www.sabirelsir.ae/about
 https://www.sabirelsir.ae/contact
 https://www.sabirelsir.ae/faq
+https://www.sabirelsir.ae/areas
+https://www.sabirelsir.ae/areas/sharjah
+https://www.sabirelsir.ae/areas/ajman
+https://www.sabirelsir.ae/areas/khartoum
 https://www.sabirelsir.ae/blog/building-approval-stages-sharjah-ajman
 https://www.sabirelsir.ae/blog
 https://www.sabirelsir.ae/blog/structural-rehabilitation-assessment-khartoum

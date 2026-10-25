@@ -24,6 +24,11 @@ i18n
           "Our Team": "Our Team",
           "Mission & Vision": "Mission & Vision",
           "Our Story": "Our Story",
+          Areas: "Areas",
+          "Areas We Serve": "Areas We Serve",
+          "Sharjah UAE": "Sharjah, UAE",
+          "Ajman UAE": "Ajman, UAE",
+          "Khartoum Sudan": "Khartoum, Sudan",
         },
       },
       ar: {
@@ -182,6 +187,10 @@ i18n
           "Interior Design": "التصميم الداخلي",
           "General Buildings": "تصميم المباني العامة ",
           "Khartoum Sudan": "الخرطوم -السودان",
+          Areas: "المناطق",
+          "Areas We Serve": "المناطق التي نخدمها",
+          "Sharjah UAE": "الشارقة، الإمارات العربية المتحدة",
+          "Ajman UAE": "عجمان، الإمارات العربية المتحدة",
           "Saturday to Thursday: 9:00 AM to 5:00 PM":
             "السبت إلى الخميس: 9:00 صباحا إلى 5:00 مساء",
           "Sharjah-Almajaz(1)- Balrasheed Tower (1)-Floor 22 - office 2203":

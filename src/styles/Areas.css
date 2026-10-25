@@ -1,0 +1,248 @@
+.areas-page,
+.area-page {
+  --areas-ink: #202923;
+  --areas-muted: #68736b;
+  --areas-green: #315746;
+  --areas-line: #dfe4dc;
+  color: var(--areas-ink);
+}
+
+.areas-inner {
+  width: min(100% - 48px, 1020px);
+  margin-inline: auto;
+}
+
+.areas-intro,
+.area-hero {
+  padding: clamp(52px, 8vw, 94px) 0 clamp(38px, 6vw, 64px);
+  border-bottom: 1px solid var(--areas-line);
+  background: #eef1e9;
+}
+
+.areas-eyebrow,
+.areas-card-country {
+  margin: 0 0 12px;
+  color: var(--areas-green);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.areas-eyebrow {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.areas-intro h1,
+.area-hero h1 {
+  margin: 0;
+  color: var(--areas-ink);
+  font-size: clamp(34px, 5vw, 54px);
+  font-weight: 600;
+  line-height: 1.16;
+}
+
+.areas-intro > .areas-inner > p:last-child,
+.area-summary {
+  max-width: 760px;
+  margin: 18px 0 0;
+  color: var(--areas-muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Index page cards */
+.areas-grid {
+  width: min(100% - 48px, 1020px);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding-block: clamp(38px, 6vw, 60px) clamp(52px, 8vw, 90px);
+}
+
+.areas-card {
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  border: 1px solid var(--areas-line);
+  border-radius: 12px;
+  background: #fff;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.areas-card:hover {
+  box-shadow: 0 10px 30px rgba(32, 41, 35, 0.08);
+  transform: translateY(-2px);
+}
+
+.areas-card-country {
+  margin-bottom: 8px;
+}
+
+.areas-card h2 {
+  margin: 0;
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.areas-card h2 a {
+  color: var(--areas-ink);
+  text-decoration: none;
+}
+
+.areas-card h2 a:hover,
+.areas-card h2 a:focus-visible {
+  color: var(--areas-green);
+}
+
+.areas-card-blurb {
+  margin: 12px 0 20px;
+  color: var(--areas-muted);
+  font-size: 15px;
+  line-height: 1.75;
+  flex-grow: 1;
+}
+
+.areas-card-link,
+.area-cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--areas-green);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.areas-card-link:focus-visible,
+.area-cta-link:focus-visible {
+  outline: 2px solid #8b9e73;
+  outline-offset: 4px;
+}
+
+.areas-page[dir="rtl"] .areas-card-link span,
+.area-page[dir="rtl"] .area-cta-link span {
+  transform: scaleX(-1);
+}
+
+/* Detail page */
+.area-breadcrumb {
+  margin-bottom: 20px;
+  color: var(--areas-muted);
+  font-size: 14px;
+}
+
+.area-breadcrumb a {
+  color: var(--areas-green);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.area-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.area-body {
+  padding-block: clamp(38px, 6vw, 60px) clamp(52px, 8vw, 90px);
+}
+
+.area-body section {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--areas-line);
+}
+
+.area-body section:last-child {
+  border-bottom: 0;
+}
+
+.area-body h2 {
+  margin: 0 0 18px;
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.area-services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.area-services-list li {
+  position: relative;
+  padding-inline-start: 22px;
+  color: var(--areas-ink);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.area-services-list li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #8b9e73;
+}
+
+.area-points-list {
+  margin: 0;
+  padding-inline-start: 22px;
+  color: var(--areas-muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.area-points-list li + li {
+  margin-top: 8px;
+}
+
+.area-office {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.area-office-copy p {
+  color: var(--areas-muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.area-cta-text {
+  margin-top: 20px;
+}
+
+.area-cta-link {
+  margin-top: 6px;
+  font-size: 15px;
+}
+
+.area-office-map iframe {
+  border-radius: 12px;
+}
+
+@media (max-width: 700px) {
+  .areas-inner,
+  .areas-grid {
+    width: min(100% - 32px, 1020px);
+  }
+
+  .areas-intro,
+  .area-hero {
+    padding-block: 44px 36px;
+  }
+
+  .area-office {
+    grid-template-columns: 1fr;
+  }
+}

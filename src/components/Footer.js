@@ -3,11 +3,13 @@ import "../styles/Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faTiktok } from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
 import { faSnapchatGhost } from "@fortawesome/free-brands-svg-icons";
 
 import { useTranslation } from "react-i18next";
+import { getWhatsAppLink } from "../data/siteInfo";
 
 function Footer() {
   const { t } = useTranslation();
@@ -40,6 +42,13 @@ function Footer() {
             <Link to="/Contact">{t("Ajman UAE")}</Link>
             <Link to="/Contact">{t("Khartoum Sudan")}</Link>
           </div>
+          <div className="footer-link-items">
+            <h2>{t("Areas We Serve")}</h2>
+            <Link to="/areas">{t("Areas We Serve")}</Link>
+            <Link to="/areas/sharjah">{t("Sharjah UAE")}</Link>
+            <Link to="/areas/ajman">{t("Ajman UAE")}</Link>
+            <Link to="/areas/khartoum">{t("Khartoum Sudan")}</Link>
+          </div>
         </div>
       </div>
       <section className="social-media">
@@ -49,6 +58,15 @@ function Footer() {
             Sabir Elsir Engineering Consultants © {new Date().getFullYear()}
           </small>
           <div className="social-icons">
+            <Link
+              className="social-icon-link whatsapp"
+              to={getWhatsAppLink()}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
+              <FontAwesomeIcon icon={faWhatsapp} />
+            </Link>
             <Link
               className="social-icon-link snapchat"
               to="https://www.snapchat.com/add/dr.sabiralsir"

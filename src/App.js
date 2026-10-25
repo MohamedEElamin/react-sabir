@@ -12,7 +12,10 @@ import BlogIndex from "./components/BlogIndex";
 import KhartoumRehabilitationArticle from "./components/KhartoumRehabilitationArticle";
 import ClimateDesignArticle from "./components/ClimateDesignArticle";
 import VideoWatchPage from "./components/VideoWatchPage";
+import AreasIndex from "./components/AreasIndex";
+import AreaPage from "./components/AreaPage";
 import Footer from "./components/Footer";
+import WhatsAppFloat from "./components/WhatsAppFloat";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -28,6 +31,22 @@ function App() {
               <Route exact path="/services" element={<Services />} />
               <Route exact path="/contact" element={<Contact />} />
               <Route exact path="/faq" element={<FAQ />} />
+              <Route exact path="/areas" element={<AreasIndex />} />
+              <Route
+                exact
+                path="/areas/sharjah"
+                element={<AreaPage slug="sharjah" />}
+              />
+              <Route
+                exact
+                path="/areas/ajman"
+                element={<AreaPage slug="ajman" />}
+              />
+              <Route
+                exact
+                path="/areas/khartoum"
+                element={<AreaPage slug="khartoum" />}
+              />
               <Route
                 exact
                 path="/videos/modern-villa-design"
@@ -53,6 +72,7 @@ function App() {
           </main>
         </div>
         <Footer />
+        <WhatsAppFloat />
       </Router>
     </>
   );

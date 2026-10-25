@@ -209,13 +209,16 @@ const Map = ({ location }) => {
                   <br /> <br />
                   <h3>{t("Email")}</h3>
                   {/* <h4>sabirelgabri@sabirelsir.ae </h4> */}
-                  <h4>sabir.elsir.eng.cons@gmail.com</h4>
+                  <h4>
+                    <a href="mailto:info@sabirelsir.ae">info@sabirelsir.ae</a>
+                  </h4>
                   <br />
                   <br />
                   <h3>{t("Phone")}</h3>
                   <h4>
-                    +971552771408 <br />
-                    +974547099448
+                    <a href="tel:+971552771408">+971 55 277 1408</a>
+                    <br />
+                    <a href="tel:+971565393256">+971 56 539 3256</a>
                   </h4>
                 </Card.Body>
               </div>

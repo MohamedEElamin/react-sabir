@@ -23,7 +23,7 @@ const Contact = () => {
         <meta
           name="description"
           content=" مكتب صابر السر الاستشاري في إماره الشارقه الإمارات المجاز1 برج الرشيد1 مكتب 2023
-          Contact us: sabir.elsir.eng.cons@gmail.com, Almajaz(1)-Balrasheed Tower(1), office 2203 Sharjah, +971552771408. "
+          Contact us: info@sabirelsir.ae, Almajaz(1)-Balrasheed Tower(1), office 2203 Sharjah, +971552771408, +971565393256. "
         ></meta>
         <meta
           name="description"
