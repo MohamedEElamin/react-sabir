@@ -215,7 +215,7 @@ const Map = ({ location }) => {
                   <br />
                   <br />
                   <h3>{t("Phone")}</h3>
-                  <h4>
+                  <h4 dir="ltr">
                     <a href="tel:+971552771408">+971 55 277 1408</a>
                     <br />
                     <a href="tel:+971565393256">+971 56 539 3256</a>
