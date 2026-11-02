@@ -85,7 +85,7 @@ function Footer() {
             </Link>
             <Link
               className="social-icon-link tiktok"
-              to="https://www.tiktok.com/@sabirelsirengineeringcon"
+              to="https://www.tiktok.com/@sabirelsir?_r=1&_t=ZP-9B3bOqkYd2s"
               target="_blank"
               aria-label="TikTok"
             >
@@ -93,7 +93,7 @@ function Footer() {
             </Link>
             <Link
               className="social-icon-link instagram"
-              to="https://www.instagram.com/sabir.elsir.eng.cons/?hl=en"
+              to="https://www.instagram.com/sabirelsir/?hl=en"
               target="_blank"
               aria-label="Instagram"
             >
