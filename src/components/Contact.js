@@ -34,7 +34,7 @@ const Contact = () => {
           content="اتصال الاستشارات الهندسية، شركة صابر السر، مهندسون في الشارقة، الاستشارات الهندسية الإمارات"
         />
 
-        <link rel="canonical" href="https://www.sabirelsir.ae/Contact"></link>
+        <link rel="canonical" href="https://www.sabirelsir.ae/contact"></link>
         <meta name="language" content="AR, EN"></meta>
       </Helmet>
 
