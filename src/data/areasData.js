@@ -8,7 +8,7 @@ const areas = [
       name: "Sharjah",
       country: "United Arab Emirates",
       metaTitle:
-        "Engineering Consultants in Sharjah | Sabir Elsir Engineering Consultants",
+        "Civil Engineering Consultants in Sharjah | Sabir Elsir",
       metaDescription:
         "Licensed engineering consultancy in Sharjah since 2001. Architectural design, structural engineering, MEP, municipality approvals, and site supervision from our Al Majaz head office.",
       eyebrow: "Areas we serve · United Arab Emirates",
@@ -93,7 +93,7 @@ const areas = [
       name: "Ajman",
       country: "United Arab Emirates",
       metaTitle:
-        "Engineering Consultants in Ajman | Sabir Elsir Engineering Consultants",
+        "Civil Engineering Consultants in Ajman | Sabir Elsir",
       metaDescription:
         "Engineering consultancy in Ajman for villa, residential, and commercial projects. Architectural and structural design, Ajman Municipality approvals, and site supervision from our Al Nakhil office.",
       eyebrow: "Areas we serve · United Arab Emirates",

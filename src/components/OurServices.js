@@ -11,7 +11,7 @@ const OurServices = () => {
   return (
     <>
       <Helmet>
-        <title>الخدمات الهندسية | شركة صابر السر</title>
+        <title>Engineering Consultant Services in Sharjah & Ajman</title>
         <meta
           name="description"
           content="تعرّف على خدمات الاستشارات الهندسية، التصميم المعماري، والإشراف على المشاريع في الإمارات والسودان منذ عام 2001."

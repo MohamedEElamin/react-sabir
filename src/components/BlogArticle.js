@@ -7,7 +7,7 @@ import "../styles/BlogArticle.css";
 const articleContent = {
   en: {
     title:
-      "How to Navigate Engineering Approvals & Permits in Sharjah and Ajman (2026 Guide) | Sabir Elsir Engineering Consultants",
+      "Building Approval Stages in Sharjah & Ajman (Guide) | Sabir Elsir Engineering Consultants",
     description:
       "A 2026 guide to engineering approvals, civil defense NOCs, local building permits, and structural design compliance in Sharjah and Ajman, UAE.",
     eyebrow: "Engineering guide · UAE",

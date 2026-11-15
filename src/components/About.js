@@ -6,7 +6,7 @@ import "../styles/PageLayout.css";
 
 const aboutContent = {
   en: {
-    title: "About Sabir Elsir Engineering Consultants",
+  title: "About Sabir Elsir – Engineering Consultants, Sharjah",
     description:
       "Learn about Sabir Elsir Engineering Consultants, established in 2001 and serving projects in Sharjah, Ajman, and Khartoum through architectural and structural design, engineering supervision, and project management.",
     introTitle:
