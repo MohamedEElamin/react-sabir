@@ -37,7 +37,7 @@ function VideoWatchPage() {
     name: content.name,
     description: content.description,
     thumbnailUrl: ["https://i.ytimg.com/vi/kDAkQ_-998s/hqdefault.jpg"],
-    uploadDate: "2024-07-18",
+    uploadDate: "2024-07-18T17:15:01-07:00",
     contentUrl: "https://www.youtube.com/watch?v=kDAkQ_-998s",
     embedUrl: "https://www.youtube-nocookie.com/embed/kDAkQ_-998s",
     publisher: {
