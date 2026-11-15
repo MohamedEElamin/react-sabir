@@ -83,12 +83,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/About" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
               {t("About")}
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/Contact" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>
               {t("Contact")}
             </Link>
           </li>

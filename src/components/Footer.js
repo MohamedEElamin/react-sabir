@@ -20,9 +20,9 @@ function Footer() {
           <div className="footer-link-items">
             <h2>{t("About Us")}</h2>
 
-            <Link to="/About">{t("Vision")}</Link>
-            <Link to="/About">{t("Mission")}</Link>
-            <Link to="/About">{t("About Us")}</Link>
+            <Link to="/about">{t("Vision")}</Link>
+            <Link to="/about">{t("Mission")}</Link>
+            <Link to="/about">{t("About Us")}</Link>
           </div>
           <div className="footer-link-wrapper">
             <div className="footer-link-items">
@@ -37,10 +37,10 @@ function Footer() {
 
           <div className="footer-link-items">
             <h2>{t("Contact Us")}</h2>
-            <Link to="/Contact">{t("Contact")}</Link>
-            <Link to="/Contact">{t("Sharjah UAE")}</Link>
-            <Link to="/Contact">{t("Ajman UAE")}</Link>
-            <Link to="/Contact">{t("Khartoum Sudan")}</Link>
+            <Link to="/contact">{t("Contact")}</Link>
+            <Link to="/contact">{t("Sharjah UAE")}</Link>
+            <Link to="/contact">{t("Ajman UAE")}</Link>
+            <Link to="/contact">{t("Khartoum Sudan")}</Link>
           </div>
           <div className="footer-link-items">
             <h2>{t("Areas We Serve")}</h2>
