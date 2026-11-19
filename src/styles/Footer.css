@@ -74,27 +74,6 @@
   margin: 18px auto 0;
 }
 
-.social-logo {
-  display: block;
-  width: auto;
-  max-width: 150px;
-  max-height: 56px;
-  object-fit: contain;
-}
-
-.footer-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-.website-by {
-  color: #aeb9af;
-  font-size: 12px;
-  white-space: nowrap;
-}
-
 .website-rights {
   margin: 0;
   color: #aeb9af;

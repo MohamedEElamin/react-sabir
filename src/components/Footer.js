@@ -53,15 +53,6 @@ function Footer() {
       </div>
       <section className="social-media">
         <div className="social-media-wrap">
-          <div className="footer-logo">
-            <span className="website-by">Website by</span>
-            <img
-              src="/images/Modus Code Developer Logo.png"
-              alt="Modus Code Developer"
-              className="social-logo"
-            />
-          </div>
-          <div className="footer-log"></div>
           <small className="website-rights">
             Sabir Elsir Engineering Consultants © {new Date().getFullYear()}
           </small>
