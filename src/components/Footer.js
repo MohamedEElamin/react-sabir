@@ -29,15 +29,13 @@ function Footer() {
                 : "Founder profile"}
             </Link>
           </div>
-          <div className="footer-link-wrapper">
-            <div className="footer-link-items">
-              <h2>{t("Services")}</h2>
-              <Link to="/services">{t("Architectural")}</Link>
-              <Link to="/services">{t("Civil")}</Link>
-              <Link to="/services">{t("Projects Management")}</Link>
-              <Link to="/services">{t("Interior Design")}</Link>
-              <Link to="/services">{t("General Buildings")}</Link>
-            </div>
+          <div className="footer-link-items">
+            <h2>{t("Services")}</h2>
+            <Link to="/services">{t("Architectural")}</Link>
+            <Link to="/services">{t("Civil")}</Link>
+            <Link to="/services">{t("Projects Management")}</Link>
+            <Link to="/services">{t("Interior Design")}</Link>
+            <Link to="/services">{t("General Buildings")}</Link>
           </div>
 
           <div className="footer-link-items">
@@ -52,7 +50,11 @@ function Footer() {
             <Link to="/areas">{t("Areas We Serve")}</Link>
             <Link to="/areas/sharjah">{t("Sharjah UAE")}</Link>
             <Link to="/areas/ajman">{t("Ajman UAE")}</Link>
-            <Link to="/areas/khartoum">{t("Khartoum Sudan")}</Link>
+            <Link to="/areas/khartoum">
+              {i18n.language.startsWith("ar")
+                ? "الخرطوم"
+                : t("Khartoum Sudan")}
+            </Link>
           </div>
         </div>
       </div>

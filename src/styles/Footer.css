@@ -17,12 +17,8 @@
 .footer-link-wrapper {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 48px;
-}
-
-.footer-link-wrapper > .footer-link-wrapper {
-  display: contents;
 }
 
 .footer-link-items {
