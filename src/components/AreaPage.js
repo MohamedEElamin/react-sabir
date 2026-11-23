@@ -1,8 +1,8 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import areas from "../data/areasData";
+import SEO from "./SEO";
 import "../styles/Areas.css";
 
 function AreaPage({ slug }) {
@@ -49,8 +49,7 @@ function AreaPage({ slug }) {
         name: `Sabir Elsir Engineering Consultants – ${content.name}`,
         provider: {
           "@type": "Organization",
-          name: "Sabir Elsir Engineering Consultants",
-          url: "https://www.sabirelsir.ae/",
+          "@id": "https://www.sabirelsir.ae/#organization",
         },
         areaServed: [content.name, content.country],
         description: content.metaDescription,
@@ -58,21 +57,46 @@ function AreaPage({ slug }) {
       },
     ],
   };
+  if (content.assetValuation) {
+    const professionalService = area.professionalService;
+    structuredData["@graph"].push(
+      {
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": "https://www.sabirelsir.ae/#organization",
+        name: professionalService.name,
+        url: "https://www.sabirelsir.ae/",
+        telephone: professionalService.telephone,
+        email: professionalService.email,
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: professionalService.addressLocality,
+          addressCountry: professionalService.addressCountry,
+        },
+      },
+      {
+        "@type": "Service",
+        "@id": `${canonical}#asset-valuation`,
+        name: content.assetValuation.sectionTitle,
+        serviceType: "Asset valuation",
+        provider: {
+          "@id": "https://www.sabirelsir.ae/#organization",
+        },
+        areaServed: content.country,
+        description: content.assetValuation.serviceDescription,
+        url: canonical,
+      },
+    );
+  }
 
   return (
     <>
-      <Helmet>
-        <html lang={language} />
-        <title>{content.metaTitle}</title>
-        <meta name="description" content={content.metaDescription} />
-        <link rel="canonical" href={canonical} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={content.heading} />
-        <meta property="og:description" content={content.metaDescription} />
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      </Helmet>
+      <SEO
+        title={content.metaTitle}
+        description={content.metaDescription}
+        canonical={canonical}
+        language={language}
+        structuredData={structuredData}
+      />
 
       <div className="area-page" dir={isArabic ? "rtl" : "ltr"}>
         <header className="area-hero">
@@ -107,13 +131,57 @@ function AreaPage({ slug }) {
             </ul>
           </section>
 
+          {content.assetValuation && (
+            <section
+              className="area-asset-valuation"
+              aria-labelledby="area-asset-valuation"
+            >
+              <h2 id="area-asset-valuation">
+                {content.assetValuation.sectionTitle}
+              </h2>
+              {content.assetValuation.paragraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+              <p>
+                {`${content.assetValuation.officialLabel} `}<a
+                  href="https://cbos.gov.sd/ar/content/قائمة-بيوت-الخبرة-الاستشارية-المعتمدة-لدى-بنك-السودان-المركزي"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {content.assetValuation.officialLinkLabel}
+                </a>
+              </p>
+              <h3>{content.assetValuation.contactTitle}</h3>
+              <ul className="asset-valuation-contact-list">
+                <li>
+                  {`${content.assetValuation.phoneLabel}: `}<a
+                    href={`tel:${area.professionalService.telephone}`}
+                  >
+                    {area.professionalService.telephone}
+                  </a>
+                </li>
+                <li>
+                  {`${content.assetValuation.emailLabel}: `}<a
+                    href={`mailto:${area.professionalService.email}`}
+                  >
+                    {area.professionalService.email}
+                  </a>
+                </li>
+                <li>
+                  {`${content.assetValuation.directorLabel}: ${area.professionalService.director}`}
+                </li>
+              </ul>
+            </section>
+          )}
+
           <section className="area-office" aria-labelledby="area-office">
             <div className="area-office-copy">
               <h2 id="area-office">{content.officeTitle}</h2>
               <p>{content.officeAddress}</p>
               <p className="area-cta-text">{content.ctaText}</p>
               <Link className="area-cta-link" to="/contact">
-                {content.ctaLink} <span aria-hidden="true">↗</span>
+                {`${content.ctaLink} `}
+                <span aria-hidden="true">↗</span>
               </Link>
             </div>
             <div className="area-office-map">

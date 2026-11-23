@@ -41,13 +41,17 @@
   line-height: 1.16;
 }
 
-.areas-intro > .areas-inner > p:last-child,
+.areas-intro > .areas-inner > p:not(.areas-eyebrow),
 .area-summary {
   max-width: 760px;
   margin: 18px 0 0;
   color: var(--areas-muted);
   font-size: 16px;
   line-height: 1.8;
+}
+
+.areas-intro > .areas-inner > p:not(.areas-eyebrow) + p:not(.areas-eyebrow) {
+  margin-top: 12px;
 }
 
 /* Index page cards */
@@ -203,6 +207,33 @@
 
 .area-points-list li + li {
   margin-top: 8px;
+}
+
+.area-asset-valuation > p {
+  color: var(--areas-muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.area-asset-valuation a {
+  color: var(--areas-green);
+  text-underline-offset: 3px;
+}
+
+.area-asset-valuation h3 {
+  margin: 24px 0 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.asset-valuation-contact-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  color: var(--areas-muted);
+  font-size: 15px;
+  list-style: none;
 }
 
 .area-office {

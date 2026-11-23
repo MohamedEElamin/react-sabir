@@ -1,12 +1,12 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import SEO from "./SEO";
 import "../styles/FAQ.css";
 
 const faqContent = {
   en: {
-    title: "Frequently Asked Questions | Sabir Elsir Engineering Consultants",
+    title: "Engineering FAQs | Sabir Elsir Consultants",
     description:
       "Answers about engineering design, project supervision, building permits, and consultancy services in Sharjah, Ajman, and Khartoum.",
     eyebrow: "Client information",
@@ -145,21 +145,13 @@ function FAQ() {
 
   return (
     <>
-      <Helmet>
-        <html lang={language} />
-        <title>{content.title}</title>
-        <meta name="description" content={content.description} />
-        <link rel="canonical" href={content.canonical} />
-        <link rel="alternate" hrefLang="en" href={content.canonical} />
-        <link rel="alternate" hrefLang="ar" href={content.canonical} />
-        <link rel="alternate" hrefLang="x-default" href={content.canonical} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={content.title} />
-        <meta property="og:description" content={content.description} />
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      </Helmet>
+      <SEO
+        title={content.title}
+        description={content.description}
+        canonical={content.canonical}
+        language={language}
+        structuredData={structuredData}
+      />
 
       <div className="faq-page" dir={language === "ar" ? "rtl" : "ltr"}>
         <header className="faq-intro">

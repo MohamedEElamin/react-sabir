@@ -1,11 +1,64 @@
 import "../styles/Cards.css";
 import { useTranslation } from "react-i18next";
 import React from "react";
-import { Link } from "react-router-dom";
-import "../styles/VideoWatchPage.css";
 
 function Grid() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
+  const isArabic = i18n.language?.startsWith("ar") === true;
+  const approvalFact = isArabic
+    ? {
+        label: "خدمات الاعتماد",
+        value:
+          "متابعة تنسيق إجراءات اعتماد المخططات والتصاريح الهندسية لدى الجهات المختصة وفق متطلبات كل مشروع",
+      }
+    : {
+        label: "Approval coordination",
+        value:
+          "Coordination of drawing approvals and engineering permits with the relevant authorities according to each project's requirements",
+      };
+  const companyFacts = isArabic
+    ? [
+        { label: "اسم الشركة", value: "صابر السر للاستشارات الهندسية" },
+        { label: "سنة التأسيس", value: "2001" },
+        { label: "الخبرة المهنية", value: "أكثر من 25 عاماً" },
+        {
+          label: "مجال العمل",
+          value: "الاستشارات الهندسية والتصميم المعماري والإشراف الهندسي",
+        },
+        {
+          label: "المواقع",
+          value:
+            "الشارقة وعجمان، الإمارات العربية المتحدة، والخرطوم، السودان",
+        },
+        {
+          label: "التخصصات",
+          value:
+            "الهندسة المعمارية والمدنية والإنشائية والميكانيكية والكهربائية، والتصميم الداخلي وإدارة المشاريع",
+        },
+      ]
+    : [
+        {
+          label: "Company name",
+          value: "Sabir Elsir Engineering Consultants",
+        },
+        { label: "Year established", value: "2001" },
+        { label: "Professional experience", value: "More than 25 years" },
+        {
+          label: "Field",
+          value:
+            "Engineering consultancy, architectural design, and engineering supervision",
+        },
+        {
+          label: "Locations",
+          value:
+            "Sharjah and Ajman, United Arab Emirates, and Khartoum, Sudan",
+        },
+        {
+          label: "Specialties",
+          value:
+            "Architectural, civil, structural, mechanical, and electrical engineering; interior design; and project management",
+        },
+      ];
   return (
     <div className="home-page">
       {/* Articles Section */}
@@ -17,13 +70,13 @@ function Grid() {
               <div className="card-body">
                 <h2 className="card-title home-section-heading">
                   {i18n.language.startsWith("ar")
-                    ? "تعاون مع نخبة الاستشاريين الهندسيين لحلول مبتكرة وقابلة للتوسع"
-                    : "Partner with Industry-Leading Engineering Consultants for Innovative, Scalable Solutions"}
+                    ? "خدمات التصميم المعماري والهندسة الإنشائية والإشراف الهندسي"
+                    : "Architectural Design, Structural Engineering & Engineering Supervision Services"}
                 </h2>
                 <p className="card-text">
                   {i18n.language.startsWith("ar")
-                    ? "بصفتنا من شركات الاستشارات الهندسية الرائدة في الشارقة وعجمان، نقدم حلولاً متكاملة للمشاريع من بدايتها حتى إنجازها، مع خدمات التصميم الهندسي واستيفاء متطلبات الاعتماد لدى بلديتي الشارقة وعجمان. يضم فريقنا متعدد التخصصات خبراء في التصميم المعماري والهندسة الإنشائية وهندسة الميكانيكا والكهرباء والسباكة والهندسة المدنية، لخدمة مشاريع المباني التجارية والفلل. كما نقدم التصميم الداخلي وإدارة المشاريع، ونتابع إجراءات الموافقات لدى الجهات المختصة، بما في ذلك شهادات عدم الممانعة من هيئة كهرباء ومياه وغاز الشارقة ومتطلبات الدفاع المدني. ويتولى فريقنا المعتمد تنسيق خدمات التصميم والإشراف الهندسي ومتابعة تنفيذ الأعمال في الشارقة وعجمان، من مرحلة التخطيط وحتى اكتمال المشروع."
-                    : "As one of the best engineering consultants in Sharjah and a leading engineering consultancy in Ajman, our firm delivers complete solutions from project planning through completion, including engineering design and approval requirements for Sharjah and Ajman municipalities. Our multidisciplinary team includes architectural, structural, MEP, and civil engineering consultants, supporting commercial building and villa projects. We also provide interior design and project management, and coordinate authority approvals, including SEWA no-objection certificates and Civil Defence requirements. Our team provides engineering design and construction supervision in Sharjah and Ajman, guiding each project from its initial plans through completion."}
+                    ? "تُعد شركة صابر السر للاستشارات الهندسية من شركات الاستشارات الهندسية العاملة في الشارقة وعجمان، بخبرة مهنية تمتد لأكثر من 25 عاماً منذ تأسيسها عام 2001. نقدم خدمات التصميم المعماري والهندسة الإنشائية والمدنية وهندسة الميكانيكا والكهرباء والسباكة (MEP)، إلى جانب التصميم الداخلي والتصميم ثلاثي الأبعاد وإدارة المشاريع والإشراف الهندسي. نعمل مع أصحاب المشاريع السكنية والتجارية والصناعية لتطوير حلول هندسية متكاملة تراعي متطلبات المشروع والمعايير الفنية والاشتراطات التنظيمية المعمول بها. كما نتابع تنسيق إجراءات اعتماد المخططات والتصاريح الهندسية لدى الجهات المختصة، بما في ذلك بلدية مدينة الشارقة وبلدية عجمان وهيئة كهرباء ومياه وغاز الشارقة (SEWA) والدفاع المدني، وفقاً لطبيعة المشروع ومتطلباته. هدفنا تقديم خدمات استشارية هندسية تجمع بين جودة التصميم والدقة الفنية وكفاءة التنفيذ، من مرحلة التخطيط والتصميم وحتى الإشراف على إنجاز المشروع."
+                    : "Sabir Elsir Engineering Consultants is an engineering consultancy serving Sharjah and Ajman, with over 25 years of professional experience since its establishment in 2001. We provide architectural design, structural and civil engineering, mechanical, electrical, and plumbing (MEP) engineering, as well as interior and 3D design, project management, and engineering supervision. We work with residential, commercial, and industrial project owners to develop integrated engineering solutions that take project requirements, technical standards, and applicable regulations into account. We also coordinate drawing approvals and engineering permits with the relevant authorities, including Sharjah City Municipality, Ajman Municipality, Sharjah Electricity, Water and Gas Authority (SEWA), and Civil Defence, according to the nature and requirements of each project. Our aim is to provide consultancy services that combine design quality, technical accuracy, and efficient delivery, from planning and design through supervision of project completion."}
                 </p>
               </div>
             </div>
@@ -33,13 +86,13 @@ function Grid() {
               <section className="card-body engineering-consultants-qualifications">
                 <h2 className="home-section-heading">
                   {i18n.language.startsWith("ar")
-                    ? "استشارات هندسية وتصميم مبانٍ متكامل في الشارقة وعجمان"
-                    : "Leading Engineering & Building Design Consultancy in Sharjah & Ajman"}
+                    ? "استشارات هندسية للمشاريع السكنية والتجارية والصناعية"
+                    : "Engineering Consultancy for Residential, Commercial & Industrial Projects"}
                 </h2>
                 <p className="card-text">
                   {i18n.language.startsWith("ar")
-                    ? "بصفتنا جهة رائدة في إدارة المشاريع والاستشارات المتكاملة لتصميم المباني والإشراف عليها في الشارقة وعجمان، نقدم حلولاً هندسية شاملة في أنحاء دولة الإمارات. من المساكن الفاخرة المصممة حسب الطلب إلى المشاريع التجارية واسعة النطاق، يجمع فريقنا متعدد التخصصات بين العمارة المبتكرة والدقة الإنشائية الصارمة وضبط الجودة. سواء كنا نقدم خدمات الهندسة المدنية المتكاملة في عجمان أو نتخصص في تصميم الفلل في الشارقة، نرافق مشروعك في جميع مراحله، وندمج بسلاسة التصميم المفاهيمي والهندسة الإنشائية والتصميم الداخلي وإشراف الموقع المخصص، بصفتنا استشاريي إشراف موثوقين في عجمان."
-                    : "As a premier project management consultancy in Sharjah and a fully integrated building design and supervision consultancy in Ajman, our firm delivers complete, end-to-end engineering solutions across the United Arab Emirates. From bespoke luxury residences to expansive commercial developments, our multidisciplinary team blends innovative architecture with rigorous structural precision and quality control. Whether serving as complete civil engineering consultants in Ajman or specialized villa design consultants in Sharjah, we guide your project through every stage of development—seamlessly integrating concept design, structural engineering, interior design engineering consultancy in Ajman, and dedicated site oversight as trusted construction supervision consultants in Ajman."}
+                    ? "نقدم في شركة صابر السر للاستشارات الهندسية مجموعة متكاملة من الخدمات الهندسية لتصميم وتطوير المباني السكنية والتجارية والصناعية في الشارقة وعجمان. تشمل خدماتنا إعداد المخططات المعمارية والإنشائية، والتصميم المدني وأنظمة الميكانيكا والكهرباء والسباكة، وتصميم الفلل والمباني التجارية، والتصميم الداخلي ثلاثي الأبعاد، إضافة إلى إدارة المشاريع والإشراف الهندسي على أعمال التنفيذ. نحرص على تنسيق مختلف التخصصات الهندسية ضمن رؤية متكاملة تساعد على تحقيق التوازن بين المتطلبات المعمارية والسلامة الإنشائية والوظائف التشغيلية وجودة التصميم. كما نولي اهتماماً خاصاً بمتطلبات الجهات التنظيمية وإجراءات اعتماد المخططات الهندسية، مع متابعة التنسيق الفني للمشاريع وفق الأنظمة والاشتراطات المحلية. سواء كنت تخطط لبناء فيلا سكنية أو تطوير مبنى تجاري أو تنفيذ مشروع صناعي، فإن فريقنا يقدم الخبرة الفنية والدعم الاستشاري اللازمين في مختلف مراحل المشروع."
+                    : "At Sabir Elsir Engineering Consultants, we provide a range of integrated engineering services for the design and development of residential, commercial, and industrial buildings in Sharjah and Ajman. Our services include preparing architectural and structural drawings; civil design; mechanical, electrical, and plumbing systems; villa and commercial-building design; 3D interior design; project management; and engineering supervision during construction. We coordinate the different engineering disciplines within an integrated approach to help balance architectural requirements, structural safety, operational functions, and design quality. We also give particular attention to regulatory requirements and engineering-drawing approval procedures, coordinating project technical matters in accordance with local regulations. Whether you are planning a residential villa, developing a commercial building, or carrying out an industrial project, our team provides the technical expertise and consultancy support needed at each project stage."}
                 </p>
               </section>
             </div>
@@ -47,76 +100,70 @@ function Grid() {
         </div>
       </div>
 
-      <section className="home-video-promo">
-        <Link
-          className="home-video-thumbnail"
-          to="/videos/modern-villa-design"
-          aria-label={
-            i18n.language.startsWith("ar")
-              ? "شاهد فيديو تصميم فيلا حديثة"
-              : "Watch the modern villa design video"
-          }
-        >
-          <img
-            src="https://i.ytimg.com/vi/kDAkQ_-998s/hqdefault.jpg"
-            alt={
-              i18n.language.startsWith("ar")
-                ? "صورة مصغرة لفيديو تصميم فيلا حديثة"
-                : "Thumbnail for the modern villa design video"
-            }
-            loading="lazy"
-            width="480"
-            height="360"
-          />
-          <span className="home-video-play" aria-hidden="true">
-            ▶
-          </span>
-        </Link>
-        <div className="home-video-copy">
-          <p className="home-video-eyebrow">
-            {i18n.language.startsWith("ar") ? "من أعمالنا" : "Project video"}
-          </p>
-          <h2>
-            {i18n.language.startsWith("ar")
-              ? "تصميم فيلا حديثة"
-              : "Modern Villa Design"}
+      <section
+        className="home-company-facts"
+        aria-labelledby="home-company-facts-title"
+        dir={isArabic ? "rtl" : "ltr"}
+        lang={isArabic ? "ar" : "en"}
+      >
+        <section className="home-company-facts-group home-company-approvals">
+          <h2 className="home-section-heading">
+            {isArabic
+              ? "خدمات اعتماد المخططات والتنسيق مع الجهات المختصة"
+              : "Drawing Approval Services and Coordination with Relevant Authorities"}
           </h2>
-          <p>
-            {i18n.language.startsWith("ar")
-              ? "شاهد عرضاً لتصميم فيلا حديثة من صابر السر للاستشارات الهندسية."
-              : "Watch a modern villa design presentation by Sabir Elsir Engineering Consultants."}
-          </p>
-          <Link
-            className="home-video-watch-link"
-            to="/videos/modern-villa-design"
-          >
-            {i18n.language.startsWith("ar") ? "شاهد الفيديو" : "Watch video"}
-            <span aria-hidden="true">↗</span>
-          </Link>
-        </div>
+          <dl className="home-company-facts-grid">
+            <div className="home-company-fact" key={approvalFact.label}>
+              <dt>{approvalFact.label}</dt>
+              <dd>{approvalFact.value}</dd>
+            </div>
+          </dl>
+        </section>
+        <section className="home-company-facts-group">
+          <h2 className="home-section-heading">
+            {isArabic
+              ? "خبرة هندسية تمتد لأكثر من 25 عاماً"
+              : "More Than 25 Years of Engineering Experience"}
+          </h2>
+          <h3 id="home-company-facts-title" className="home-company-facts-title">
+            {isArabic
+              ? "تعرف على شركة صابر السر للاستشارات الهندسية"
+              : "About Sabir Elsir Engineering Consultants"}
+          </h3>
+          <dl className="home-company-facts-grid">
+            {companyFacts.map(({ label, value }) => (
+              <div className="home-company-fact" key={label}>
+                <dt>{label}</dt>
+                <dd>{value}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
       </section>
+
       <div className="container my-5">
         <div className="row">
           {/* Card 1 */}
           <div className="col-md-4 mb-4">
             <div className="card h-100">
               <img
-                src="images/modVilla2.jpg"
+                src="/images/modVilla2.jpg"
                 className="card-img-top"
                 alt="Modern Villa Design"
-                loading="eager"
+                loading="lazy"
                 width={400}
+                height={225}
               />
               <div className="card-body">
                 <h5 className="card-title">
                   {i18n.language.startsWith("ar")
-                    ? "تصميم فلل عصرية في الشارقة وعجمان | استشارات هندسية معمارية"
-                    : "Premier Modern Villa Design Services in Sharjah & Ajman | Expert Architectural Engineering"}
+                    ? "تصميم فلل عصرية في الشارقة وعجمان | تصميم معماري واستشارات هندسية متكاملة"
+                    : "Modern Villa Design in Sharjah & Ajman | Integrated Architectural Design & Engineering Consultancy"}
                 </h5>
                 <p className="card-text">
                   {i18n.language.startsWith("ar")
-                    ? "اكتشف أسلوب الحياة الفاخر مع خدمات تصميم الفلل العصرية حسب الطلب، المصممة للمشاريع السكنية في الشارقة وعجمان. بصفتنا مكتب استشارات هندسية في الإمارات، نمزج الاتجاهات المعمارية الحديثة وممارسات البناء المستدامة والأناقة العملية لإنشاء منازل مميزة ومراعية للبيئة. من الفكرة الأولية وتخطيط المساحات إلى موافقات البلدية والتصميم الإنشائي، ينسق فريقنا الهندسي والمعماري التصاميم بما يتوافق مع احتياجاتك وكود البناء والاعتبارات الثقافية المحلية. تواصل مع مستشارينا في الشارقة وعجمان لتحويل أرضك إلى منزل عصري مصمم للراحة والقيمة طويلة الأمد."
-                    : "Discover luxury living with our bespoke modern villa design services, tailored specifically for high-end residential projects across Sharjah and Ajman. As a trusted engineering consultancy in the UAE, we blend contemporary architectural trends, sustainable building practices, and functional elegance to craft visually striking, eco-friendly homes. From initial concept and space planning to local municipal authority approvals and structural engineering, our engineering and architecture team coordinates designs with UAE building codes and local cultural considerations. Contact our Sharjah and Ajman engineering consultants today to turn your plot into a custom modern sanctuary designed for luxury, comfort, and long-term value."}
+                    ? "تقدم شركة صابر السر للاستشارات الهندسية خدمات تصميم الفلل السكنية في الشارقة وعجمان، من خلال إعداد مخططات معمارية وهندسية تجمع بين التصميم العصري والوظائف العملية ومتطلبات الحياة العائلية. تبدأ خدماتنا بدراسة متطلبات المالك وطبيعة الأرض وتخطيط المساحات الداخلية والخارجية، مروراً بتصميم الواجهات المعمارية والتفاصيل الجمالية، وإعداد المخططات الإنشائية وتنسيق أنظمة الميكانيكا والكهرباء والسباكة (MEP). كما نهتم بتصميم الفلل وفق احتياجات كل مشروع، مع مراعاة الخصوصية والاعتبارات المعمارية المحلية وكفاءة استخدام المساحات والإضاءة والتهوية الطبيعية. ويتولى فريقنا الهندسي تنسيق التخصصات المختلفة ومتابعة إجراءات اعتماد المخططات لدى الجهات البلدية المختصة وفق الاشتراطات المعمول بها في الشارقة وعجمان. سواء كنت تخطط لبناء فيلا عصرية أو منزل عائلي بتصميم خاص، نقدم لك خدمات استشارية هندسية متكاملة تبدأ من الفكرة والتصميم وتستمر حتى استكمال المخططات الهندسية المطلوبة للمشروع."
+                    : "Sabir Elsir Engineering Consultants provides residential villa design services in Sharjah and Ajman, preparing architectural and engineering plans that combine contemporary design, practical functionality, and family living requirements. Our services begin with reviewing the owner's requirements and the characteristics of the plot, and planning indoor and outdoor spaces. They also include designing architectural facades and aesthetic details, preparing structural drawings, and coordinating mechanical, electrical, and plumbing (MEP) systems. We design villas to suit each project's needs, taking privacy, local architectural considerations, efficient use of space, and natural light and ventilation into account. Our engineering team coordinates the different disciplines and follows up on drawing approval procedures with the relevant municipal authorities in accordance with applicable requirements in Sharjah and Ajman. Whether you are planning a modern villa or a family home with a custom design, we provide integrated engineering consultancy from the initial concept and design through completion of the engineering drawings required for the project."}
                 </p>
               </div>
             </div>
@@ -128,33 +175,21 @@ function Grid() {
               <img
                 src="/images/P17-min.jpg"
                 alt="Mosque"
-                loading="eager "
+                loading="lazy"
                 className="card-img-top"
                 width={400}
+                height={225}
               />
               <div className="card-body">
                 <h5 className="card-title">
                   {i18n.language.startsWith("ar")
-                    ? "تصميم مساجد معمارية هادفة في الشارقة وعجمان | خدمات استشارات هندسية متكاملة"
-                    : "Purposeful Mosque Design in Sharjah & Ajman | Integrated Engineering Consultancy"}
+                    ? "تصميم مساجد في الشارقة وعجمان | استشارات هندسية ومعمارية متكاملة"
+                    : "Mosque Design in Sharjah & Ajman | Integrated Architectural and Engineering Consultancy"}
                 </h5>
                 <p className="card-text">
-                  {i18n.language.startsWith("ar") ? (
-                    <>
-                      بصفتنا مكتب استشارات هندسية يخدم الشارقة وعجمان، نقدم
-                      خدمات <strong>تصميم مساجد</strong> تجمع بين أصالة العمارة
-                      الإسلامية والحلول الهندسية الحديثة. نراعي اتجاه القبلة
-                      والصوتيات الداخلية وتوزيع الإضاءة الطبيعية لتهيئة أجواء
-                      روحانية هادئة. وينسق فريقنا مراحل المشروع، من التصميم
-                      المعماري والإنشائي للقباب والمآذن إلى تجهيز معاملات
-                      الاعتماد لدى الجهات الحكومية والجهات المختصة بالأوقاف في
-                      الشارقة وعجمان، بحسب متطلبات المشروع. تواصل مع فريقنا
-                      الهندسي لمناقشة تصميم مسجد مستدام يعكس قيم المجتمع ويراعي
-                      متطلبات العبادة.
-                    </>
-                  ) : (
-                    "As an engineering consultancy serving Sharjah and Ajman, we provide purposeful mosque design that brings together Islamic architectural heritage and modern engineering solutions. Our team considers qibla orientation, interior acoustics, and natural lighting to support a calm spiritual environment. We coordinate project stages from architectural and structural design for domes and minarets to preparing approval submissions for relevant government and Awqaf authorities in Sharjah and Ajman, as applicable to the project. Contact our engineering team to discuss a sustainable mosque design that reflects community values and supports the needs of worshippers."
-                  )}
+                  {i18n.language.startsWith("ar")
+                    ? "تقدم شركة صابر السر للاستشارات الهندسية خدمات التصميم المعماري والهندسي للمساجد في الشارقة وعجمان، مع الجمع بين أصالة العمارة الإسلامية ومتطلبات التصميم المعماري والإنشائي الحديث. تشمل خدماتنا إعداد المخططات المعمارية للمساجد، وتخطيط قاعات الصلاة ومواقع المحراب والمنبر، ومراعاة اتجاه القبلة وتوزيع المساحات المخصصة للمصلين ومرافق الوضوء. كما تشمل الأعمال التصميم الإنشائي للقباب والمآذن، وتنسيق أنظمة الميكانيكا والكهرباء والتكييف والتهوية والإضاءة والصوتيات، مع الاهتمام بمتطلبات السلامة وسهولة الوصول. نحرص على تنسيق مختلف التخصصات الهندسية وإعداد المخططات وفق متطلبات المشروع والاشتراطات التنظيمية المعمول بها، مع متابعة إجراءات الاعتماد لدى الجهات المختصة، بما في ذلك الجهات البلدية والأوقاف عند الاقتضاء. نسعى إلى تقديم تصاميم مساجد تجمع بين الهوية الإسلامية والوظائف العملية والجودة الهندسية، وتوفر بيئة مريحة ومناسبة للعبادة."
+                    : "Sabir Elsir Engineering Consultants provides architectural and engineering design services for mosques in Sharjah and Ajman, combining the heritage of Islamic architecture with modern architectural and structural design requirements. Our services include preparing architectural mosque plans; planning prayer halls and the locations of the mihrab and minbar; and considering the qibla direction, the allocation of space for worshippers, and ablution facilities. The work also includes structural design for domes and minarets, and coordination of mechanical, electrical, air-conditioning, ventilation, lighting, and acoustics systems, with attention to safety and accessibility requirements. We coordinate the engineering disciplines and prepare drawings in accordance with project requirements and applicable regulations, while following up on approval procedures with the relevant authorities, including municipal and Awqaf authorities where applicable. We aim to provide mosque designs that bring together Islamic identity, practical functions, and engineering quality, and create a comfortable environment suitable for worship."}
                 </p>
               </div>
             </div>
@@ -165,34 +200,40 @@ function Grid() {
             <div className="card h-100">
               <img
                 src="/images/re-min.jpg"
-                loading="eager"
+                loading="lazy"
                 alt="Landscape Design"
                 className="card-img-top"
                 width={400}
+                height={225}
               />
               <div className="card-body">
                 <h5 className="card-title">
                   {i18n.language.startsWith("ar")
-                    ? "تصميم مناظر طبيعية ولاندسكيب في الشارقة وعجمان | خدمات هندسية خارجية مستدامة"
-                    : "Landscape Design in Sharjah & Ajman | Sustainable Outdoor Engineering"}
+                    ? "تصميم لاندسكيب وتنسيق حدائق في الشارقة وعجمان | استشارات هندسية للمناظر الطبيعية"
+                    : "Landscape Design & Garden Planning in Sharjah & Ajman | Engineering Consultancy for Outdoor Spaces"}
                 </h5>
                 <p className="card-text">
                   {i18n.language.startsWith("ar") ? (
                     <>
-                      نقدم في مكتبنا للاستشارات الهندسية حلولاً متطورة في{" "}
-                      <strong>تصميم المناظر الطبيعية (اللاندسكيب)</strong>{" "}
-                      للمشاريع السكنية والتجارية والعامة في الشارقة وعجمان. يدمج
-                      مهندسونا بين الجمال المعماري والممارسات البيئية المستدامة،
-                      من خلال الري الذكي واختيار النباتات الملائمة للمناخ الجاف
-                      في الإمارات للمساعدة على تقليل استهلاك المياه. تشمل
-                      خدماتنا تخطيط الحدائق وتصميم العناصر الصلبة (Hardscape)
-                      وأنظمة الإضاءة الخارجية والمسطحات المائية، مع مراعاة
-                      المعايير والاشتراطات البلدية المحلية. تواصل مع خبراء
-                      اللاندسكيب لدينا لتحويل مساحتك الخارجية إلى بيئة جذابة
-                      تعزز قيمة عقارك وتلبي تطلعاتك.
+                      تقدم شركة صابر السر للاستشارات الهندسية خدمات{" "}
+                      <strong>
+                        تصميم اللاندسكيب وتنسيق الحدائق والمناظر الطبيعية
+                      </strong>{" "}
+                      للمشاريع السكنية والتجارية في الشارقة وعجمان. تشمل خدماتنا
+                      إعداد المخططات الهندسية للمساحات الخارجية، وتصميم الحدائق
+                      المنزلية، وتخطيط المسطحات الخضراء، وتصميم الممرات والعناصر
+                      المعمارية الخارجية (Hardscape)، وأنظمة الإضاءة الخارجية
+                      والري. نحرص على دمج الجمال المعماري مع الحلول البيئية
+                      المستدامة، من خلال اختيار النباتات المناسبة للمناخ المحلي
+                      وتوظيف أنظمة الري الموفرة للمياه، بما يساعد على تقليل
+                      استهلاك الموارد وتكاليف الصيانة. كما نراعي التنسيق بين
+                      تصميم المناظر الطبيعية والمباني والمرافق المحيطة، مع
+                      مراعاة الاشتراطات البلدية والفنية المعمول بها. هدفنا تطوير
+                      مساحات خارجية عملية وجذابة تعزز جودة البيئة المحيطة والقيمة
+                      الجمالية للعقار.
                     </>
                   ) : (
-                    "Our engineering consultancy provides landscape design services for residential, commercial, and public projects in Sharjah and Ajman. We combine architectural quality with sustainable practices, including smart irrigation and climate-appropriate plant selection to help reduce water use in the UAE's arid climate. Our services include garden planning, hardscape design, outdoor lighting, and water features, with consideration for applicable local municipal standards. Contact our landscape design team to create an attractive outdoor space that supports your needs and adds value to your property."
+                    "Sabir Elsir Engineering Consultants provides landscape design, garden planning, and natural-landscape services for residential and commercial projects in Sharjah and Ajman. Our services include preparing engineering plans for outdoor spaces; designing home gardens; planning green areas; designing walkways and outdoor architectural features (hardscape); and outdoor lighting and irrigation systems. We combine architectural aesthetics with sustainable environmental solutions by selecting plants suited to the local climate and using water-efficient irrigation systems, helping reduce resource consumption and maintenance costs. We also coordinate landscape design with surrounding buildings and facilities, taking applicable municipal and technical requirements into account. Our aim is to develop practical, attractive outdoor spaces that enhance the surrounding environment and the property's aesthetic value."
                   )}
                 </p>
               </div>

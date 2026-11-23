@@ -1,45 +1,143 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Cards.css";
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
 import ServiceItem from "./ServiceItem";
 import PageIntro from "./PageIntro";
+import SEO from "./SEO";
+
+const architecturalContent = {
+  en: {
+    eyebrow: "Architectural Design",
+    heading:
+      "Architectural Design & Engineering Consultancy in Sharjah and Ajman",
+    summary:
+      "Architectural design, building planning, villa design, elevations, and construction drawings coordinated with structural, civil, and MEP disciplines where included in the project scope.",
+    link: "Explore architectural services",
+  },
+  ar: {
+    eyebrow: "التصميم المعماري",
+    heading: "التصميم المعماري والاستشارات الهندسية في الشارقة وعجمان",
+    summary:
+      "خدمات التصميم المعماري وتخطيط المباني وتصميم الفلل والواجهات ومخططات التنفيذ، مع تنسيق التخصصات الإنشائية والمدنية والكهروميكانيكية وفق نطاق المشروع.",
+    link: "استكشف خدمات التصميم المعماري",
+  },
+};
+
+const civilEngineeringContent = {
+  en: {
+    heading: "Civil Engineering Consultancy in Sharjah and Ajman",
+    summary:
+      "Civil design, technical coordination, infrastructure planning, and engineering documentation tailored to project needs, where applicable.",
+    link: "Explore civil engineering services",
+  },
+  ar: {
+    heading: "استشارات هندسية مدنية في الشارقة وعجمان",
+    summary:
+      "التصميم المدني والتنسيق الفني وتخطيط البنية التحتية والوثائق الهندسية وفق احتياجات المشروع، عند الاقتضاء.",
+    link: "استكشف خدمات الهندسة المدنية",
+  },
+};
+
+const interiorDesignContent = {
+  en: {
+    heading: "Interior Design Consultancy",
+    summary:
+      "Interior space planning, design concepts, 3D visualization, material selection, and coordination with architectural and MEP disciplines.",
+    link: "Explore interior design services",
+  },
+  ar: {
+    heading: "استشارات التصميم الداخلي",
+    summary:
+      "تخطيط المساحات الداخلية ومفاهيم التصميم والتصور ثلاثي الأبعاد واختيار المواد والتنسيق مع التخصصات المعمارية والكهروميكانيكية.",
+    link: "استكشف خدمات التصميم الداخلي",
+  },
+};
+
+const projectManagementContent = {
+  en: {
+    heading: "Engineering Project Management Consultancy",
+    summary:
+      "Project planning, engineering coordination, progress monitoring, and technical reporting tailored to the agreed project scope.",
+    link: "Explore project management services",
+  },
+  ar: {
+    heading: "استشارات إدارة المشاريع الهندسية",
+    summary:
+      "تخطيط المشاريع والتنسيق الهندسي ومتابعة التقدم وإعداد التقارير الفنية وفق نطاق المشروع المتفق عليه.",
+    link: "استكشف خدمات إدارة المشاريع",
+  },
+};
+
+const generalBuildingContent = {
+  en: {
+    heading: "General Building Engineering Consultancy",
+    summary:
+      "Multidisciplinary building consultancy covering architectural planning, design coordination, engineering requirements, and technical documentation.",
+    link: "Explore building engineering services",
+  },
+  ar: {
+    heading: "استشارات هندسة المباني العامة",
+    summary:
+      "استشارات متعددة التخصصات تشمل التخطيط المعماري وتنسيق التصميم والمتطلبات الهندسية والوثائق الفنية.",
+    link: "استكشف خدمات هندسة المباني",
+  },
+};
+
+const modificationDrawingsContent = {
+  en: {
+    heading: "Warehouse, Factory & Workshop Modification Drawings",
+    summary:
+      "Engineering drawings and documentation for industrial and commercial modifications in Sharjah, prepared according to project scope and applicable authority requirements.",
+    link: "View service details in Arabic",
+  },
+  ar: {
+    heading: "مخططات تعديل المستودعات والمصانع والورش في الشارقة",
+    summary:
+      "إعداد وتنسيق المخططات والوثائق الهندسية للمشاريع الصناعية والتجارية وفق نطاق العمل ومتطلبات الجهات المختصة.",
+    link: "عرض تفاصيل الخدمة",
+  },
+};
 
 const OurServices = () => {
   const { t, i18n } = useTranslation();
-  const isArabic = i18n.language.startsWith("ar");
+  const language = i18n.language?.startsWith("ar") ? "ar" : "en";
+  const isArabic = language === "ar";
+  const architectural = architecturalContent[language];
+  const civilEngineering = civilEngineeringContent[language];
+  const interiorDesign = interiorDesignContent[language];
+  const projectManagement = projectManagementContent[language];
+  const generalBuilding = generalBuildingContent[language];
+  const modificationDrawings = modificationDrawingsContent[language];
+  const title = isArabic
+    ? "الخدمات الهندسية في الإمارات والسودان | صابر السر"
+    : "Engineering Services in Sharjah & Ajman | Sabir Elsir";
+  const description = isArabic
+    ? "خدمات التصميم المعماري والمدني والإنشائي والداخلي والإشراف وإدارة المشاريع للمباني السكنية والتجارية والصناعية في الإمارات والسودان."
+    : "Engineering design, supervision, and project management for residential, commercial, and industrial projects across the UAE and Sudan.";
   return (
     <>
-      <Helmet>
-        <title>Engineering Consultant Services in Sharjah & Ajman</title>
-        <meta
-          name="description"
-          content="تعرّف على خدمات الاستشارات الهندسية، التصميم المعماري، والإشراف على المشاريع في الإمارات والسودان منذ عام 2001."
-        />
-        <meta
-          name="keywords"
-          content="الاستشارات الهندسية، التصميم المعماري، إشراف هندسي، شركات هندسية في الشارقة، شركة صابر السر"
-        />
-        <meta
-          name="description"
-          content="Explore our engineering consultancy, architecture, and supervision services across the UAE and Sudan since 2001."
-        />
-        <meta
-          name="keywords"
-          content="engineering consultants UAE, architectural design Sharjah, project supervision Ajman, engineering companies in Sharjah"
-        />
-        <title className="Myh2">{t("Services")}</title>
-
-        <link rel="canonical" href="https://www.sabirelsir.ae/services"></link>
-        <meta name="language" content="EN, AR"></meta>
-      </Helmet>
+      <SEO
+        title={title}
+        description={description}
+        canonical="https://www.sabirelsir.ae/services"
+        language={language}
+      />
       <PageIntro
-        eyebrow={isArabic ? "خدماتنا" : "Engineering consultancy"}
-        title={isArabic ? "الخدمات الهندسية" : "Engineering services"}
+        eyebrow={
+          isArabic
+            ? "الاستشارات الهندسية في الإمارات والسودان"
+            : "Engineering Consultancy in the UAE & Sudan"
+        }
+        title={
+          isArabic
+            ? "خدمات التصميم والاستشارات والإشراف الهندسي"
+            : "Engineering Design, Consultancy & Supervision Services"
+        }
         description={
           isArabic
-            ? "تصميم واستشارات وإشراف هندسي للمشاريع السكنية والتجارية والصناعية في الإمارات والسودان."
-            : "Design, consultancy, and engineering supervision for residential, commercial, and industrial projects across the UAE and Sudan."
+            ? "نقدم خدمات التصميم المعماري والإنشائي والمدني والاستشارات الهندسية والإشراف على المشاريع السكنية والتجارية والصناعية في الشارقة وعجمان ومختلف مناطق الإمارات والسودان."
+            : "We provide architectural design, structural and civil engineering, engineering consultancy, and project supervision for residential, commercial, and industrial developments across Sharjah, Ajman, the UAE, and Sudan."
         }
       />
       <section className="site-page-content services-page-content">
@@ -48,45 +146,48 @@ const OurServices = () => {
             <div className="card">
               <img
                 className="card-img-top"
-                src="images/vils-min.jpg"
+                src="/images/vils-min.jpg"
                 loading="lazy"
                 alt="modern villa design"
-                title="Architectural Engineering Consultancy"
+                width="3840"
+                height="2160"
               />
               <div className="card-body">
-                <h5 className="card-title">
-                  {t("Architectural Engineering Consultancy")}
-                </h5>
-                <br />
-                <p className="card-text">
-                  {t(
-                    "As one of the top engineering companies in Sharjah and Ajman, Sabir Elsir Engineering Office stands out for its exceptional Architectural Engineering Consultancy services tailored to meet the dynamic needs of the UAE's growing construction and infrastructure sectors. Recognized among leading engineering companies in Sharjah, we specialize in innovative architectural design, sustainable development, and regulatory-compliant planning. Our team of experienced architects and engineers delivers bespoke solutions for residential, commercial, and industrial projects, ensuring both aesthetic value and structural integrity. From concept to completion, Sabir Elsir Engineering Office remains a trusted partner for quality, precision, and visionary design.",
-                  )}
+                <p className="text-muted text-uppercase small mb-2">
+                  {architectural.eyebrow}
                 </p>
+                <h2 className="card-title">{architectural.heading}</h2>
+                <p className="card-text">{architectural.summary}</p>
+                <Link
+                  className="btn btn-link p-0 fw-semibold"
+                  to="/services/architectural-engineering-consultancy"
+                >
+                  {architectural.link}
+                </Link>
               </div>
             </div>
           </div>
           <div className="col-md-4 mb-4">
             <div className="card">
               <img
-                className="card-img-top"
-                src="images/3000.jpeg"
+                src="/images/3000.jpeg"
                 loading="lazy"
-                alt="modern villa design"
-                title="Architectural Engineering Consultancy"
+                alt="Promotional graphic for warehouse, factory, and workshop modification drawings"
+                className="card-img-top card-img-top--promo"
+                width="1047"
+                height="1152"
               />
               <div className="card-body">
-                <h5 className="card-title">
-                  {t(
-                    "Civil Engineering-Approved Modification Drawings for Warehouses, Factories & Workshops",
-                  )}
-                </h5>
-                <br />
-                <p className="card-text">
-                  {t(
-                    "Sabir Elsir Engineering Office is one of the leading engineering consultancies approved by Sharjah Municipality, SEWA, and the Civil Defense, delivering reliable, end-to-end engineering solutions for industrial and commercial projects. Our expert team specializes in creating modification drawings for warehouses, factories, and workshops, including comprehensive architectural, structural, MEP, and fire & life-safety plans required for official approvals. We provide fast and accurate support with: Building permits, municipal approvals, SEWA load approvals, Civil Defense fire-safety drawings, renovation permits, change-of-use applications, and completion certificates, all fully compliant with Sharjah regulations. If you are searching for: An approved engineering consultant in Sharjah, modification drawings, municipal approval services, SEWA NOC assistance, or fire-safety plan approval — we deliver the fastest, most reliable, and hassle-free approval process for your project.",
-                  )}
-                </p>
+                <h2 className="card-title">
+                  {modificationDrawings.heading}
+                </h2>
+                <p className="card-text">{modificationDrawings.summary}</p>
+                <Link
+                  className="btn btn-link p-0 fw-semibold"
+                  to="/ar/warehouse-factory-workshop-modification-drawings-sharjah"
+                >
+                  {modificationDrawings.link}
+                </Link>
               </div>
             </div>
           </div>
@@ -94,21 +195,22 @@ const OurServices = () => {
           <div className="col-md-4 mb-4">
             <div className="card">
               <img
-                src="images/13 (2)-min.jpg"
+                src="/images/13 (2)-min.jpg"
                 loading="lazy"
                 alt="Modern circular staircase design"
                 className="card-img-top"
+                width="3840"
+                height="2160"
               />
               <div className="card-body">
-                <h5 className="card-title">
-                  {t("Civil Engineering Consultancy")}
-                </h5>
-                <br />
-                <p className="card-text">
-                  {t(
-                    "Sabir Elsir Engineering Consultants Office is a leading name in the engineering and civil engineering industry in the UAE, delivering trusted and innovative solutions across Sharjah and Ajman. As one of the region’s most experienced eng consultants, we provide comprehensive engineering and consultancy services covering structural design, infrastructure planning, and full project management. Our civil engineering expertise, combined with deep knowledge of local regulations, allows us to deliver high-quality consulting services for residential, commercial, and industrial developments. With a strong reputation for reliability and engineering excellence, Sabir Elsir Engineering Consultants remains a top choice for developers, contractors, and government entities seeking professional and cost-effective civil engineering solutions.",
-                  )}
-                </p>
+                <h2 className="card-title">{civilEngineering.heading}</h2>
+                <p className="card-text">{civilEngineering.summary}</p>
+                <Link
+                  className="btn btn-link p-0 fw-semibold"
+                  to="/services/civil-engineering-consultancy"
+                >
+                  {civilEngineering.link}
+                </Link>
               </div>
             </div>
           </div>
@@ -117,42 +219,44 @@ const OurServices = () => {
           <div className="col-md-4 mb-4">
             <div className="card">
               <img
-                src="images/3-min.jpg"
-                loading="required"
+                src="/images/3-min.jpg"
+                loading="lazy"
                 alt="General Building"
                 className="card-img-top"
+                width="3840"
+                height="2160"
               />
               <div className="card-body">
-                <h5 className="card-title">
-                  {t("General Buildings Engineering  Consultancy")}
-                </h5>
-                <br />
-                <p className="card-text">
-                  {t(
-                    "As one of the leading engineering companies in Sharjah and Ajman, Sabir Elsir Engineering Office stands out with its exceptional expertise in General Buildings Engineering Consultancy. With decades of experience in structural design, architectural planning, and construction supervision, we offer innovative and compliant solutions for residential, commercial, and mixed-use developments. Recognized among the top engineering companies in Sharjah, our team delivers tailored engineering services that meet the highest standards of quality, safety, and sustainability—making us the trusted partner for developers, contractors, and government entities across the UAE.",
-                  )}
-                </p>
+                <h2 className="card-title">{generalBuilding.heading}</h2>
+                <p className="card-text">{generalBuilding.summary}</p>
+                <Link
+                  className="btn btn-link p-0 fw-semibold"
+                  to="/services/general-building-engineering-consultancy"
+                >
+                  {generalBuilding.link}
+                </Link>
               </div>
             </div>
           </div>
           <div className="col-md-4 mb-4">
             <div className="card">
               <img
-                src="images/int2.jpg"
+                src="/images/int2.jpg"
                 loading="lazy"
                 alt="Interior Design"
                 className="card-img-top"
+                width="1080"
+                height="1080"
               />
               <div className="card-body">
-                <h5 className="card-title">
-                  {t("Interior Design Engineering Consultancy")}
-                </h5>
-                <br />
-                <p className="card-text">
-                  {t(
-                    "As one of the leading engineering companies in Sharjah and Ajman, Sabir Elsir Engineering Office specializes in Interior Design Engineering Consultancy that blends functionality, aesthetics, and structural integrity. Unlike many engineering companies in Sharjah, we offer a holistic approach to interior design by combining architectural vision with advanced engineering solutions tailored to residential, commercial, and hospitality spaces. From space planning and 3D visualization to material selection and MEP integration, our experienced consultants ensure that every detail aligns with client goals and regulatory standards across the UAE.",
-                  )}
-                </p>
+                <h2 className="card-title">{interiorDesign.heading}</h2>
+                <p className="card-text">{interiorDesign.summary}</p>
+                <Link
+                  className="btn btn-link p-0 fw-semibold"
+                  to="/services/interior-design-consultancy"
+                >
+                  {interiorDesign.link}
+                </Link>
               </div>
             </div>
           </div>
@@ -163,17 +267,18 @@ const OurServices = () => {
                 loading="lazy"
                 alt=" villa design"
                 className="card-img-top"
+                width="7680"
+                height="4320"
               />
               <div className="card-body">
-                <h5 className="card-title">
-                  {t("Engineering Projects Management Consultancy")}
-                </h5>
-                <br />
-                <p className="card-text">
-                  {t(
-                    "As one of the leading engineering companies in Sharjah, Sabir Elsir  Engineering Office specializes in comprehensive project management consultancy services tailored to meet the diverse needs of the construction and infrastructure sectors. Recognized among top civil engineering companies in Sharjah, we deliver expert guidance from concept to completion—ensuring projects are executed on time, within budget, and to the highest standards. With a strong focus on quality control, risk mitigation, and regulatory compliance, Sabir Elsir Engineering Office empowers developers and contractors to achieve sustainable success in every phase of engineering project execution.",
-                  )}
-                </p>
+                <h2 className="card-title">{projectManagement.heading}</h2>
+                <p className="card-text">{projectManagement.summary}</p>
+                <Link
+                  className="btn btn-link p-0 fw-semibold"
+                  to="/services/engineering-project-management"
+                >
+                  {projectManagement.link}
+                </Link>
               </div>
             </div>
           </div>

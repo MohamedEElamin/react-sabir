@@ -1,13 +1,12 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import SEO from "./SEO";
 import "../styles/BlogArticle.css";
 
 const articleContent = {
   en: {
-    title:
-      "Building Approval Stages in Sharjah & Ajman (Guide) | Sabir Elsir Engineering Consultants",
+    title: "Building Approvals in Sharjah & Ajman | Sabir Elsir",
     description:
       "A 2026 guide to engineering approvals, civil defense NOCs, local building permits, and structural design compliance in Sharjah and Ajman, UAE.",
     eyebrow: "Engineering guide · UAE",
@@ -87,8 +86,7 @@ const articleContent = {
       "https://www.sabirelsir.ae/blog/building-approval-stages-sharjah-ajman",
   },
   ar: {
-    title:
-      "دليل 2026 للتعامل مع اعتمادات وتصاريح الهندسة في الشارقة وعجمان | صابر السر للاستشارات الهندسية",
+    title: "اعتمادات البناء في الشارقة وعجمان | صابر السر",
     description:
       "دليل 2026 للاعتمادات الهندسية وشهادات عدم الممانعة من الدفاع المدني وتصاريح البناء والامتثال الإنشائي في الشارقة وعجمان، الإمارات.",
     eyebrow: "دليل هندسي · الإمارات",
@@ -194,7 +192,6 @@ function BlogArticle() {
         articleBody: articleText,
         articleSection: content.publishedLabel,
         inLanguage: language,
-        areaServed: ["Sharjah", "Ajman", "United Arab Emirates"],
         keywords: [
           "Engineering consultants Sharjah",
           "Ajman municipality structural approvals",
@@ -202,13 +199,11 @@ function BlogArticle() {
         ],
         author: {
           "@type": "Organization",
-          name: content.author,
-          url: "https://www.sabirelsir.ae/",
+          "@id": "https://www.sabirelsir.ae/#organization",
         },
         publisher: {
           "@type": "Organization",
-          name: content.author,
-          url: "https://www.sabirelsir.ae/",
+          "@id": "https://www.sabirelsir.ae/#organization",
         },
         mainEntityOfPage: {
           "@type": "WebPage",
@@ -243,19 +238,14 @@ function BlogArticle() {
 
   return (
     <>
-      <Helmet>
-        <html lang={language} />
-        <title>{content.title}</title>
-        <meta name="description" content={content.description} />
-        <link rel="canonical" href={content.canonical} />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content={content.title} />
-        <meta property="og:description" content={content.description} />
-        <meta property="og:url" content={content.canonical} />
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      </Helmet>
+      <SEO
+        title={content.title}
+        description={content.description}
+        canonical={content.canonical}
+        language={language}
+        type="article"
+        structuredData={structuredData}
+      />
 
       <div
         className="blog-article-page"
@@ -266,8 +256,9 @@ function BlogArticle() {
             <p className="blog-article-eyebrow">{content.eyebrow}</p>
             <h1>{content.heading}</h1>
             <p className="blog-article-byline">
-              {content.author} <span aria-hidden="true">·</span>{" "}
-              {content.publishedLabel}
+              {`${content.author} `}
+              <span aria-hidden="true">·</span>
+              {` ${content.publishedLabel}`}
             </p>
           </div>
         </header>
@@ -311,7 +302,8 @@ function BlogArticle() {
             <ul>
               {content.localConsultantBenefits.map((benefit) => (
                 <li key={benefit.title}>
-                  <strong>{benefit.title}:</strong> {benefit.text}
+                  <strong>{`${benefit.title}:`}</strong>
+                  {` ${benefit.text}`}
                 </li>
               ))}
             </ul>

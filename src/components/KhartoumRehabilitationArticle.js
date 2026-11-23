@@ -1,14 +1,13 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import SEO from "./SEO";
 import "../styles/BlogArticle.css";
 import "../styles/KhartoumRehabilitationArticle.css";
 
 const articleContent = {
   en: {
-    title:
-      "Structural Integrity Assessment & Infrastructure Rehabilitation in Khartoum: A Technical Roadmap | Sabir Elsir Engineering Consultants",
+    title: "Structural Rehabilitation in Khartoum | Sabir Elsir",
     description:
       "Technical guide to non-destructive testing, concrete core sampling, structural damage inspection, and rehabilitation planning in Khartoum, Sudan.",
     heading:
@@ -89,8 +88,7 @@ const articleContent = {
     ],
   },
   ar: {
-    title:
-      "تقييم السلامة الإنشائية وتأهيل البنية التحتية في الخرطوم: خارطة طريق فنية | صابر السر للاستشارات الهندسية",
+    title: "تأهيل المنشآت في الخرطوم | صابر السر",
     description:
       "دليل فني للفحوصات غير المتلفة وأخذ عينات الخرسانة وفحص أضرار المباني وتخطيط التأهيل الإنشائي في الخرطوم، السودان.",
     heading:
@@ -200,15 +198,12 @@ function KhartoumRehabilitationArticle() {
     inLanguage: language,
     author: {
       "@type": "Organization",
-      name: content.author,
-      url: "https://www.sabirelsir.ae/",
+      "@id": "https://www.sabirelsir.ae/#organization",
     },
     publisher: {
       "@type": "Organization",
-      name: content.author,
-      url: "https://www.sabirelsir.ae/",
+      "@id": "https://www.sabirelsir.ae/#organization",
     },
-    areaServed: ["Khartoum", "Sudan"],
     keywords: content.keywords,
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -218,19 +213,14 @@ function KhartoumRehabilitationArticle() {
 
   return (
     <>
-      <Helmet>
-        <html lang={language} />
-        <title>{content.title}</title>
-        <meta name="description" content={content.description} />
-        <link rel="canonical" href={content.canonical} />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content={content.title} />
-        <meta property="og:description" content={content.description} />
-        <meta property="og:url" content={content.canonical} />
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      </Helmet>
+      <SEO
+        title={content.title}
+        description={content.description}
+        canonical={content.canonical}
+        language={language}
+        type="article"
+        structuredData={structuredData}
+      />
 
       <div
         className="blog-article-page khartoum-article-page"
@@ -241,10 +231,13 @@ function KhartoumRehabilitationArticle() {
             <p className="blog-article-eyebrow">{content.eyebrow}</p>
             <h1>{content.heading}</h1>
             <p className="blog-article-byline">
-              {content.author} <span aria-hidden="true">·</span>{" "}
-              {language === "ar"
-                ? "تقييم وتأهيل إنشائي"
-                : "Assessment and rehabilitation"}
+              {`${content.author} `}
+              <span aria-hidden="true">·</span>
+              {` ${
+                language === "ar"
+                  ? "تقييم وتأهيل إنشائي"
+                  : "Assessment and rehabilitation"
+              }`}
             </p>
           </div>
         </header>

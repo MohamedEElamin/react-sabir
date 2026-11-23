@@ -10,13 +10,13 @@ const areas = [
       metaTitle:
         "Civil Engineering Consultants in Sharjah | Sabir Elsir",
       metaDescription:
-        "Licensed engineering consultancy in Sharjah since 2001. Architectural design, structural engineering, MEP, municipality approvals, and site supervision from our Al Majaz head office.",
+        "Engineering consultancy services in Sharjah, including architectural and structural design, MEP coordination, approval support, and site supervision.",
       eyebrow: "Areas we serve · United Arab Emirates",
       heading: "Engineering Consultants in Sharjah",
       summary:
-        "Our head office on Corniche Street in Al Majaz has served Sharjah since 2001. As a consultancy approved by Sharjah Municipality, SEWA, and the Civil Defense, we prepare authority-ready designs and guide projects from concept to final permit.",
+        "Our head office on Corniche Street in Al Majaz supports projects across Sharjah. As a consultancy approved by Sharjah Municipality, SEWA, and the Civil Defense, we prepare authority-ready designs and guide projects from concept to final permit.",
       cardBlurb:
-        "Head office. Architectural and structural design, municipal approvals, and site supervision across the emirate since 2001.",
+        "Head office. Architectural and structural design, municipal approvals, and site supervision across the emirate.",
       servicesTitle: "Engineering services in Sharjah",
       services: [
         "Architectural design",
@@ -49,13 +49,13 @@ const areas = [
       country: "الإمارات العربية المتحدة",
       metaTitle: "استشاريون هندسيون في الشارقة | صابر السر للاستشارات الهندسية",
       metaDescription:
-        "مكتب استشارات هندسية مرخص في الشارقة منذ عام 2001. تصميم معماري وهندسة إنشائية وأعمال كهروميكانيكية واعتمادات البلدية والإشراف على المواقع من مكتبنا الرئيسي في المجاز.",
+        "خدمات استشارات هندسية في الشارقة تشمل التصميم المعماري والإنشائي والأعمال الكهروميكانيكية ودعم الاعتمادات والإشراف على المواقع.",
       eyebrow: "المناطق التي نخدمها · الإمارات العربية المتحدة",
       heading: "استشاريون هندسيون في الشارقة",
       summary:
-        "يخدم مكتبنا الرئيسي على شارع الكورنيش في المجاز إمارة الشارقة منذ عام 2001. وبصفتنا مكتب استشارات معتمداً لدى بلدية الشارقة وهيئة كهرباء ومياه الشارقة والدفاع المدني، نُعدّ تصاميم جاهزة للاعتماد ونرافق المشاريع من الفكرة حتى الرخصة النهائية.",
+        "يدعم مكتبنا الرئيسي على شارع الكورنيش في المجاز المشاريع في إمارة الشارقة. وبصفتنا مكتب استشارات معتمداً لدى بلدية الشارقة وهيئة كهرباء ومياه الشارقة والدفاع المدني، نُعدّ تصاميم جاهزة للاعتماد ونرافق المشاريع من الفكرة حتى الرخصة النهائية.",
       cardBlurb:
-        "المكتب الرئيسي. تصميم معماري وإنشائي واعتمادات بلدية وإشراف على المواقع في جميع أنحاء الإمارة منذ عام 2001.",
+        "المكتب الرئيسي. تصميم معماري وإنشائي واعتمادات بلدية وإشراف على المواقع في جميع أنحاء الإمارة.",
       servicesTitle: "الخدمات الهندسية في الشارقة",
       services: [
         "التصميم المعماري",
@@ -95,7 +95,7 @@ const areas = [
       metaTitle:
         "Civil Engineering Consultants in Ajman | Sabir Elsir",
       metaDescription:
-        "Engineering consultancy in Ajman for villa, residential, and commercial projects. Architectural and structural design, Ajman Municipality approvals, and site supervision from our Al Nakhil office.",
+        "Engineering consultancy for residential and commercial projects in Ajman, including architectural and structural design, approval support, and site supervision.",
       eyebrow: "Areas we serve · United Arab Emirates",
       heading: "Engineering Consultants in Ajman",
       summary:
@@ -133,7 +133,7 @@ const areas = [
       country: "الإمارات العربية المتحدة",
       metaTitle: "استشاريون هندسيون في عجمان | صابر السر للاستشارات الهندسية",
       metaDescription:
-        "مكتب استشارات هندسية في عجمان لمشاريع الفلل والمباني السكنية والتجارية. تصميم معماري وإنشائي واعتمادات بلدية عجمان وإشراف على المواقع من مكتبنا في النخيل.",
+        "استشارات هندسية لمشاريع سكنية وتجارية في عجمان، تشمل التصميم المعماري والإنشائي ودعم الاعتمادات والإشراف على المواقع.",
       eyebrow: "المناطق التي نخدمها · الإمارات العربية المتحدة",
       heading: "استشاريون هندسيون في عجمان",
       summary:
@@ -176,9 +176,9 @@ const areas = [
       name: "Khartoum",
       country: "Sudan",
       metaTitle:
-        "Engineering Consultants in Khartoum | Sabir Elsir Engineering Consultants",
+        "Engineering Consultants in Khartoum & Asset Valuation | Sabir Elsir",
       metaDescription:
-        "Structural integrity assessment, damage inspection, rehabilitation planning, and engineering design services in Khartoum, Sudan, from Sabir Elsir Engineering Consultants.",
+        "Engineering and architectural consultancy in Sudan, including structural assessment, rehabilitation planning, and asset valuation services.",
       eyebrow: "Areas we serve · Sudan",
       heading: "Engineering Consultants in Khartoum",
       summary:
@@ -208,13 +208,31 @@ const areas = [
       ctaText:
         "Need structural assessment, rehabilitation planning, or design services in Khartoum? Talk to our engineering team.",
       ctaLink: "Contact our team",
+      assetValuation: {
+        sectionTitle: "Asset Valuation Services in Sudan",
+        paragraphs: [
+          "Sabir Elsir Engineering Consultants provides real estate and engineering asset valuation services in Sudan, drawing on its experience in architecture, engineering, and urban planning.",
+          "The name “Sabir Elsir Consultancy” appears as entry 14 in the Central Bank of Sudan's published 2026 list of approved consultancy firms with renewed registration, covering architecture and urban planning, engineering, and asset valuation.",
+          "Depending on the assignment and agreed scope, asset valuation services may include the study and valuation of real estate, buildings, facilities, and related assets, as well as technical and valuation reports to support investment, financing, and administrative decisions.",
+          "The office serves individuals, companies, and institutions, taking into account the asset, the purpose of the valuation, and relevant professional requirements.",
+        ],
+        officialLabel: "Official listing:",
+        officialLinkLabel:
+          "Central Bank of Sudan approved consultancy firms – No. 14: Sabir Elsir Consultancy",
+        contactTitle: "Inquiries about asset valuation",
+        phoneLabel: "Phone",
+        emailLabel: "Email",
+        directorLabel: "Full-time manager",
+        serviceDescription:
+          "Real estate and engineering asset valuation in Sudan, with services tailored to the assignment and agreed scope.",
+      },
     },
     ar: {
       name: "الخرطوم",
       country: "السودان",
-      metaTitle: "استشاريون هندسيون في الخرطوم | صابر السر للاستشارات الهندسية",
+      metaTitle: "استشاريون هندسيون في الخرطوم وخدمات تقييم الأصول",
       metaDescription:
-        "خدمات تقييم السلامة الإنشائية وفحص الأضرار وتخطيط أعمال التأهيل والتصميم الهندسي في الخرطوم، السودان، من صابر السر للاستشارات الهندسية.",
+        "مكتب صابر السر للاستشارات الهندسية، من بيوت الخبرة المعتمدة لدى بنك السودان المركزي، يقدم خدمات هندسية ومعمارية وتقييم الأصول في السودان.",
       eyebrow: "المناطق التي نخدمها · السودان",
       heading: "استشاريون هندسيون في الخرطوم",
       summary:
@@ -244,6 +262,32 @@ const areas = [
       ctaText:
         "تحتاج إلى تقييم إنشائي أو تخطيط أعمال تأهيل أو خدمات تصميم في الخرطوم؟ تحدث مع فريقنا الهندسي.",
       ctaLink: "تواصل مع فريقنا",
+      assetValuation: {
+        sectionTitle: "تقييم الأصول في السودان – مكتب معتمد لدى بنك السودان المركزي",
+        paragraphs: [
+          "يقدم مكتب صابر السر للاستشارات الهندسية خدمات تقييم الأصول العقارية والهندسية في السودان، مستنداً إلى خبرته في المجالات المعمارية والهندسية والتخطيط العمراني.",
+          "ويظهر اسم «صابر السر الاستشارية» في القائمة الرسمية المنشورة لبنك السودان المركزي تحت الرقم (14)، ضمن بيوت الخبرة الاستشارية المعتمدة والمسجلة والمجددة لعام 2026، في مجالات العمارة والتخطيط العمراني والمجالات الهندسية وتقييم الأصول.",
+          "تشمل خدمات تقييم الأصول، بحسب طبيعة المهمة ونطاق التكليف، دراسة وتقييم العقارات والمباني والمنشآت والأصول ذات الصلة، وإعداد التقارير الفنية والتقييمية لدعم القرارات الاستثمارية والتمويلية والإدارية.",
+          "يقدم المكتب خدماته للأفراد والشركات والمؤسسات، مع مراعاة طبيعة الأصل والغرض من التقييم والمتطلبات المهنية ذات الصلة.",
+        ],
+        officialLabel: "الاعتماد الرسمي:",
+        officialLinkLabel:
+          "قائمة بيوت الخبرة الاستشارية المعتمدة لدى بنك السودان المركزي – رقم (14): صابر السر الاستشارية",
+        contactTitle: "للاستفسار عن خدمة تقييم الأصول",
+        phoneLabel: "الهاتف",
+        emailLabel: "البريد الإلكتروني",
+        directorLabel: "المدير المتفرغ",
+        serviceDescription:
+          "خدمات تقييم الأصول العقارية والهندسية في السودان وفق طبيعة المهمة ونطاق التكليف.",
+      },
+    },
+    professionalService: {
+      name: "Sabir Elsir Engineering Consultants",
+      telephone: "0912311241",
+      email: "sabir.elsir.eng.cons@gmail.com",
+      addressLocality: "Khartoum",
+      addressCountry: "SD",
+      director: "د. صابر السر محمد الأمين",
     },
   },
 ];

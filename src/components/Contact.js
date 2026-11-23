@@ -1,42 +1,28 @@
 // src/components/Map.js
 import React from "react";
 import Map from "../components/Map.js";
-import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import PageIntro from "./PageIntro";
+import SEO from "./SEO";
 
 const Contact = () => {
-  const { t, i18n } = useTranslation();
-  const isArabic = i18n.language.startsWith("ar");
+  const { i18n } = useTranslation();
+  const language = i18n.language?.startsWith("ar") ? "ar" : "en";
+  const isArabic = language === "ar";
+  const title = isArabic
+    ? "تواصل معنا | صابر السر للاستشارات الهندسية"
+    : "Contact | Sabir Elsir Engineering Consultants";
+  const description = isArabic
+    ? "تواصل مع صابر السر للاستشارات الهندسية للاستفسار عن خدمات التصميم والاستشارات والإشراف الهندسي في الإمارات والسودان."
+    : "Contact Sabir Elsir Engineering Consultants about engineering design, consultancy, and supervision services in the UAE and Sudan.";
   return (
     <>
-      <Helmet>
-        <title className="Myh2">{t("Contact Us")}</title>
-        <meta
-          name="description"
-          content="Get in touch with Sabir Elsir Engineering Consultants. We are here to assist you with engineering consultancy, design, and supervision services across the UAE and Sudan."
-        />
-        <meta
-          name="keywords"
-          content="contact engineering consultants, contact Sabir Elsir, engineering company Sharjah, engineering consultants UAE"
-        />
-        <meta
-          name="description"
-          content=" مكتب صابر السر الاستشاري في إماره الشارقه الإمارات المجاز1 برج الرشيد1 مكتب 2023
-          Contact us: info@sabirelsir.ae, Almajaz(1)-Balrasheed Tower(1), office 2203 Sharjah, +971552771408, +971565393256. "
-        ></meta>
-        <meta
-          name="description"
-          content="تواصل مع شركة صابر السر للاستشارات الهندسية. نحن جاهزون لمساعدتك في خدمات الاستشارات الهندسية، التصميم، والإشراف في الإمارات والسودان."
-        />
-        <meta
-          name="keywords"
-          content="اتصال الاستشارات الهندسية، شركة صابر السر، مهندسون في الشارقة، الاستشارات الهندسية الإمارات"
-        />
-
-        <link rel="canonical" href="https://www.sabirelsir.ae/contact"></link>
-        <meta name="language" content="AR, EN"></meta>
-      </Helmet>
+      <SEO
+        title={title}
+        description={description}
+        canonical="https://www.sabirelsir.ae/contact"
+        language={language}
+      />
 
       <PageIntro
         eyebrow={isArabic ? "تواصل معنا" : "Contact"}

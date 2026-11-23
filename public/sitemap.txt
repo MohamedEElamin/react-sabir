@@ -1,6 +1,13 @@
 https://www.sabirelsir.ae/
 https://www.sabirelsir.ae/services
+https://www.sabirelsir.ae/services/architectural-engineering-consultancy
+https://www.sabirelsir.ae/services/civil-engineering-consultancy
+https://www.sabirelsir.ae/services/interior-design-consultancy
+https://www.sabirelsir.ae/services/engineering-project-management
+https://www.sabirelsir.ae/services/general-building-engineering-consultancy
+https://www.sabirelsir.ae/ar/warehouse-factory-workshop-modification-drawings-sharjah
 https://www.sabirelsir.ae/about
+https://www.sabirelsir.ae/founder-profile
 https://www.sabirelsir.ae/contact
 https://www.sabirelsir.ae/faq
 https://www.sabirelsir.ae/areas
@@ -11,4 +18,3 @@ https://www.sabirelsir.ae/blog/building-approval-stages-sharjah-ajman
 https://www.sabirelsir.ae/blog
 https://www.sabirelsir.ae/blog/structural-rehabilitation-assessment-khartoum
 https://www.sabirelsir.ae/blog/seismic-environmental-structural-design-middle-east-east-africa
-https://www.sabirelsir.ae/videos/modern-villa-design

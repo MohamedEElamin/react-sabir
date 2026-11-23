@@ -1,14 +1,13 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import SEO from "./SEO";
 import "../styles/BlogArticle.css";
 import "../styles/ClimateDesignArticle.css";
 
 const articleContent = {
   en: {
-    title:
-      "Seismic & Environmental Considerations for Structural Design in the Middle East and East Africa | Sabir Elsir Engineering Consultants",
+    title: "Seismic Structural Design: UAE & Sudan | Sabir Elsir",
     description:
       "Comparative guide to structural design standards, foundation engineering, seismic requirements, and environmental durability in the UAE and Sudan.",
     heading:
@@ -89,8 +88,7 @@ const articleContent = {
     ],
   },
   ar: {
-    title:
-      "الاعتبارات الزلزالية والبيئية للتصميم الإنشائي في الشرق الأوسط وشرق أفريقيا | صابر السر للاستشارات الهندسية",
+    title: "التصميم الزلزالي والإنشائي في الإمارات والسودان | صابر السر",
     description:
       "دليل مقارن لمعايير التصميم الإنشائي وهندسة الأساسات والمتطلبات الزلزالية ومتانة المنشآت البيئية في الإمارات والسودان.",
     heading:
@@ -198,21 +196,12 @@ function ClimateDesignArticle() {
     inLanguage: language,
     author: {
       "@type": "Organization",
-      name: content.author,
-      url: "https://www.sabirelsir.ae/",
+      "@id": "https://www.sabirelsir.ae/#organization",
     },
     publisher: {
       "@type": "Organization",
-      name: content.author,
-      url: "https://www.sabirelsir.ae/",
+      "@id": "https://www.sabirelsir.ae/#organization",
     },
-    areaServed: [
-      "Sharjah",
-      "Ajman",
-      "Khartoum",
-      "United Arab Emirates",
-      "Sudan",
-    ],
     keywords: content.keywords,
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -222,19 +211,14 @@ function ClimateDesignArticle() {
 
   return (
     <>
-      <Helmet>
-        <html lang={language} />
-        <title>{content.title}</title>
-        <meta name="description" content={content.description} />
-        <link rel="canonical" href={content.canonical} />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content={content.title} />
-        <meta property="og:description" content={content.description} />
-        <meta property="og:url" content={content.canonical} />
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      </Helmet>
+      <SEO
+        title={content.title}
+        description={content.description}
+        canonical={content.canonical}
+        language={language}
+        type="article"
+        structuredData={structuredData}
+      />
 
       <div
         className="blog-article-page climate-design-page"
@@ -245,8 +229,9 @@ function ClimateDesignArticle() {
             <p className="blog-article-eyebrow">{content.eyebrow}</p>
             <h1>{content.heading}</h1>
             <p className="blog-article-byline">
-              {content.author} <span aria-hidden="true">·</span>{" "}
-              {language === "ar" ? "دليل التصميم" : "Design guide"}
+              {`${content.author} `}
+              <span aria-hidden="true">·</span>
+              {` ${language === "ar" ? "دليل التصميم" : "Design guide"}`}
             </p>
           </div>
         </header>

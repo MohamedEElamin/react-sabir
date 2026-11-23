@@ -41,6 +41,69 @@
   padding-block: clamp(36px, 6vw, 68px) clamp(52px, 8vw, 90px);
 }
 
+.founder-profile-content {
+  display: grid;
+  gap: 24px;
+}
+
+.founder-profile-card {
+  padding: clamp(20px, 3vw, 28px);
+  border: 1px solid var(--site-line, #dfe4dc);
+  border-radius: 4px;
+  background: #fff;
+}
+
+.founder-profile-card h2 {
+  margin: 0 0 14px;
+  color: var(--site-green, #315746);
+  font-size: clamp(19px, 2vw, 23px);
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: start;
+}
+
+.founder-profile-card p,
+.founder-profile-card li {
+  color: #58645b;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.founder-profile-card p {
+  margin: 0;
+}
+
+.founder-profile-biography p + p {
+  margin-top: 12px;
+}
+
+.founder-profile-contact {
+  margin: 0;
+}
+
+.founder-profile-contact a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  padding: 8px 18px;
+  border: 1px solid var(--site-green, #315746);
+  border-radius: 3px;
+  background: var(--site-green, #315746);
+  color: #fff;
+  text-decoration: none;
+}
+
+.founder-profile-contact a:hover,
+.founder-profile-contact a:focus-visible {
+  background: #243f33;
+  color: #fff;
+}
+
+.founder-profile-contact a:focus-visible {
+  outline: 2px solid #8b9e73;
+  outline-offset: 3px;
+}
+
 .site-page-content > .row {
   --bs-gutter-x: 24px;
   --bs-gutter-y: 24px;
@@ -88,8 +151,14 @@
 .services-page-content .card-img-top {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: auto;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
+}
+
+.services-page-content .card-img-top--promo {
+  aspect-ratio: auto;
+  object-fit: contain;
 }
 
 .contact-page-shell {
@@ -277,4 +346,5 @@
     --bs-gutter-x: 16px;
     --bs-gutter-y: 18px;
   }
+
 }

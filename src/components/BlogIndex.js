@@ -1,7 +1,7 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import SEO from "./SEO";
 import "../styles/BlogIndex.css";
 
 const posts = {
@@ -93,18 +93,13 @@ function BlogIndex() {
 
   return (
     <>
-      <Helmet>
-        <html lang={language} />
-        <title>{`${title} | Sabir Elsir Engineering Consultants`}</title>
-        <meta name="description" content={description} />
-        <link rel="canonical" href="https://www.sabirelsir.ae/blog" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      </Helmet>
+      <SEO
+        title={`${title} | Sabir Elsir Engineering Consultants`}
+        description={description}
+        canonical="https://www.sabirelsir.ae/blog"
+        language={language}
+        structuredData={structuredData}
+      />
 
       <div className="blog-index-page" dir={isArabic ? "rtl" : "ltr"}>
         <header className="blog-index-intro">
@@ -131,7 +126,8 @@ function BlogIndex() {
                 <p className="blog-index-description">{post.description}</p>
               </div>
               <Link className="blog-index-read" to={post.path}>
-                {post.label} <span aria-hidden="true">↗</span>
+                {`${post.label} `}
+                <span aria-hidden="true">↗</span>
               </Link>
             </article>
           ))}

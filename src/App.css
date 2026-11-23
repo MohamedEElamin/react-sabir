@@ -189,24 +189,6 @@ main {
   object-fit: cover;
 }
 
-.home-page .video-container {
-  width: min(100% - 48px, 920px);
-  max-width: 920px !important;
-  margin: 4px auto 40px !important;
-  overflow: hidden;
-  border-radius: 4px;
-  background: #202923;
-}
-
-.home-page .responsive-iframe {
-  display: block;
-  width: 100%;
-  height: auto !important;
-  aspect-ratio: 16 / 9;
-  border: 0;
-  border-radius: 0;
-}
-
 h1,
 h2,
 h3,
@@ -248,10 +230,6 @@ h5 {
   .home-page > .Myh2 {
     padding: 48px 22px 12px;
     font-size: clamp(27px, 8vw, 38px);
-  }
-
-  .home-page .video-container {
-    width: calc(100% - 32px);
   }
 
   .home-page .row {

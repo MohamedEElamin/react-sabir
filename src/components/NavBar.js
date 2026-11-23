@@ -35,15 +35,11 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    document.documentElement.lang = i18n.language;
-    document.documentElement.dir = i18n.language === "ar" ? "rtl" : "ltr";
-
-    if (i18n.language === "ar") {
-      document.body.classList.add("arabic");
-    } else {
-      document.body.classList.remove("arabic");
-    }
-  }, [i18n.language]);
+    const isArabic = language.startsWith("ar");
+    document.documentElement.lang = isArabic ? "ar" : "en";
+    document.documentElement.dir = isArabic ? "rtl" : "ltr";
+    document.body.classList.toggle("arabic", isArabic);
+  }, [language]);
 
   return (
     <nav className="navbar">
@@ -54,15 +50,38 @@ const Navbar = () => {
             src="/images/logo-part-min.jpg"
             alt={t("Sabir Elsir Engineering Consultants logo")}
             title={t("Sabir Elsir Engineering Consultants logo")}
+            width="945"
+            height="334"
           />
           <i className="fab fa-typ" />
         </Link>
 
-        <div className="menu-icon" onClick={handleClick}>
-          <i className={click ? "fas fa-times" : "fas fa-bars"} />
-        </div>
+        <button
+          type="button"
+          className="menu-icon"
+          onClick={handleClick}
+          aria-label={
+            language.startsWith("ar")
+              ? click
+                ? "إغلاق قائمة التنقل"
+                : "فتح قائمة التنقل"
+              : click
+                ? "Close navigation menu"
+                : "Open navigation menu"
+          }
+          aria-expanded={click}
+          aria-controls="primary-navigation"
+        >
+          <i
+            aria-hidden="true"
+            className={click ? "fas fa-times" : "fas fa-bars"}
+          />
+        </button>
 
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
+        <ul
+          id="primary-navigation"
+          className={click ? "nav-menu active" : "nav-menu"}
+        >
           <li className="nav-item">
             <Link to="/" className="nav-links" onClick={closeMobileMenu}>
               {t("Home")}
@@ -85,6 +104,15 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
               {t("About")}
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/founder-profile"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              {i18n.language.startsWith("ar") ? "المؤسس" : "Founder"}
             </Link>
           </li>
           <li className="nav-item">

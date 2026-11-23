@@ -21,6 +21,16 @@ const AutoSlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
+    prevArrow: (
+      <button type="button" aria-label="Previous slide">
+        Previous
+      </button>
+    ),
+    nextArrow: (
+      <button type="button" aria-label="Next slide">
+        Next
+      </button>
+    ),
   };
 
   const { t } = useTranslation();
@@ -30,61 +40,71 @@ const AutoSlider = () => {
       <Slider {...settings} className="Container fluid">
         <div className="slide">
           <img
-            src="images/circle_villa-min.jpg"
+            src="/images/circle_villa-min.jpg"
             loading="eager"
             fetchPriority="high"
             alt="Contemporary villa design by Sabir Elsir Engineering Consultants"
             className="img-fluid"
-            width="800"
-            height="600"
+            width="3840"
+            height="2160"
           />
         </div>
         <div className="slide">
           <img
-            src="images/vils-min.jpg"
+            src="/images/vils-min.jpg"
             alt="Classic Villa"
-            loading="eager"
+            loading="lazy"
             title={t("Classic Villa Design")}
             className="img-fluid"
+            width="3840"
+            height="2160"
           />
         </div>
 
         <div className="slide">
           <img
-            src="images/تصميم مسجد-min.jpg"
+            src="/images/تصميم مسجد-min.jpg"
             loading="lazy"
             alt="Modern Mosque Design"
             title={t("Modern Mosque Design")}
             className="img-fluid"
+            width="3000"
+            height="1687"
           />
         </div>
 
         <div className="slide">
           <img
-            src="images/li.jpg"
+            src="/images/li.jpg"
             loading="lazy"
             alt="Interior Design"
             title={t("Interior Design")}
             className="img-fluid"
+            width="1600"
+            height="900"
           />
         </div>
 
         <div className="slide">
           <img
-            src="images/villa_compound.jpg"
+            src="/images/villa_compound.jpg"
             loading="lazy"
             alt="Villa"
             title={"Villa Compound"}
             className="img-fluid"
+            width="3840"
+            height="2160"
           />
         </div>
         <div className="slide">
           <img
-            src="images/000.jpg"
+            src="/images/000.jpg"
             loading="lazy"
             alt="Villa"
             title={"Villa"}
             className="img-fluid"
+            width="2560"
+            height="1440"
           />
         </div>
       </Slider>

@@ -12,7 +12,7 @@ import { useTranslation } from "react-i18next";
 import { getWhatsAppLink } from "../data/siteInfo";
 
 function Footer() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <div className="footer-container">
       <div className="footer-links">
@@ -23,15 +23,20 @@ function Footer() {
             <Link to="/about">{t("Vision")}</Link>
             <Link to="/about">{t("Mission")}</Link>
             <Link to="/about">{t("About Us")}</Link>
+            <Link to="/founder-profile">
+              {i18n.language.startsWith("ar")
+                ? "ملف المؤسس"
+                : "Founder profile"}
+            </Link>
           </div>
           <div className="footer-link-wrapper">
             <div className="footer-link-items">
               <h2>{t("Services")}</h2>
-              <Link to="/Services">{t("Architectural")}</Link>
-              <Link to="/Services">{t("Civil")}</Link>
-              <Link to="/Services">{t("Projects Management")}</Link>
-              <Link to="/Services">{t("Interior Design")}</Link>
-              <Link to="/Services">{t("General Buildings")}</Link>
+              <Link to="/services">{t("Architectural")}</Link>
+              <Link to="/services">{t("Civil")}</Link>
+              <Link to="/services">{t("Projects Management")}</Link>
+              <Link to="/services">{t("Interior Design")}</Link>
+              <Link to="/services">{t("General Buildings")}</Link>
             </div>
           </div>
 
@@ -54,7 +59,7 @@ function Footer() {
       <section className="social-media">
         <div className="social-media-wrap">
           <small className="website-rights">
-            Sabir Elsir Engineering Consultants © {new Date().getFullYear()}
+            {`Sabir Elsir Engineering Consultants © ${new Date().getFullYear()}`}
           </small>
           <div className="social-icons">
             <Link

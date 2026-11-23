@@ -221,10 +221,6 @@ h2 {
     width: 350px;
   }
 }
-.responsive-iframe {
-  border-radius: 2ex;
-}
-
 .span {
   font-size: 13px;
   display: none;
@@ -385,10 +381,6 @@ h2 {
   }
   .cards {
     width: auto !important;
-  }
-  .responsive-iframe {
-    width: 93%;
-    margin: 60px 0px 40px 0px;
   }
   .slider-container {
     margin-bottom: 20px;

@@ -1,0 +1,154 @@
+.service-detail-content {
+  max-width: 960px;
+}
+
+.service-detail-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 30px;
+  color: #68736b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.service-detail-breadcrumb a {
+  color: #315746;
+  text-decoration: none;
+}
+
+.service-detail-breadcrumb a:hover,
+.service-detail-breadcrumb a:focus-visible {
+  text-decoration: underline;
+}
+
+.service-detail-section + .service-detail-section {
+  margin-top: clamp(36px, 5vw, 56px);
+}
+
+.service-detail-section h2 {
+  margin: 0 0 18px;
+  color: #315746;
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.service-detail-section p {
+  color: #58645b;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.service-detail-section p + p {
+  margin-top: 16px;
+}
+
+.service-detail-table-wrapper {
+  width: 100%;
+  margin-top: 24px;
+  overflow-x: auto;
+}
+
+.service-detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #58645b;
+  line-height: 1.6;
+}
+
+.service-detail-table th,
+.service-detail-table td {
+  padding: 14px 16px;
+  border: 1px solid #dfe4dc;
+  text-align: start;
+  vertical-align: top;
+}
+
+.service-detail-table thead th {
+  background: #f4f6f2;
+  color: #315746;
+  font-weight: 600;
+}
+
+.service-detail-faq {
+  border-top: 1px solid #dfe4dc;
+}
+
+.service-detail-faq details {
+  border-bottom: 1px solid #dfe4dc;
+}
+
+.service-detail-faq summary {
+  position: relative;
+  padding: 20px 38px 20px 0;
+  color: #202923;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.55;
+  list-style: none;
+}
+
+.service-detail-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.service-detail-faq summary::after {
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  color: #315746;
+  content: "+";
+  font-size: 24px;
+  font-weight: 400;
+  transform: translateY(-50%);
+}
+
+.service-detail-faq details[open] summary::after {
+  content: "−";
+}
+
+.service-detail-faq summary:focus-visible {
+  outline: 2px solid #8b9e73;
+  outline-offset: 4px;
+}
+
+.service-detail-faq details p {
+  max-width: 800px;
+  margin: -2px 0 22px;
+  color: #68736b;
+  font-size: 15px;
+}
+
+.service-detail-page[dir="rtl"] .service-detail-faq summary {
+  padding-right: 0;
+  padding-left: 38px;
+}
+
+.service-detail-page[dir="rtl"]
+  .service-detail-faq
+  summary::after {
+  right: auto;
+  left: 4px;
+}
+
+@media (max-width: 700px) {
+  .service-detail-content {
+    width: min(100% - 32px, 960px);
+  }
+
+  .service-detail-section p,
+  .service-detail-faq summary {
+    font-size: 15px;
+  }
+
+  .service-detail-table {
+    min-width: 560px;
+    font-size: 14px;
+  }
+
+  .service-detail-faq details p {
+    font-size: 14px;
+  }
+}
