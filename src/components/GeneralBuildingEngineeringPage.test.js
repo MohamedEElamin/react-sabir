@@ -32,7 +32,7 @@ test("renders building consultancy metadata, services, FAQs, and schema", () => 
     document.querySelector('meta[name="description"]'),
   ).toHaveAttribute(
     "content",
-    "Sabir Elsir Engineering Consultants provides building engineering consultancy, architectural planning, design coordination, and engineering supervision in Sharjah, Ajman, and across the UAE.",
+    "Building engineering consultancy, architectural planning, design coordination, and supervision in Sharjah and Ajman.",
   );
   expect(
     document.querySelector('link[rel="canonical"]'),

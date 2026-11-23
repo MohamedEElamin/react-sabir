@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "./LocalizedLink";
 import { useTranslation } from "react-i18next";
 import PageIntro from "./PageIntro";
 import SEO from "./SEO";
@@ -12,7 +12,7 @@ const pageContent = {
   en: {
     title: "Interior Design Consultancy in Sharjah & Ajman",
     description:
-      "Sabir Elsir Engineering Consultants provides interior design consultancy, space planning, 3D visualization, and engineering coordination in Sharjah, Ajman, and across the UAE.",
+      "Interior design consultancy, space planning, 3D visualization, and engineering coordination in Sharjah and Ajman.",
     eyebrow: "Interior Design Consultancy",
     heading:
       "Interior Design Consultancy & Engineering Services in Sharjah and Ajman",
@@ -79,7 +79,7 @@ const pageContent = {
   ar: {
     title: "استشارات التصميم الداخلي في الشارقة وعجمان",
     description:
-      "تقدم صابر السر للاستشارات الهندسية خدمات استشارات التصميم الداخلي وتخطيط المساحات والتصور ثلاثي الأبعاد والتنسيق الهندسي في الشارقة وعجمان ومختلف أنحاء الإمارات.",
+      "استشارات التصميم الداخلي وتخطيط المساحات والتصور ثلاثي الأبعاد والتنسيق الهندسي في الشارقة وعجمان.",
     eyebrow: "استشارات التصميم الداخلي",
     heading: "استشارات التصميم الداخلي والخدمات الهندسية في الشارقة وعجمان",
     lead:

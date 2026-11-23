@@ -23,7 +23,58 @@ import AreaPage from "./components/AreaPage";
 import NotFound from "./components/NotFound";
 import Footer from "./components/Footer";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import { getLocalizedPath, ENGLISH_WAREHOUSE_PATH } from "./utils/localizedRoutes";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+const publicRoutes = [
+  { path: "/", element: <Home /> },
+  { path: "/about", element: <About /> },
+  { path: "/founder-profile", element: <FounderProfile /> },
+  { path: "/services", element: <Services /> },
+  {
+    path: "/services/architectural-engineering-consultancy",
+    element: <ArchitecturalServicePage />,
+  },
+  {
+    path: "/services/civil-engineering-consultancy",
+    element: <CivilEngineeringServicePage />,
+  },
+  {
+    path: "/services/interior-design-consultancy",
+    element: <InteriorDesignServicePage />,
+  },
+  {
+    path: "/services/engineering-project-management",
+    element: <EngineeringProjectManagementPage />,
+  },
+  {
+    path: "/services/general-building-engineering-consultancy",
+    element: <GeneralBuildingEngineeringPage />,
+  },
+  {
+    path: ENGLISH_WAREHOUSE_PATH,
+    element: <WarehouseModificationDrawingsPage />,
+  },
+  { path: "/contact", element: <Contact /> },
+  { path: "/faq", element: <FAQ /> },
+  { path: "/areas", element: <AreasIndex /> },
+  { path: "/areas/sharjah", element: <AreaPage slug="sharjah" /> },
+  { path: "/areas/ajman", element: <AreaPage slug="ajman" /> },
+  { path: "/areas/khartoum", element: <AreaPage slug="khartoum" /> },
+  { path: "/blog", element: <BlogIndex /> },
+  {
+    path: "/blog/building-approval-stages-sharjah-ajman",
+    element: <BlogArticle />,
+  },
+  {
+    path: "/blog/structural-rehabilitation-assessment-khartoum",
+    element: <KhartoumRehabilitationArticle />,
+  },
+  {
+    path: "/blog/seismic-environmental-structural-design-middle-east-east-africa",
+    element: <ClimateDesignArticle />,
+  },
+];
 
 function App() {
   return (
@@ -33,78 +84,16 @@ function App() {
         <div className="App">
           <main>
             <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route exact path="/about" element={<About />} />
-              <Route
-                exact
-                path="/founder-profile"
-                element={<FounderProfile />}
-              />
-              <Route exact path="/services" element={<Services />} />
-              <Route
-                exact
-                path="/services/architectural-engineering-consultancy"
-                element={<ArchitecturalServicePage />}
-              />
-              <Route
-                exact
-                path="/services/civil-engineering-consultancy"
-                element={<CivilEngineeringServicePage />}
-              />
-              <Route
-                exact
-                path="/services/interior-design-consultancy"
-                element={<InteriorDesignServicePage />}
-              />
-              <Route
-                exact
-                path="/services/engineering-project-management"
-                element={<EngineeringProjectManagementPage />}
-              />
-              <Route
-                exact
-                path="/services/general-building-engineering-consultancy"
-                element={<GeneralBuildingEngineeringPage />}
-              />
-              <Route
-                exact
-                path="/ar/warehouse-factory-workshop-modification-drawings-sharjah"
-                element={<WarehouseModificationDrawingsPage />}
-              />
-              <Route exact path="/contact" element={<Contact />} />
-              <Route exact path="/faq" element={<FAQ />} />
-              <Route exact path="/areas" element={<AreasIndex />} />
-              <Route
-                exact
-                path="/areas/sharjah"
-                element={<AreaPage slug="sharjah" />}
-              />
-              <Route
-                exact
-                path="/areas/ajman"
-                element={<AreaPage slug="ajman" />}
-              />
-              <Route
-                exact
-                path="/areas/khartoum"
-                element={<AreaPage slug="khartoum" />}
-              />
-              <Route exact path="/blog" element={<BlogIndex />} />
-              <Route
-                exact
-                path="/blog/building-approval-stages-sharjah-ajman"
-                element={<BlogArticle />}
-              />
-              <Route
-                exact
-                path="/blog/structural-rehabilitation-assessment-khartoum"
-                element={<KhartoumRehabilitationArticle />}
-              />
-              <Route
-                exact
-                path="/blog/seismic-environmental-structural-design-middle-east-east-africa"
-                element={<ClimateDesignArticle />}
-              />
+              {publicRoutes.map(({ path, element }) => (
+                <Route key={path} path={path} element={element} />
+              ))}
+              {publicRoutes.map(({ path, element }) => (
+                <Route
+                  key={`ar-${path}`}
+                  path={getLocalizedPath(path, "ar")}
+                  element={element}
+                />
+              ))}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "./LocalizedLink";
 import { useTranslation } from "react-i18next";
 import PageIntro from "./PageIntro";
 import SEO from "./SEO";
@@ -12,7 +12,7 @@ const pageContent = {
   en: {
     title: "General Building Engineering Consultancy in Sharjah & Ajman",
     description:
-      "Sabir Elsir Engineering Consultants provides building engineering consultancy, architectural planning, design coordination, and engineering supervision in Sharjah, Ajman, and across the UAE.",
+      "Building engineering consultancy, architectural planning, design coordination, and supervision in Sharjah and Ajman.",
     eyebrow: "General Building Engineering Consultancy",
     heading: "General Building Engineering Consultancy in Sharjah and Ajman",
     lead:

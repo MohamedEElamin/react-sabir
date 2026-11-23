@@ -1,13 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "./LocalizedLink";
+import { useTranslation } from "react-i18next";
 import PageIntro from "./PageIntro";
 import SEO from "./SEO";
 import "../styles/ServiceDetail.css";
 
-const canonical =
+const englishCanonical =
+  "https://www.sabirelsir.ae/services/warehouse-factory-workshop-modification-drawings-sharjah";
+const arabicCanonical =
   "https://www.sabirelsir.ae/ar/warehouse-factory-workshop-modification-drawings-sharjah";
 
-const content = {
+const arabicContent = {
   title: "مخططات تعديل المستودعات والمصانع والورش في الشارقة",
   description:
     "خدمات إعداد وتعديل المخططات الهندسية للمستودعات والمصانع والورش في الشارقة، مع تجهيز الوثائق اللازمة لمعاملات البلدية وSEWA والدفاع المدني.",
@@ -106,7 +109,102 @@ const content = {
   ],
 };
 
+const englishContent = {
+  title: "Warehouse Modification Drawings | Sharjah",
+  description:
+    "Engineering drawing and documentation services for warehouse, factory, and workshop modifications in Sharjah, coordinated for relevant authority requirements.",
+  heading: "Warehouse, Factory & Workshop Modification Drawings in Sharjah",
+  lead:
+    "Engineering drawings and documentation for industrial and commercial modifications in Sharjah, prepared according to project scope and applicable authority requirements.",
+  sectionHeading:
+    "Engineering Consultancy for Industrial and Commercial Projects",
+  paragraphs: [
+    "Sabir Elsir Engineering Consultants prepares and coordinates engineering drawings for warehouses, factories, and workshops in Sharjah according to project needs and applicable technical and regulatory requirements. Depending on the project and agreed scope, this may include architectural, structural, mechanical, electrical, and fire-safety drawings.",
+    "We help owners prepare drawings and documents for alterations, renewals, and changes of use, taking account of Sharjah Municipality, SEWA, and Civil Defense requirements as applicable to each authority's responsibilities and the project.",
+    "Depending on the project requirements, services may include architectural and structural modification drawings, ventilation and air-conditioning coordination, electrical plans, and fire-safety documentation, as well as assistance coordinating submissions and responses to technical comments.",
+    "Whether you are modifying an existing warehouse, developing a factory, or reorganizing an industrial workshop, our team can help prepare the engineering drawings and documents required for the project, subject to its scope and the applicable Sharjah regulations.",
+    "Contact us to discuss the requirements for warehouse, factory, or workshop modification drawings.",
+  ],
+  tableTitle:
+    "Engineering Drawing Modification Services for Industrial Facilities in Sharjah",
+  tableLabel:
+    "Engineering drawing modification services for industrial facilities in Sharjah",
+  categoryColumn: "Information",
+  detailsColumn: "Details",
+  rows: [
+    { category: "Consultancy", details: "Sabir Elsir Engineering Consultants" },
+    {
+      category: "Main service",
+      details: "Preparation and modification of engineering drawings",
+    },
+    { category: "Location", details: "Sharjah, United Arab Emirates" },
+    { category: "Facility types", details: "Warehouses, factories, and workshops" },
+    {
+      category: "Disciplines",
+      details: "Architectural, structural, mechanical, and electrical",
+    },
+    {
+      category: "Relevant authorities",
+      details: "Sharjah Municipality, SEWA, and Civil Defense, as applicable",
+    },
+    { category: "Application types", details: "Alteration, renewal, and change of use" },
+  ],
+  faqTitle: "Frequently Asked Questions",
+  faqs: [
+    {
+      question: "Do you prepare warehouse modification drawings in Sharjah?",
+      answer:
+        "Yes. We prepare and coordinate engineering drawings for warehouse modifications according to the project scope and the applicable technical and regulatory requirements.",
+    },
+    {
+      question: "Can you prepare drawings for factory and workshop modifications?",
+      answer:
+        "Yes. Drawing preparation and coordination for factories and industrial workshops can be scoped according to the facility's activity and project requirements.",
+    },
+    {
+      question: "Which drawings may be needed for warehouse or factory modifications?",
+      answer:
+        "The required drawings depend on the proposed modification and activity. They may include architectural, structural, mechanical, electrical, and fire-safety drawings.",
+    },
+    {
+      question: "Can you help coordinate Sharjah Municipality approval submissions?",
+      answer:
+        "We can help prepare and coordinate the engineering drawings and documents for submission, according to the agreed scope and application requirements. The relevant authority makes the approval decision.",
+    },
+    {
+      question: "Can you help coordinate SEWA requirements?",
+      answer:
+        "We can help coordinate utility-related drawings and documents when SEWA review or approval applies. Requirements depend on the project and the services requested.",
+    },
+    {
+      question: "Can an existing warehouse use be changed to another activity?",
+      answer:
+        "A change of use depends on the property, proposed activity, applicable regulations, and approvals from the relevant authorities. We can help prepare engineering documents within the agreed project scope.",
+    },
+    {
+      question: "How can I request engineering drawing modification services in Sharjah?",
+      answer:
+        "Contact Sabir Elsir Engineering Consultants with details about the facility and proposed modification so the project requirements and necessary engineering documents can be reviewed.",
+    },
+  ],
+  home: "Home",
+  services: "Services",
+  breadcrumb: "Breadcrumb",
+  serviceName: "Warehouse, Factory & Workshop Modification Drawings",
+  serviceTypes: [
+    "Warehouse modification drawings",
+    "Factory modification drawings",
+    "Workshop modification drawings",
+    "Engineering drawing coordination",
+  ],
+};
+
 function WarehouseModificationDrawingsPage() {
+  const { i18n } = useTranslation();
+  const language = i18n.language?.startsWith("ar") ? "ar" : "en";
+  const isArabic = language === "ar";
+  const content = isArabic ? arabicContent : englishContent;
+  const canonical = isArabic ? arabicCanonical : englishCanonical;
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -168,12 +266,25 @@ function WarehouseModificationDrawingsPage() {
         title={content.title}
         description={content.description}
         canonical={canonical}
-        language="ar"
+        language={language}
+        localized={false}
+        alternateUrls={{
+          en: englishCanonical,
+          ar: arabicCanonical,
+        }}
         structuredData={structuredData}
       />
-      <div className="service-detail-page" dir="rtl" lang="ar">
+      <div
+        className="service-detail-page"
+        dir={isArabic ? "rtl" : "ltr"}
+        lang={language}
+      >
         <PageIntro
-          eyebrow="الاستشارات الهندسية للمشاريع الصناعية والتجارية"
+          eyebrow={
+            isArabic
+              ? "الاستشارات الهندسية للمشاريع الصناعية والتجارية"
+              : "Engineering consultancy for industrial and commercial projects"
+          }
           title={content.heading}
           description={content.lead}
         />

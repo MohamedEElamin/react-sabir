@@ -11,10 +11,10 @@ const Contact = () => {
   const isArabic = language === "ar";
   const title = isArabic
     ? "تواصل معنا | صابر السر للاستشارات الهندسية"
-    : "Contact | Sabir Elsir Engineering Consultants";
+    : "Contact Sabir Elsir Engineering Consultants";
   const description = isArabic
     ? "تواصل مع صابر السر للاستشارات الهندسية للاستفسار عن خدمات التصميم والاستشارات والإشراف الهندسي في الإمارات والسودان."
-    : "Contact Sabir Elsir Engineering Consultants about engineering design, consultancy, and supervision services in the UAE and Sudan.";
+    : "Contact us for architectural and interior design, 3D visualization, engineering consultancy, and project supervision in Sharjah, Ajman, UAE, and Sudan.";
   return (
     <>
       <SEO
@@ -22,17 +22,20 @@ const Contact = () => {
         description={description}
         canonical="https://www.sabirelsir.ae/contact"
         language={language}
+        pageType="ContactPage"
       />
 
       <PageIntro
-        eyebrow={isArabic ? "تواصل معنا" : "Contact"}
+        eyebrow={isArabic ? "تواصل معنا" : "Contact Us"}
         title={
-          isArabic ? "تواصل مع فريقنا الهندسي" : "Contact our engineering team"
+          isArabic
+            ? "تواصل مع شركة صابر السر للاستشارات الهندسية"
+            : "Contact Sabir Elsir Engineering Consultants"
         }
         description={
           isArabic
             ? "تواصل معنا للاستفسار عن خدمات التصميم والاستشارات والإشراف في الإمارات والسودان."
-            : "Reach out about engineering design, consultancy, and supervision services in the UAE and Sudan."
+            : "Get in touch with our engineering consultancy team for professional architectural design, interior design, engineering consultancy, 3D design, and project supervision services across Sharjah, Ajman, the UAE, and Sudan."
         }
       />
       <div className="contact-page-shell">

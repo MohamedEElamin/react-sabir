@@ -4,6 +4,12 @@ import { HelmetProvider } from "react-helmet-async";
 import { MemoryRouter } from "react-router-dom";
 import WarehouseModificationDrawingsPage from "./WarehouseModificationDrawingsPage";
 
+jest.mock("react-i18next", () => ({
+  useTranslation: () => ({
+    i18n: { language: "ar" },
+  }),
+}));
+
 test("renders Arabic service metadata, details, FAQs, and structured data", () => {
   render(
     <HelmetProvider>

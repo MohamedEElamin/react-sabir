@@ -46,7 +46,7 @@ test("renders interior design metadata, content, FAQs, and structured data", () 
     document.querySelector('meta[name="description"]'),
   ).toHaveAttribute(
     "content",
-    "Sabir Elsir Engineering Consultants provides interior design consultancy, space planning, 3D visualization, and engineering coordination in Sharjah, Ajman, and across the UAE.",
+    "Interior design consultancy, space planning, 3D visualization, and engineering coordination in Sharjah and Ajman.",
   );
   expect(
     document.querySelector('link[rel="canonical"]'),

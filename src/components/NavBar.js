@@ -1,18 +1,26 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "../styles/NavBar.css";
 import withTrans from "./withTranslation";
 import { useTranslation } from "react-i18next";
+import Link from "./LocalizedLink";
+import {
+  getLanguageFromPath,
+  getLocalizedPath,
+} from "../utils/localizedRoutes";
 
 const Navbar = () => {
   const { i18n, t } = useTranslation();
   const language = i18n.resolvedLanguage || i18n.language || "en";
+  const location = useLocation();
+  const navigate = useNavigate();
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
-  const toggleLanguage = () => {
+  const toggleLanguage = async () => {
     const newLanguage = language.startsWith("en") ? "ar" : "en";
-    i18n.changeLanguage(newLanguage);
+    await i18n.changeLanguage(newLanguage);
+    navigate(getLocalizedPath(location.pathname, newLanguage));
   };
 
   const handleClick = () => setClick(!click);
@@ -33,6 +41,13 @@ const Navbar = () => {
     // Cleanup event listener to avoid memory leaks
     return () => window.removeEventListener("resize", showButton);
   }, []);
+
+  useEffect(() => {
+    const pathLanguage = getLanguageFromPath(location.pathname);
+    if (!language.startsWith(pathLanguage)) {
+      i18n.changeLanguage(pathLanguage);
+    }
+  }, [i18n, language, location.pathname]);
 
   useEffect(() => {
     const isArabic = language.startsWith("ar");

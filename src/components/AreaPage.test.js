@@ -71,7 +71,8 @@ test("renders Khartoum asset valuation section, official link, and schema", () =
       Array.isArray(type) && type.includes("ProfessionalService"),
   );
   const assetValuationService = graph.find(
-    ({ "@id": id }) => id === "https://www.sabirelsir.ae/areas/khartoum#asset-valuation",
+    ({ "@id": id }) =>
+      id === "https://www.sabirelsir.ae/ar/areas/khartoum#asset-valuation",
   );
 
   expect(professionalService.telephone).toBe("0912311241");

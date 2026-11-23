@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "./LocalizedLink";
 import { useTranslation } from "react-i18next";
 import PageIntro from "./PageIntro";
 import SEO from "./SEO";
@@ -12,7 +12,7 @@ const pageContent = {
   en: {
     title: "Civil Engineering Consultancy in Sharjah & Ajman",
     description:
-      "Sabir Elsir Engineering Consultants provides civil engineering consultancy for residential, commercial, and industrial projects in Sharjah, Ajman, and across the UAE.",
+      "Civil engineering consultancy for residential, commercial, and industrial projects in Sharjah and Ajman.",
     eyebrow: "Civil Engineering Consultancy",
     heading: "Civil Engineering Consultancy in Sharjah and Ajman",
     lead:

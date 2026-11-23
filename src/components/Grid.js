@@ -149,7 +149,7 @@ function Grid() {
               <img
                 src="/images/modVilla2.jpg"
                 className="card-img-top"
-                alt="Modern Villa Design"
+                alt={isArabic ? "تصميم فلل عصرية" : "Modern villa design"}
                 loading="lazy"
                 width={400}
                 height={225}
@@ -173,8 +173,8 @@ function Grid() {
           <div className="col-md-4 mb-4">
             <div className="card h-100">
               <img
-                src="/images/P17-min.jpg"
-                alt="Mosque"
+                src="/images/P17-min.webp"
+                alt={isArabic ? "تصميم معماري لمسجد" : "Mosque architectural design"}
                 loading="lazy"
                 className="card-img-top"
                 width={400}
@@ -199,9 +199,9 @@ function Grid() {
           <div className="col-md-4 mb-4">
             <div className="card h-100">
               <img
-                src="/images/re-min.jpg"
+                src="/images/re-min.webp"
                 loading="lazy"
-                alt="Landscape Design"
+                alt={isArabic ? "تصميم مناظر طبيعية" : "Landscape design"}
                 className="card-img-top"
                 width={400}
                 height={225}
@@ -215,11 +215,11 @@ function Grid() {
                 <p className="card-text">
                   {i18n.language.startsWith("ar") ? (
                     <>
-                      تقدم شركة صابر السر للاستشارات الهندسية خدمات{" "}
+                      تقدم شركة صابر السر للاستشارات الهندسية خدمات&nbsp;
                       <strong>
                         تصميم اللاندسكيب وتنسيق الحدائق والمناظر الطبيعية
-                      </strong>{" "}
-                      للمشاريع السكنية والتجارية في الشارقة وعجمان. تشمل خدماتنا
+                      </strong>
+                      &nbsp;للمشاريع السكنية والتجارية في الشارقة وعجمان. تشمل خدماتنا
                       إعداد المخططات الهندسية للمساحات الخارجية، وتصميم الحدائق
                       المنزلية، وتخطيط المسطحات الخضراء، وتصميم الممرات والعناصر
                       المعمارية الخارجية (Hardscape)، وأنظمة الإضاءة الخارجية

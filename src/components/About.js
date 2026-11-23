@@ -9,7 +9,7 @@ const aboutContent = {
     title:
       "About Sabir Elsir Engineering Consultants | Sharjah & Ajman",
     description:
-      "Founded in 2001, Sabir Elsir Engineering Consultants provides architectural, structural, and civil design, supervision, and project management in the UAE and Sudan.",
+      "Sabir Elsir Engineering Consultants, founded in 2001, offers architectural, structural, civil, supervision, and project management in the UAE and Sudan.",
     heading:
       "About Us | Sabir Elsir Engineering Consultants in Sharjah and Ajman",
     introTitle:
@@ -77,7 +77,7 @@ const aboutContent = {
   ar: {
     title: "من نحن | صابر السر للاستشارات الهندسية في الشارقة وعجمان",
     description:
-      "تأسس مكتب صابر السر للاستشارات الهندسية عام 2001، ويقدم خدمات التصميم والاستشارات الهندسية للمشاريع في الإمارات والسودان، مع التركيز على الشارقة وعجمان والخرطوم.",
+      "تأسس مكتب صابر السر للاستشارات الهندسية عام 2001، ويقدم خدمات هندسية وإدارة مشاريع في الإمارات والسودان، خاصة في الشارقة وعجمان والخرطوم.",
     heading: "من نحن | صابر السر للاستشارات الهندسية في الشارقة وعجمان",
     introTitle:
       "مكتب صابر السر للاستشارات الهندسية: خبرة في التصميم والحلول الهندسية منذ عام 2001",
@@ -156,6 +156,7 @@ function About() {
         description={content.description}
         canonical={canonical}
         language={language}
+        pageType="AboutPage"
       />
 
       <PageIntro
@@ -166,16 +167,10 @@ function About() {
 
       <article
         className="site-page-content about-page-content about-us-section"
-        itemScope
-        itemType="https://schema.org/EngineeringService"
         dir={language === "ar" ? "rtl" : "ltr"}
       >
-        <meta
-          itemProp="areaServed"
-          content="Sharjah, Ajman, United Arab Emirates, Khartoum, Sudan"
-        />
-        <h2 itemProp="name">{content.introTitle}</h2>
-        <div itemProp="description">
+        <h2>{content.introTitle}</h2>
+        <div>
           {content.introParagraphs.map((paragraph, index) => (
             <p
               className={index === 0 ? "about-section-lead" : undefined}

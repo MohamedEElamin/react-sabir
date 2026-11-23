@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "./LocalizedLink";
 import { useTranslation } from "react-i18next";
 import PageIntro from "./PageIntro";
 import SEO from "./SEO";
@@ -10,9 +10,9 @@ const canonical =
 
 const pageContent = {
   en: {
-    title: "Engineering Project Management Consultancy in Sharjah & Ajman",
+    title: "Engineering Project Management | Sharjah & Ajman",
     description:
-      "Sabir Elsir Engineering Consultants provides engineering project management, construction coordination, project monitoring, and consultancy services in Sharjah, Ajman, and across the UAE.",
+      "Engineering project management, construction coordination, and progress monitoring in Sharjah and Ajman.",
     eyebrow: "Engineering Project Management Consultancy",
     heading:
       "Engineering Project Management Consultancy in Sharjah and Ajman",

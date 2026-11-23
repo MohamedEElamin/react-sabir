@@ -37,7 +37,7 @@ test("renders architectural service metadata, content, and structured data", () 
     ),
   ).toBeInTheDocument();
   expect(document.title).toBe(
-    "Architectural Design & Engineering Consultancy in Sharjah & Ajman",
+    "Architectural Design Consultancy | Sharjah & Ajman",
   );
   expect(
     document.querySelector('link[rel="canonical"]'),

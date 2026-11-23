@@ -1,13 +1,14 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
-import Backend from "i18next-http-backend"; // Add this line if using the backend plugin
+import { getLanguageFromPath } from "../utils/localizedRoutes";
 
 i18n
-  .use(Backend) // Add this line if using the backend plugin
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    lng:
+      typeof window === "undefined"
+        ? "en"
+        : getLanguageFromPath(window.location.pathname),
     resources: {
       en: {
         translation: {

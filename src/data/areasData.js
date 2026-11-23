@@ -176,7 +176,7 @@ const areas = [
       name: "Khartoum",
       country: "Sudan",
       metaTitle:
-        "Engineering Consultants in Khartoum & Asset Valuation | Sabir Elsir",
+        "Engineering Consultants in Khartoum | Sabir Elsir",
       metaDescription:
         "Engineering and architectural consultancy in Sudan, including structural assessment, rehabilitation planning, and asset valuation services.",
       eyebrow: "Areas we serve · Sudan",

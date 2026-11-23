@@ -55,7 +55,7 @@ test("renders civil service metadata, content, and structured data", () => {
     document.querySelector('meta[name="description"]'),
   ).toHaveAttribute(
     "content",
-    "Sabir Elsir Engineering Consultants provides civil engineering consultancy for residential, commercial, and industrial projects in Sharjah, Ajman, and across the UAE.",
+    "Civil engineering consultancy for residential, commercial, and industrial projects in Sharjah and Ajman.",
   );
   expect(
     document.querySelector('link[rel="canonical"]'),

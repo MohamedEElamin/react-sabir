@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "./LocalizedLink";
 import { useTranslation } from "react-i18next";
 import PageIntro from "./PageIntro";
 import SEO from "./SEO";
@@ -10,9 +10,9 @@ const canonical =
 
 const pageContent = {
   en: {
-    title: "Architectural Design & Engineering Consultancy in Sharjah & Ajman",
+    title: "Architectural Design Consultancy | Sharjah & Ajman",
     description:
-      "Sabir Elsir Engineering Consultants provides architectural design, building planning, villa design, and engineering consultancy services in Sharjah, Ajman, and the UAE.",
+      "Architectural design, villa planning, and engineering consultancy in Sharjah and Ajman.",
     eyebrow: "Engineering Services",
     heading:
       "Architectural Design & Engineering Consultancy in Sharjah and Ajman",

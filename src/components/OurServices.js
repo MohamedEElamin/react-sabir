@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "./LocalizedLink";
 import "../styles/Cards.css";
 import { useTranslation } from "react-i18next";
 import ServiceItem from "./ServiceItem";
@@ -89,7 +89,7 @@ const modificationDrawingsContent = {
     heading: "Warehouse, Factory & Workshop Modification Drawings",
     summary:
       "Engineering drawings and documentation for industrial and commercial modifications in Sharjah, prepared according to project scope and applicable authority requirements.",
-    link: "View service details in Arabic",
+    link: "View service details",
   },
   ar: {
     heading: "مخططات تعديل المستودعات والمصانع والورش في الشارقة",
@@ -146,11 +146,11 @@ const OurServices = () => {
             <div className="card">
               <img
                 className="card-img-top"
-                src="/images/vils-min.jpg"
+                src="/images/vils-min.webp"
                 loading="lazy"
-                alt="modern villa design"
-                width="3840"
-                height="2160"
+                alt={isArabic ? "تصميم فيلا عصرية" : "Modern villa design"}
+                width="1920"
+                height="1080"
               />
               <div className="card-body">
                 <p className="text-muted text-uppercase small mb-2">
@@ -170,9 +170,13 @@ const OurServices = () => {
           <div className="col-md-4 mb-4">
             <div className="card">
               <img
-                src="/images/3000.jpeg"
+                src="/images/3000.webp"
                 loading="lazy"
-                alt="Promotional graphic for warehouse, factory, and workshop modification drawings"
+                alt={
+                  isArabic
+                    ? "رسم توضيحي لخدمة تعديل مخططات المستودعات والمصانع والورش"
+                    : "Illustration of warehouse, factory, and workshop drawing modification services"
+                }
                 className="card-img-top card-img-top--promo"
                 width="1047"
                 height="1152"
@@ -195,12 +199,12 @@ const OurServices = () => {
           <div className="col-md-4 mb-4">
             <div className="card">
               <img
-                src="/images/13 (2)-min.jpg"
+                src="/images/13 (2)-min.webp"
                 loading="lazy"
-                alt="Modern circular staircase design"
+                alt={isArabic ? "تصميم درج دائري حديث" : "Modern circular staircase"}
                 className="card-img-top"
-                width="3840"
-                height="2160"
+                width="1920"
+                height="1080"
               />
               <div className="card-body">
                 <h2 className="card-title">{civilEngineering.heading}</h2>
@@ -219,12 +223,12 @@ const OurServices = () => {
           <div className="col-md-4 mb-4">
             <div className="card">
               <img
-                src="/images/3-min.jpg"
+                src="/images/3-min.webp"
                 loading="lazy"
-                alt="General Building"
+                alt={isArabic ? "تصميم مبنى عام" : "General building design"}
                 className="card-img-top"
-                width="3840"
-                height="2160"
+                width="1920"
+                height="1080"
               />
               <div className="card-body">
                 <h2 className="card-title">{generalBuilding.heading}</h2>
@@ -243,7 +247,7 @@ const OurServices = () => {
               <img
                 src="/images/int2.jpg"
                 loading="lazy"
-                alt="Interior Design"
+                alt={isArabic ? "تصميم داخلي" : "Interior design"}
                 className="card-img-top"
                 width="1080"
                 height="1080"
@@ -263,12 +267,12 @@ const OurServices = () => {
           <div className="col-md-4 mb-4">
             <div className="card">
               <img
-                src="/images/4 (3)-min.jpg"
+                src="/images/4 (3)-min.webp"
                 loading="lazy"
-                alt=" villa design"
+                alt={isArabic ? "تصميم فيلا" : "Villa design"}
                 className="card-img-top"
-                width="7680"
-                height="4320"
+                width="1920"
+                height="1080"
               />
               <div className="card-body">
                 <h2 className="card-title">{projectManagement.heading}</h2>

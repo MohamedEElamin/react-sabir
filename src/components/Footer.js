@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-router-dom";
+import Link from "./LocalizedLink";
 
 import { faSnapchatGhost } from "@fortawesome/free-brands-svg-icons";
 

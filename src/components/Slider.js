@@ -33,51 +33,52 @@ const AutoSlider = () => {
     ),
   };
 
-  const { t } = useTranslation();
+  const { i18n, t } = useTranslation();
+  const isArabic = i18n.language?.startsWith("ar") === true;
 
   return (
     <div className="calc">
       <Slider {...settings} className="Container fluid">
         <div className="slide">
           <img
-            src="/images/circle_villa-min.jpg"
+            src="/images/circle_villa-min.webp"
             loading="eager"
             fetchPriority="high"
-            alt="Contemporary villa design by Sabir Elsir Engineering Consultants"
+            alt={isArabic ? "تصميم فيلا معاصر" : "Contemporary villa design"}
             className="img-fluid"
-            width="3840"
-            height="2160"
+            width="1920"
+            height="1080"
           />
         </div>
         <div className="slide">
           <img
-            src="/images/vils-min.jpg"
-            alt="Classic Villa"
+            src="/images/vils-min.webp"
+            alt={isArabic ? "تصميم فيلا كلاسيكية" : "Classic villa design"}
             loading="lazy"
             title={t("Classic Villa Design")}
             className="img-fluid"
-            width="3840"
-            height="2160"
+            width="1920"
+            height="1080"
           />
         </div>
 
         <div className="slide">
           <img
-            src="/images/تصميم مسجد-min.jpg"
+            src="/images/تصميم مسجد-min.webp"
             loading="lazy"
-            alt="Modern Mosque Design"
+            alt={isArabic ? "تصميم مسجد حديث" : "Modern mosque design"}
             title={t("Modern Mosque Design")}
             className="img-fluid"
-            width="3000"
-            height="1687"
+            width="1920"
+            height="1080"
           />
         </div>
 
         <div className="slide">
           <img
-            src="/images/li.jpg"
+            src="/images/li.webp"
             loading="lazy"
-            alt="Interior Design"
+            alt={isArabic ? "تصميم داخلي" : "Interior design"}
             title={t("Interior Design")}
             className="img-fluid"
             width="1600"
@@ -87,24 +88,24 @@ const AutoSlider = () => {
 
         <div className="slide">
           <img
-            src="/images/villa_compound.jpg"
+            src="/images/villa_compound.webp"
             loading="lazy"
-            alt="Villa"
+            alt={isArabic ? "تصميم مجمع فلل" : "Villa compound design"}
             title={"Villa Compound"}
             className="img-fluid"
-            width="3840"
-            height="2160"
+            width="1920"
+            height="1080"
           />
         </div>
         <div className="slide">
           <img
-            src="/images/000.jpg"
+            src="/images/000.webp"
             loading="lazy"
-            alt="Villa"
+            alt={isArabic ? "تصميم فيلا" : "Villa design"}
             title={"Villa"}
             className="img-fluid"
-            width="2560"
-            height="1440"
+            width="1920"
+            height="1080"
           />
         </div>
       </Slider>

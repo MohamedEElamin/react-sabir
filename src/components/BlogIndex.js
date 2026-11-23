@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "./LocalizedLink";
 import { useTranslation } from "react-i18next";
 import SEO from "./SEO";
 import "../styles/BlogIndex.css";
@@ -69,10 +69,18 @@ function BlogIndex() {
   const language = i18n.language?.startsWith("ar") ? "ar" : "en";
   const isArabic = language === "ar";
   const content = posts[language];
-  const title = isArabic ? "المدونة الهندسية" : "Engineering insights";
+  const title = isArabic
+    ? "رؤى هندسية وأدلة فنية"
+    : "Engineering Insights & Technical Guides";
   const description = isArabic
-    ? "مقالات وأدلة هندسية عن اعتمادات البناء والتصميم الإنشائي في الإمارات، وتقييم الأضرار والتأهيل في السودان."
-    : "Engineering guides on UAE building approvals, cross-border structural design, and damage assessment and rehabilitation in Sudan.";
+    ? "استكشف الرؤى الهندسية والأدلة الفنية والموارد المهنية من شركة صابر السر للاستشارات الهندسية. تعرّف على لوائح البناء في الإمارات، واعتمادات بلدية الشارقة، ومتطلبات SEWA، والتصميم المعماري والإنشائي، وإدارة التشييد، وتقييم أضرار المباني وتأهيلها في السودان."
+    : "Explore expert engineering insights, technical guides, and professional resources from Sabir Elsir Engineering Consultants. Discover information about UAE building regulations, Sharjah Municipality approvals, SEWA requirements, architectural and structural design, construction management, and building damage assessment and rehabilitation in Sudan.";
+  const metaTitle = isArabic
+    ? `${title} | صابر السر`
+    : `${title} | Sabir Elsir`;
+  const metaDescription = isArabic
+    ? "أدلة فنية حول لوائح البناء في الإمارات، واعتمادات بلدية الشارقة ومتطلبات SEWA، والتصميم الهندسي وتأهيل المباني في السودان."
+    : "Technical guides on UAE building regulations, Sharjah approvals, SEWA, structural design, and building rehabilitation in Sudan.";
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -94,8 +102,8 @@ function BlogIndex() {
   return (
     <>
       <SEO
-        title={`${title} | Sabir Elsir Engineering Consultants`}
-        description={description}
+        title={metaTitle}
+        description={metaDescription}
         canonical="https://www.sabirelsir.ae/blog"
         language={language}
         structuredData={structuredData}
@@ -105,7 +113,7 @@ function BlogIndex() {
         <header className="blog-index-intro">
           <div className="blog-index-inner">
             <p className="blog-index-eyebrow">
-              {isArabic ? "المعرفة الهندسية" : "Engineering knowledge"}
+              {isArabic ? "موارد فنية" : "Technical resources"}
             </p>
             <h1>{title}</h1>
             <p>{description}</p>

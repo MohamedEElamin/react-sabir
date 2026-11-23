@@ -1,63 +1,75 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "./LocalizedLink";
 import { useTranslation } from "react-i18next";
 import SEO from "./SEO";
 import "../styles/FAQ.css";
 
 const faqContent = {
   en: {
-    title: "Engineering FAQs | Sabir Elsir Consultants",
+    title: "Engineering Services FAQ | Sabir Elsir Consultants",
     description:
-      "Answers about engineering design, project supervision, building permits, and consultancy services in Sharjah, Ajman, and Khartoum.",
-    eyebrow: "Client information",
-    heading: "Frequently asked questions",
+      "Answers about architectural and interior design, 3D visualization, MEP, Sharjah Municipality and SEWA, Civil Defense, supervision, fees, and service areas.",
+    eyebrow: "FAQ",
+    heading: "Frequently Asked Questions About Our Engineering Services",
     intro:
-      "Clear answers about our engineering services, local approvals, project timelines, and consultancy fees in the UAE and Sudan.",
+      "Find answers to common questions about Sabir Elsir Engineering Consultants, including architectural design, interior design, 3D visualization, engineering consultancy, municipality approvals, project timelines, and consultancy fees in Sharjah, Ajman, the UAE, and Sudan.",
     sections: [
       {
-        title: "Engineering services",
+        title: "Design and consultancy services",
         questions: [
           {
-            question: "What engineering consultancy services do you provide?",
+            question: "What design and engineering services do you provide?",
             answer:
-              "We provide architectural and structural design, project management, engineering supervision, building permit and government approval support, feasibility studies, and technical assessments of existing buildings.",
+              "Services include architectural design, interior design concepts and 3D visualization, civil and structural engineering, and mechanical, electrical, and plumbing (MEP) engineering. Project consultation, coordination, and construction supervision are available according to the agreed project scope.",
           },
           {
-            question: "Do you offer interior design and landscape design?",
+            question: "What is included in your MEP engineering services?",
             answer:
-              "Yes. We provide interior and landscape design services, developing practical, contemporary spaces that make effective use of each site and meet the project’s functional and aesthetic needs.",
+              "MEP covers mechanical, electrical, and plumbing engineering. The design documents and coordination required depend on the building use, project requirements, and agreed scope; MEP layouts are coordinated with the architectural and structural design.",
+          },
+          {
+            question:
+              "Is construction supervision included with design or project consultation?",
+            answer:
+              "Not automatically. Construction supervision is included only when it is specified in the agreed scope. The proposal should define the supervision responsibilities and extent of service for the project.",
           },
         ],
       },
       {
-        title: "Locations and building permits",
+        title: "Municipality and authority approvals",
         questions: [
           {
-            question: "How do I obtain a building permit in Sharjah or Ajman?",
+            question:
+              "How do you support Sharjah Municipality building approvals?",
             answer:
-              "The process depends on the regulations of the relevant emirate. It generally involves reviewing the plot and planning requirements, preparing preliminary architectural and structural designs for the client’s approval, submitting the application and obtaining required service-provider approvals, then securing the final permit and appointing the contractor and supervising consultant.",
+              "We support the preparation and coordination of architectural and engineering drawings and submission documents for the applicable approval process. Sharjah Municipality's required documents and reviews depend on the plot, building use, project scope, and current regulations. Approval is issued by the relevant authority and is not guaranteed by preparing or submitting documents.",
           },
           {
-            question:
-              "What engineering consultancy services do you provide in Khartoum?",
+            question: "What is involved in coordinating approvals with SEWA?",
             answer:
-              "In Khartoum, Sudan, we provide engineering consultancy for villas and residential, commercial, and administrative buildings. Our services include design and engineering supervision tailored to local planning requirements, with a focus on construction quality and safety.",
+              "For projects in Sharjah, we coordinate the relevant utility drawings and documents with the Sharjah Electricity, Water and Gas Authority (SEWA) when its review or service approval applies. Requirements depend on the site, requested utility services, and project; SEWA's review is separate from the municipality's building approval.",
+          },
+          {
+            question: "When are Civil Defense approvals required?",
+            answer:
+              "Civil Defense review may be required for fire and life-safety matters, depending on the building use, project details, and applicable authority requirements. Where required, the relevant plans and documents can be coordinated for review. The authority determines the applicable requirements and approval.",
           },
         ],
       },
       {
-        title: "Timelines and fees",
+        title: "Locations, timelines, and fees",
         questions: [
           {
             question:
-              "How long does residential design and building permit approval take?",
+              "Where are your engineering consultancy services available?",
             answer:
-              "A residential design and permit process typically takes around 4 to 8 weeks. The actual duration depends on the project’s size and complexity, requested revisions, and the review and approval timelines of the relevant authorities.",
+              "The company serves projects in Sharjah, Ajman, and surrounding areas in the UAE, as well as Khartoum and surrounding areas in Sudan. Available services and authority procedures depend on the project's location and agreed scope.",
           },
           {
-            question: "What determines the cost of engineering consultancy?",
+            question:
+              "How are project timelines and consultancy fees determined?",
             answer:
-              "Fees depend on the project type, total built-up area and number of floors, the requested scope (design only or design with supervision), and the applicable requirements in the project location, including Sharjah, Ajman, or Khartoum.",
+              "There is no single timeline or fee for every project. Both depend on the location, building type and area, number of floors, required design disciplines, requested services (including whether supervision is included), and authority review times. A project-specific estimate can be prepared after reviewing these details.",
           },
         ],
       },
@@ -68,54 +80,64 @@ const faqContent = {
   ar: {
     title: "الأسئلة الشائعة | صابر السر للاستشارات الهندسية",
     description:
-      "إجابات عن التصميم الهندسي والإشراف على المشاريع وتراخيص البناء والخدمات الاستشارية في الشارقة وعجمان والخرطوم.",
-    eyebrow: "معلومات للعملاء",
-    heading: "الأسئلة الشائعة",
+      "إجابات حول التصميم وMEP واعتمادات بلدية الشارقة ومتطلبات SEWA والدفاع المدني والإشراف ورسوم الاستشارات والخدمات في الإمارات والسودان.",
+    eyebrow: "الأسئلة الشائعة",
+    heading: "الأسئلة الشائعة حول خدماتنا الهندسية",
     intro:
-      "إجابات واضحة عن خدماتنا الهندسية والموافقات المحلية والمدة الزمنية للمشاريع وتكاليف الاستشارات في الإمارات والسودان.",
+      "اعثر على إجابات للأسئلة الشائعة حول صابر السر للاستشارات الهندسية، بما في ذلك التصميم المعماري والداخلي والتصور ثلاثي الأبعاد والاستشارات الهندسية وموافقات البلدية ومدد المشاريع ورسوم الاستشارات في الشارقة وعجمان والإمارات والسودان.",
     sections: [
       {
-        title: "الخدمات الهندسية",
+        title: "خدمات التصميم والاستشارات",
         questions: [
           {
-            question: "ما الخدمات التي تقدمها شركة الاستشارات الهندسية؟",
+            question: "ما خدمات التصميم والهندسة التي تقدمونها؟",
             answer:
-              "نقدم التصميم المعماري والإنشائي، وإدارة المشاريع، والإشراف الهندسي، وخدمات تراخيص البناء والموافقات الحكومية، ودراسات الجدوى، والتقييمات الفنية للمباني القائمة.",
+              "تشمل الخدمات التصميم المعماري، وأفكار التصميم الداخلي والتصور ثلاثي الأبعاد، والهندسة المدنية والإنشائية، وهندسة الميكانيكا والكهرباء والسباكة (MEP). كما تتوفر استشارات المشاريع وتنسيقها والإشراف على التنفيذ وفق نطاق العمل المتفق عليه.",
           },
           {
-            question: "هل تقدمون خدمات التصميم الداخلي وتنسيق المواقع؟",
+            question: "ما الذي تشمل عليه خدمات هندسة MEP؟",
             answer:
-              "نعم، نقدم خدمات التصميم الداخلي وتنسيق المواقع الخارجية، مع تطوير مساحات عصرية وعملية تستفيد من الموقع بكفاءة وتلبي الاحتياجات الوظيفية والجمالية للمشروع.",
+              "تشمل MEP تخصصات الميكانيكا والكهرباء والسباكة. وتتحدد وثائق التصميم والتنسيق المطلوبة بحسب استخدام المبنى ومتطلبات المشروع ونطاق العمل المتفق عليه، مع تنسيق مخططات هذه التخصصات مع التصميمين المعماري والإنشائي.",
+          },
+          {
+            question: "هل يشمل عقد التصميم أو الاستشارة الإشراف على التنفيذ؟",
+            answer:
+              "ليس تلقائياً. يُقدّم الإشراف على التنفيذ عندما يكون منصوصاً عليه في نطاق العمل المتفق عليه، وينبغي أن يحدد العرض مسؤوليات الإشراف ومدى الخدمة للمشروع.",
           },
         ],
       },
       {
-        title: "المواقع وتراخيص البناء",
+        title: "موافقات البلدية والجهات المختصة",
         questions: [
           {
-            question: "كيف أستخرج رخصة بناء في الشارقة أو عجمان؟",
+            question: "كيف تدعمون إجراءات موافقات بلدية الشارقة؟",
             answer:
-              "تعتمد الإجراءات على أنظمة الإمارة المعنية، وتشمل عادةً دراسة قطعة الأرض والاشتراطات التخطيطية، وإعداد التصاميم المعمارية والإنشائية الأولية لاعتماد العميل، ثم تقديم المعاملة واستكمال موافقات الجهات الخدمية، وأخيراً إصدار الرخصة النهائية واعتماد المقاول والاستشاري المشرف.",
+              "ندعم إعداد وتنسيق المخططات المعمارية والهندسية ومستندات التقديم ضمن إجراءات الموافقة المعمول بها. وتتوقف المستندات والمراجعات المطلوبة لدى بلدية الشارقة على قطعة الأرض واستخدام المبنى ونطاق المشروع واللوائح السارية. تصدر الموافقة عن الجهة المختصة، ولا يضمن إعداد المستندات أو تقديمها صدور الموافقة.",
           },
           {
-            question: "ما الخدمات الاستشارية التي تقدمونها في الخرطوم؟",
+            question: "ما الذي يشمله تنسيق الموافقات مع SEWA؟",
             answer:
-              "نقدم في الخرطوم بالسودان خدمات استشارية هندسية لمشاريع الفلل والمباني السكنية والتجارية والإدارية. وتشمل خدماتنا التصميم والإشراف الهندسي بما يتناسب مع متطلبات التخطيط المحلية، مع التركيز على جودة التنفيذ وسلامته.",
+              "في مشاريع الشارقة، ننسق المخططات والمستندات المتعلقة بالخدمات مع هيئة كهرباء ومياه وغاز الشارقة (SEWA) عندما تكون مراجعتها أو موافقتها مطلوبة. وتعتمد المتطلبات على الموقع والخدمات المطلوبة وطبيعة المشروع؛ كما أن مراجعة SEWA منفصلة عن موافقة البلدية على البناء.",
+          },
+          {
+            question: "متى تكون موافقات الدفاع المدني مطلوبة؟",
+            answer:
+              "قد تلزم مراجعة الدفاع المدني لمتطلبات السلامة من الحريق وسلامة الأرواح بحسب استخدام المبنى وتفاصيل المشروع ومتطلبات الجهات المختصة. وعند انطباق ذلك، يمكن تنسيق المخططات والمستندات اللازمة للمراجعة. وتحدد الجهة المختصة المتطلبات والموافقة.",
           },
         ],
       },
       {
-        title: "المدة الزمنية والتكاليف",
+        title: "مناطق الخدمة والمدد الزمنية والتكاليف",
         questions: [
           {
-            question: "كم تستغرق عملية التصميم السكني والحصول على رخصة البناء؟",
+            question: "أين تتوفر خدمات الاستشارات الهندسية؟",
             answer:
-              "تستغرق عملية التصميم السكني وإجراءات الترخيص عادةً نحو 4 إلى 8 أسابيع. وقد تختلف المدة الفعلية بحسب مساحة المشروع وتعقيده والتعديلات المطلوبة ومدد المراجعة والاعتماد لدى الجهات المختصة.",
+              "تخدم الشركة المشاريع في الشارقة وعجمان والمناطق المحيطة بهما في الإمارات، وكذلك في الخرطوم والمناطق المحيطة بها في السودان. وتتحدد الخدمات المتاحة وإجراءات الجهات المختصة بحسب موقع المشروع ونطاق العمل المتفق عليه.",
           },
           {
-            question: "ما العوامل التي تحدد تكلفة الاستشارات الهندسية؟",
+            question: "كيف تحددون مدة المشروع ورسوم الاستشارات؟",
             answer:
-              "تعتمد التكلفة على نوع المشروع، وإجمالي مساحة البناء وعدد الطوابق، ونطاق الخدمات المطلوبة (التصميم فقط أو التصميم مع الإشراف)، والاشتراطات المطبقة في موقع المشروع، بما في ذلك الشارقة أو عجمان أو الخرطوم.",
+              "لا توجد مدة أو رسوم واحدة تناسب جميع المشاريع؛ إذ تتأثر بموقع المشروع ونوع المبنى ومساحته وعدد طوابقه والتخصصات المطلوبة والخدمات المتفق عليها، بما في ذلك الإشراف، ومدد مراجعة الجهات المختصة. ويمكن إعداد تقدير خاص بالمشروع بعد مراجعة هذه التفاصيل.",
           },
         ],
       },

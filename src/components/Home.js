@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "./LocalizedLink";
 import Slider from "./Slider";
 import Grid from "./Grid";
 import "../styles/Home.css";
@@ -12,7 +12,7 @@ const Home = () => {
   const language = i18n.language?.startsWith("ar") ? "ar" : "en";
   const isArabic = language === "ar";
   const title = isArabic
-    ? "استشارات هندسية في الشارقة وعجمان | صابر السر للاستشارات الهندسية"
+    ? "استشارات هندسية في الشارقة وعجمان | صابر السر"
     : "Engineering Consultants in Sharjah & Ajman | Sabir Elsir";
   const description = isArabic
     ? "صابر السر للاستشارات الهندسية، خبرة منذ 2001 في التصميم المعماري والإنشائي والمدني وMEP وتصميم الفلل والإشراف الهندسي واعتماد المخططات في الشارقة وعجمان."

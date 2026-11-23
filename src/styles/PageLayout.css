@@ -62,6 +62,15 @@
   text-align: start;
 }
 
+.founder-profile-biography h3 {
+  margin: 24px 0 12px;
+  color: var(--site-green, #315746);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.45;
+  text-align: start;
+}
+
 .founder-profile-card p,
 .founder-profile-card li {
   color: #58645b;

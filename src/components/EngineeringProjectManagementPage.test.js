@@ -60,13 +60,13 @@ test("renders project management metadata, content, FAQs, and structured data", 
     document.querySelector(".service-detail-page"),
   ).not.toHaveTextContent(/and across the UAE|across the UAE/i);
   expect(document.title).toBe(
-    "Engineering Project Management Consultancy in Sharjah & Ajman",
+    "Engineering Project Management | Sharjah & Ajman",
   );
   expect(
     document.querySelector('meta[name="description"]'),
   ).toHaveAttribute(
     "content",
-    "Sabir Elsir Engineering Consultants provides engineering project management, construction coordination, project monitoring, and consultancy services in Sharjah, Ajman, and across the UAE.",
+    "Engineering project management, construction coordination, and progress monitoring in Sharjah and Ajman.",
   );
   expect(
     document.querySelector('link[rel="canonical"]'),
